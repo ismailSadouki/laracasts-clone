@@ -198,7 +198,7 @@ the website, in dark theme
 }
 .header__logo i {
   font-size: var(--h1-font-size);
-  color: var(--first-color-lighten);
+  color: var(--first-color);
 }
 .nav {
   display: flex;
