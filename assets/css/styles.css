@@ -528,6 +528,10 @@ the website, in dark theme
   padding: 4px;
   border-radius: 5px;
 }
+
+.teachers__card:hover .card-social-link i {
+  background-color: rgba(50,138,241,.15);
+}
 .teachers__card .card-content {
   display: flex;
   flex-direction: column;
