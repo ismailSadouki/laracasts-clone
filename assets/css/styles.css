@@ -249,7 +249,88 @@ the website, in dark theme
 
 
 /*=============== HOME ===============*/
+.home {
+  margin: 3rem 0;
+}
+.home__editor {
+  width: 100%;
+  min-width: 380px;
+  height: 320px;
+  border-radius: 15px;
+  background-color: #1A2941;
+  position: relative;
+}
+.home__editor .editor-code {
+  width: 280px;
+  height: 147px;
+  border-radius: 9px;
+  background-color: #122139;
+  position: absolute;
+  box-shadow: 0px 0px 19px -2px rgba(0,0,0,0.75);
+}
+.home__editor .editor-code:nth-child(1) {
+  top: 5%;
+  left: -3%;
+}
 
+.home__editor .editor-code:nth-child(2) {
+  top: 26%;
+  right: -2%;
+}
+.home__editor .editor-code:nth-child(3) {
+  top: 62%;
+  left: 3%;
+}
+.home__editor .editor-code {
+  display: flex;
+  flex-direction: column;
+}
+
+.home__editor .editor-nav {
+  height: 32px;
+  padding: .5rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: .5rem
+}
+.home__editor .editor-title {
+  color: #c5c8d4;
+  text-transform: uppercase;
+  font-size: var(--small-font-size);
+font-weight: var(--font-semi-bold);
+letter-spacing: 0.06rem; 
+}
+.home__editor .editor-nav i {
+  font-size: 1.2rem;
+}
+.home__editor .editor-content {
+  padding: 0 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  white-space: pre;
+}
+.white {
+  color: white;
+}
+.yellowith-orange {
+  color: #a88038;
+}
+.yellow {
+  color: #e1ca72;
+}
+.tealish-green {
+  color: #74b087;
+}
+.reddish-magenta {
+  color: #9f8198;
+}
+.orange {
+  color: #de7300;
+}
+.cyan-blue {
+  color: #7a99ad;
+}
 
 /*=============== TOP ===============*/
 
@@ -702,7 +783,7 @@ the website, in dark theme
 /*=============== FOOTER ===============*/
 .footer {
   background-image: radial-gradient(circle at 15% -3%,#365280,#080e17 116%);
-padding: 3rem 0;
+  padding: 3rem 0;
 }
 .footer__container {
   display: flex;
