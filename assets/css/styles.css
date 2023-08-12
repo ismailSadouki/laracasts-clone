@@ -1,6 +1,7 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap');
 
+
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3rem;
@@ -152,6 +153,7 @@ the website, in dark theme
   border-radius: 5px;
   font-size: var(--smaller-font-size);
   color: var(--first-color-lighten);
+  cursor: pointer;
 }
 
 .primary-button {
@@ -250,7 +252,7 @@ the website, in dark theme
 
 /*=============== HOME ===============*/
 .home {
-  margin: 3rem 0;
+  margin: 3rem 0 5rem; 
 }
 .home__editor {
   width: 100%;
@@ -298,8 +300,8 @@ the website, in dark theme
   color: #c5c8d4;
   text-transform: uppercase;
   font-size: var(--small-font-size);
-font-weight: var(--font-semi-bold);
-letter-spacing: 0.06rem; 
+  font-weight: var(--font-semi-bold);
+  letter-spacing: 0.06rem;
 }
 .home__editor .editor-nav i {
   font-size: 1.2rem;
@@ -330,6 +332,25 @@ letter-spacing: 0.06rem;
 }
 .cyan-blue {
   color: #7a99ad;
+}
+.home__main {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.main-title {
+  font-size: var(--h1-font-size);
+}
+.main-title span {
+  color: rgb(50 138 241);
+}
+.main-desc {
+  text-align: center;
+  color: var(--text-color-light);
+  margin: 1rem 0 2rem;
+}
+.main-button {
+  padding: 1rem;
 }
 
 /*=============== TOP ===============*/
@@ -379,6 +400,8 @@ letter-spacing: 0.06rem;
   font-family: var(--secondary-font);
   line-height: 1.4;
   font-size: var(--small-font-size);
+  max-height: 131px;
+  overflow: hidden;
 }
 .card-info {
   display: flex;
@@ -828,7 +851,7 @@ letter-spacing: 0.06rem;
   color: var(--first-color);
 }
 .footer .about-us-desc {
-  color: var(--first-color-lighten);
+  color: rgb(186 217 252);
   margin: 1rem;
   font-weight: var(--font-medium);
   font-size: .9rem;
@@ -873,6 +896,53 @@ letter-spacing: 0.06rem;
 
 
 /* For medium devices */
+@media (min-width: 768px) {
+  .top__data {
+    margin: 0 9rem 2rem;
+  }
+  .top__content {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 152px)
+  }
+  .medium-card {
+    grid-column: 3 / 5;
+  }
+
+  .top__content > div:nth-child(3) {
+    grid-row: 2/4;
+  }
+  .top__content > div:nth-child(4) {
+    grid-row: 4/6;
+  }
+  .top__content > div:nth-child(5) {
+    grid-row: 1/2;
+  }
+  .top__content > div:nth-child(6) {
+    grid-row: 2/3;
+  }
+
+  .top__content > div:nth-child(7) {
+    grid-column: 3;
+  }
+  .top__content > div:nth-child(9) {
+    grid-row: 4/6;
+  }
+
+
+  .topic__data {
+    margin: 0 3rem;
+  }
+  .topic__list-link {
+    font-size: .9rem;
+  }
+  .topic__cards {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+  }
+  .topic__cards .topic__card {
+  }
+}
 
 
 /* For large devices */
