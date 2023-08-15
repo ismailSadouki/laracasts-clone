@@ -252,7 +252,7 @@ the website, in dark theme
 
 /*=============== HOME ===============*/
 .home {
-  margin: 3rem 0 5rem; 
+  margin: 3rem 0 5rem;
 }
 .home__editor {
   width: 100%;
@@ -676,6 +676,127 @@ the website, in dark theme
 
 }
 
+/*=============== DEVELOPERS ===============*/
+
+
+.developers__container {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.developers__data {
+  margin: 0 13rem;
+}
+.developers__data span {
+  color: var(--first-color);
+}
+.developers__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+
+}
+.developers__column {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items:center;
+  position: relative;
+}
+.developers__column:before {
+  content: '';
+  width: 3px;
+  background-color: #182a45;
+  height: 100%;
+  position: absolute;
+}
+
+.developers__column .developer {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  background-color: #182a45;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.developers__column .developer:hover {
+  background-color: #0d131d;
+}
+.developers__column:not(:nth-child(12)):nth-child(2n+4) {
+  position: relative;
+  top: 4.5rem;
+}
+.developers__column:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(12)):not(:nth-child(13)) .developer:not(:nth-child(1))::before {
+  content: '';
+  position: absolute;
+  left: calc(50% - 13px/2);
+  top: calc(-3rem/2 - 13px/2);
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+  background-color: #182a45;
+}
+
+.developer img {
+  width: 76px;
+  height: 76px;
+  border-radius: 100%;
+}
+.developer-content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  background-color: black;
+  z-index: 999999;
+}
+
+
+
+@media (max-width: 1200px) {
+      .developers__column {
+    gap: 4rem
+  }
+  .developers__column .developer {
+    width: 80px;
+    height: 80px;
+  }
+  .developer img {
+    width: 66px;
+    height: 66px;
+  }
+}
+
+@media (max-width: 1060px) {
+      .developers__column {
+    gap: 5rem
+  }
+  .developers__column .developer {
+    width: 60px;
+    height: 60px;
+  }
+  .developer img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 840px) {
+  .developers {
+    display: none;
+  }
+}
+
 
 /*=============== PLANS ===============*/
 .plans__container {
@@ -704,16 +825,18 @@ the website, in dark theme
   font-family: var(--body-font);
   font-size: var(--small-font-size);
   font-weight: var(--font-semi-bold);
+  white-space: nowrap;
 }
 .plans__reduction .reduction-text span {
   color: var(--first-color);
 }
 .plans__content {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 .plans__card {
   text-align: center;
@@ -799,6 +922,9 @@ the website, in dark theme
 }
 .plans__content  .sub-title:hover {
   text-decoration: underline;
+}
+.plans .question {
+  display: block;
 }
 
 
@@ -897,6 +1023,13 @@ the website, in dark theme
 
 /* For medium devices */
 @media (min-width: 768px) {
+  .home__container {
+    display: flex;
+    gap: 1rem;
+  }
+  .home__main {
+    order: -1;
+  }
   .top__data {
     margin: 0 9rem 2rem;
   }
@@ -938,14 +1071,99 @@ the website, in dark theme
   .topic__cards {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     gap: 1rem;
+    overflow: initial;
+    scrollbar-width: initial;
+    height: auto;
   }
   .topic__cards .topic__card {
+    width: 100%;
+    max-width: 225px;
+    min-width: 190px;
+  }
+
+
+  .teachers__card .card-series {
+    padding-top: 10rem;
+  }
+  .teachers__card .card-series-link img {
+    width: 2.8rem;
+  }
+
+
+  .footer .newspaper-form {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .footer .about-us-desc {
+    margin: 1rem 8rem;
   }
 }
 
 
 /* For large devices */
+
+@media (min-width: 992px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .top__content {
+    max-width: 75vw;
+    margin: 0 auto;
+  }
+  .teachers__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home__container {
+    gap: 2rem;
+  }
+  .home__editor {
+    max-width: 500px;
+    min-width: auto;
+  }
+  .container {
+    max-width: 1250px;
+  }
+  .section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .topic__content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .teachers__content {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    margin-top: 7rem;
+  }
+  .teachers__card {
+    height: 255px;
+  }
+  .teachers__card:nth-child(3n+2) {
+    position: relative;
+    top: -4rem;
+  }
+  .teachers__card:last-child {
+    display: none;
+  }
+  .teachers__card .card-series {
+    padding-top: 12.4rem;
+  }
+  .plans__data .plans__sub-title {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+}
 
 
 /* For 2K & 4K resolutions */
