@@ -1,0 +1,195 @@
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+}
+
+/* Responsive typography */
+@media screen and (min-width: 1024px) {
+  :root {
+  }
+}
+
+/*=============== BASE ===============*/
+
+/*=============== THEME ===============*/
+
+
+/*========== Variables Dark theme ==========*/
+
+
+/*==========
+Color changes in some parts of
+the website, in dark theme
+==========*/
+
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+
+.white-button {
+  background-color: white !important;
+  color: #111 !important;
+}
+
+
+
+/*=============== SERIE DATA ===============*/
+.serie__data,
+.serie__data .serie-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.serie__data .serie-img ,
+.serie__data .serie-img img{
+  width: 216px;
+  height: 216px;
+}
+
+.serie__data .serie-desc {
+  margin: 1rem;
+}
+.serie__data .button {
+  background-color: #182a46;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--secondary-font);
+  font-weight: var(--font-semi-bold);
+  font-size: var(--smaller-font-size);
+  letter-spacing: .05rem;
+  border-radius: 15px;
+  padding: 0 0.7rem .1rem 0rem;
+  text-align: center;
+  transition: .4s;
+}
+
+.serie__data .button i {
+  font-size: var(--h2-font-size);
+}
+.serie__data .button:hover {
+  background-color: #192f4f;
+  color: var(--first-color) !important;
+}
+.serie__data .serie-title {
+  font-size: 2.1rem;
+  margin-bottom: .7rem;
+  white-space: nowrap;
+}
+.serie__data .serie-category.button {
+  padding: .3rem .9rem;
+  letter-spacing: 0.01rem;
+  font-size: .7rem;
+  margin-bottom: 1rem;
+}
+.serie__data .serie-text {
+  text-align: center;
+  color: #fff;
+  font-size: var(--smaller-font-size);
+  margin-bottom: 2rem;
+}
+.serie__data .serie-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  max-width: 420px;
+  width: 100%;
+}
+.serie__data .serie-button {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  gap: .5rem;
+}
+
+
+/*=============== SERIE INFO ===============*/
+.serie__info {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: .2rem;
+  background-color: rgb(241 154 26);
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-bottom: .8rem;
+  border-radius: 15px;
+  color: #fff;
+}
+.serie__info p {
+  font-size: var(--smaller-font-size);
+}
+
+/*=============== SERIE VIDEOS ===============*/
+.serie__videos {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+.serie-card {
+  display: flex;
+  gap: 1rem;
+  background-color: #18273f;
+  border-radius: 15px;
+  padding: 1rem;
+  height: 145px;
+  cursor: pointer;
+  transition: .3s;
+}
+.serie-card .card-progress {
+  width: 70px;
+  min-width: 70px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.serie-card .card-progress span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  border-radius: 100%;
+  background-color: #1b3152;
+  font-size: var(--h1-font-size);
+  transition: .3s;
+}
+.serie-card .card-content {
+  display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: start;
+}
+.serie-card .card-title {
+  font-size: var(--h2-font-size);
+  padding: 0 0 .3rem;
+}
+.serie-card .card-desc {
+  font-size: .75rem;
+}
+
+
+.serie-card:hover {
+  background-color: #19304e;
+}
+.serie-card:hover .card-progress span {
+  background-color: #1b395f;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+
+
+/* For medium devices */
+
+
+
+/* For large devices */
+
+
+
+/* For 2K & 4K resolutions */

@@ -71,6 +71,7 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   transition: .3s; /* For animation dark mode */
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -840,7 +841,7 @@ the website, in dark theme
 }
 .plans__card {
   text-align: center;
-  padding: 1rem;
+  padding: .5rem 1rem 1rem;
   border-radius: 15px;
   background-color: #18273f;
   width: 235px;
@@ -874,6 +875,7 @@ the website, in dark theme
 .plans__card .card-prices {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .plans__card .card-button {
   padding: 1rem;

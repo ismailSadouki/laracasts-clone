@@ -5,31 +5,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--=============== FAVICON ===============-->
-        <!-- <link rel="shortcut icon" href="" type="image/x-icon"> -->
+        <link rel="shortcut icon" href="" type="image/x-icon">
 
         <!--=============== BOXICONS ===============-->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="">
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
         <title>Laracasts clone</title>
-
-        <!--==============META DESC =====================-->
-          <meta name="description" content="Free Web tutorials">
-  <meta name="keywords" content="HTML, CSS, JavaScript">
-  <meta name="author" content="John Doe">
     </head>
     <body>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
-            <a href="/" aria-label="home page" class="header__logo">
+            <a href="" class="header__logo">
                 <i class="bx bx-code-alt"></i>
             </a>
             <nav class="nav">
                 <div class="nav__search">
                     <i class="bx bx-search-alt-2"></i>
-                    <input class="nav__search-input" aria-label="Search input"  placeholder="Search ...">
+                    <input class="nav__search-input" placeholder="Search ...">
                 </div>
 
                 <a href="" class="nav__button button primary-button">Sign Up</a>
@@ -51,11 +49,11 @@
                                 </h3>
                             </div>
                             <div class="editor-content">
-                                <span class="orange"> &lt;div </span>
+                                <span class="yellowith-orange"> &lt;div </span>
                                 <span class="yellow">class</span>
                                 <span class="white">=</span>
                                 <span class="tealish-green">"react"</span>
-                                <span class="orange">&gt;&lt;/div&gt;</span>
+                                <span class="yellowith-orange">&gt;&lt;/div&gt;</span>
                             </div>
                         </div>
                         <div class="editor-code">
@@ -66,11 +64,11 @@
                                 </h3>
                             </div>
                             <div class="editor-content">
-                                <span class="orange"> &lt;div </span>
+                                <span class="yellowith-orange"> &lt;div </span>
                                 <span class="yellow">class</span>
                                 <span class="white">=</span>
                                 <span class="tealish-green">"react"</span>
-                                <span class="orange">&gt;&lt;/div&gt;</span>
+                                <span class="yellowith-orange">&gt;&lt;/div&gt;</span>
                             </div>
                         </div>
 
@@ -82,11 +80,11 @@
                                 </h3>
                             </div>
                             <div class="editor-content">
-                                <span class="orange"> &lt;div </span>
+                                <span class="yellowith-orange"> &lt;div </span>
                                 <span class="yellow">class</span>
                                 <span class="white">=</span>
                                 <span class="tealish-green">"react"</span>
-                                <span class="orange">&gt;&lt;/div&gt;</span>
+                                <span class="yellowith-orange">&gt;&lt;/div&gt;</span>
                             </div>
                         </div>
 
@@ -121,11 +119,11 @@
                     <div class="top__content">
 
                         <div class="top__card small-card">
-                            <img alt="laravel nova mastery" src="assets/img/laravel-nova-mastery-2023.webp">
+                            <img src="assets/img/laravel-nova-mastery-2023.webp">
                         </div>
 
                         <div class="top__card small-card">
-                            <img alt="build shopify apps with laravel" src="assets/img/build-shopify-apps-with-laravel.webp">
+                            <img src="assets/img/build-shopify-apps-with-laravel.webp">
                         </div>
 
                         <div class="top__card large-card">
@@ -185,7 +183,7 @@
                                     Laravel Octane
                                 </h3>
                                 <p class="card-desc">
-                                    In this course, we'll explore Laravel Octane in detail, and learn how to leverage its capabilities to optimize the performance of your Laravel...
+                                    In this course, we'll explore Laravel Octane in detail, and learn how to leverage its capabilities to optimize the performance of your Laravel...                                </p>
                                 </p>
                                 <div class="card-info">
                                     <i class="bx bxs-book-alt"></i>
@@ -265,7 +263,7 @@
                                     Laravel Octane
                                 </h3>
                                 <p class="card-desc">
-                                    In this course, we'll explore Laravel Octane in detail, and learn how to leverage its capabilities to optimize the performance of your Laravel...
+                                    In this course, we'll explore Laravel Octane in detail, and learn how to leverage its capabilities to optimize the performance of your Laravel...                                </p>
                                 </p>
                                 <div class="card-info">
                                     <i class="bx bxs-book-alt"></i>
@@ -420,7 +418,7 @@
                                 </a>
                             </li>
 
-                            <!--================copies===========-->
+                            <!---------------------------------------->
 
 
 
@@ -1361,199 +1359,198 @@
 
                         <div class="developers__column">
                             <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img src="assets/img/syntax-seed.webp" src="developer image">
                             </div>
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
+                                <img src="assets/img/darren-benney.webp" src="developer image">
                             </div>
                         </div>
 
                         <div class="developers__column">
                             <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img src="assets/img/syntax-seed.webp" src="developer image">
                             </div>
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
+                                <img src="assets/img/darren-benney.webp" src="developer image">
                             </div>
 
                             <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img src="assets/img/syntax-seed.webp" src="developer image">
                             </div>
                         </div>
 
                         <div class="developers__column">
                             <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img src="assets/img/syntax-seed.webp" src="developer image">
                             </div>
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
-                            </div>
-
-                            <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img src="assets/img/darren-benney.webp" src="developer image">
                             </div>
 
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
+                                <img src="assets/img/syntax-seed.webp" src="developer image">
+                            </div>
+
+                            <div class="developer">
+                                <img src="assets/img/darren-benney.webp" src="developer image">
                             </div>
                         </div>
 
-                        <!-- ====================== copies =========== -->
+                        <!-- ------------------------------- copies ------------------------------------ -->
 
                         <div class="developers__column">
                             <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img src="assets/img/syntax-seed.webp" src="developer image">
                             </div>
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
-                            </div>
-
-                            <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img src="assets/img/darren-benney.webp" src="developer image">
                             </div>
 
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
-                            </div>
-                        </div>
-                        <div class="developers__column">
-                            <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
-                            </div>
-                            <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
+                                <img src="assets/img/syntax-seed.webp" src="developer image">
                             </div>
 
                             <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
-                            </div>
-
-                            <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
+                                <img src="assets/img/darren-benney.webp" src="developer image">
                             </div>
                         </div>
                         <div class="developers__column">
                             <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img src="assets/img/syntax-seed.webp" src="developer image">
                             </div>
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
-                            </div>
-
-                            <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img src="assets/img/darren-benney.webp" src="developer image">
                             </div>
 
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
+                                <img src="assets/img/syntax-seed.webp" src="developer image">
+                            </div>
+
+                            <div class="developer">
+                                <img src="assets/img/darren-benney.webp" src="developer image">
                             </div>
                         </div>
                         <div class="developers__column">
                             <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img src="assets/img/syntax-seed.webp" src="developer image">
                             </div>
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
-                            </div>
-
-                            <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img src="assets/img/darren-benney.webp" src="developer image">
                             </div>
 
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
+                                <img src="assets/img/syntax-seed.webp" src="developer image">
+                            </div>
+
+                            <div class="developer">
+                                <img src="assets/img/darren-benney.webp" src="developer image">
                             </div>
                         </div>
                         <div class="developers__column">
                             <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img src="assets/img/syntax-seed.webp" src="developer image">
                             </div>
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
-                            </div>
-
-                            <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img src="assets/img/darren-benney.webp" src="developer image">
                             </div>
 
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
+                                <img src="assets/img/syntax-seed.webp" src="developer image">
+                            </div>
+
+                            <div class="developer">
+                                <img src="assets/img/darren-benney.webp" src="developer image">
                             </div>
                         </div>
                         <div class="developers__column">
                             <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img src="assets/img/syntax-seed.webp" src="developer image">
                             </div>
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
-                            </div>
-
-                            <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img src="assets/img/darren-benney.webp" src="developer image">
                             </div>
 
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
+                                <img src="assets/img/syntax-seed.webp" src="developer image">
+                            </div>
+
+                            <div class="developer">
+                                <img src="assets/img/darren-benney.webp" src="developer image">
                             </div>
                         </div>
                         <div class="developers__column">
                             <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img src="assets/img/syntax-seed.webp" src="developer image">
                             </div>
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
-                            </div>
-
-                            <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img src="assets/img/darren-benney.webp" src="developer image">
                             </div>
 
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
+                                <img src="assets/img/syntax-seed.webp" src="developer image">
+                            </div>
+
+                            <div class="developer">
+                                <img src="assets/img/darren-benney.webp" src="developer image">
                             </div>
                         </div>
                         <div class="developers__column">
                             <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img src="assets/img/syntax-seed.webp" src="developer image">
                             </div>
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
-                            </div>
-
-                            <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img src="assets/img/darren-benney.webp" src="developer image">
                             </div>
 
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
+                                <img src="assets/img/syntax-seed.webp" src="developer image">
+                            </div>
+
+                            <div class="developer">
+                                <img src="assets/img/darren-benney.webp" src="developer image">
                             </div>
                         </div>
                         <div class="developers__column">
                             <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img src="assets/img/syntax-seed.webp" src="developer image">
                             </div>
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
+                                <img src="assets/img/darren-benney.webp" src="developer image">
                             </div>
 
                             <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img src="assets/img/syntax-seed.webp" src="developer image">
+                            </div>
+
+                            <div class="developer">
+                                <img src="assets/img/darren-benney.webp" src="developer image">
+                            </div>
+                        </div>
+                        <div class="developers__column">
+                            <div class="developer">
+                                <img src="assets/img/syntax-seed.webp" src="developer image">
+                            </div>
+                            <div class="developer">
+                                <img src="assets/img/darren-benney.webp" src="developer image">
+                            </div>
+
+                            <div class="developer">
+                                <img src="assets/img/syntax-seed.webp" src="developer image">
                             </div>
 
                         </div>
                         <div class="developers__column">
                             <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img src="assets/img/syntax-seed.webp" src="developer image">
                             </div>
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
+                                <img src="assets/img/darren-benney.webp" src="developer image">
                             </div>
 
                         </div>
+
 
                     </div>
-                </div>
-
             </section>
 
 
@@ -1577,7 +1574,6 @@
 
                         <div class=plans__card>
                             <div class="card-prices">
-
                                 <div class="card-prices-buttons">
                                     <button class="button active-button">
                                         Monthly
@@ -1587,8 +1583,7 @@
                                         Yearly
                                     </button>
                                 </div>
-
-                                <h4 class="price" aria-live="assertive" aria-label="yearly price">
+                                <h4 class="price">
                                     $15
                                 </h4>
                             </div>
@@ -1606,16 +1601,15 @@
 
                         <div class=plans__card>
                             <div class="card-prices">
-
-                                <h4 class="price" aria-live="assertive" aria-label="yearly price">
-                                    $15
-                                </h4>
                                 <div class="card-prices-buttons">
                                     <button class="button active-button">
                                         forever
                                     </button>
 
                                 </div>
+                                <h4 class="price">
+                                    $15
+                                </h4>
                             </div>
                             <h3 class="card-title">Individual Plan</h3>
                             <div class="card-img">
@@ -1640,7 +1634,7 @@
                                         Yearly
                                     </button>
                                 </div>
-                                <h4 class="price" aria-live="assertive" aria-label="yearly price">
+                                <h4 class="price">
                                     $29
                                 </h4>
                             </div>
@@ -1658,7 +1652,7 @@
 
                     </div>
 
-                    <a href="" class="question sub-title"> Want to learn more avout our excellent team plans?</a>
+                        <a href="" class="question sub-title"> Want to learn more avout our excellent team plans?</a>
                 </div>
             </section>
 
@@ -1672,30 +1666,30 @@
                     <h2 class="newspaper-title title">
                         Want us to email you accasionally with our news?
                     </h2>
-                    <form class="newspaper-form">
-                        <input class="newspaper-input" placeholder="Enter your email address" aria-label="Your email" type="email">
+                    <div class="newspaper-form">
+                        <input class="newspaper-input" placeholder="Enter your email address" type="email">
                         <button class="button primary-button newspaper-button">
                             Subscribe
                         </button>
-                    </form>
+                    </div>
                 </div>
 
                 <div class="about-us">
-                    <a aria-label="home page" href="/" class="about-us-logo">
+                    <a href="" class="about-us-logo">
                         <i class="bx bx-code-alt"></i>
                     </a>
                     <p class="about-us-desc">
                         Nine out of ten doctors recommend us over competing brands. Come inside, see for yourself, and massively level up your development skills in the process.
                     </p>
                     <div class="social-link">
-                        <a class="" href="github.com" target="_blank" aria-label="github">
+                        <a class="" href="">
                             <i class='bx bxl-github'></i>
                         </a>
 
-                        <a class="" href="twitter.com" target="_blank" aria-label="twitter">
+                        <a class="" href="">
                             <i class='bx bxl-twitter'></i>
                         </a>
-                        <a class="" href="facebook.com" target="_blank" aria-label="facebook">
+                        <a class="" href="">
                             <i class='bx bxl-facebook'></i>
                         </a>
                     </div>
@@ -1709,7 +1703,16 @@
         </footer>
 
 
+        <!--========== SCROLL UP ==========-->
 
 
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src=""></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src=""></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src=""></script>
     </body>
 </html>
