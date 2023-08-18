@@ -354,9 +354,10 @@ the website, in dark theme
   padding: 1rem;
 }
 
-/*=============== TOP ===============*/
+/*=============== TOP && RELATED from the topic page ===============*/
 
-.top__content {
+.top__content,
+.related__content {
   margin-top: 1rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -371,7 +372,8 @@ the website, in dark theme
   cursor: pointer;
 }
 
-.top__card.large-card {
+.top__card.large-card,
+.related__card.large-card {
   grid-column: span 2;
   position: relative;
   display: flex;
@@ -381,7 +383,8 @@ the website, in dark theme
   min-height: 292px;
 }
 
-.top__card .card-content {
+.top__card .card-content,
+.related__card .card-content {
   padding: 1.5rem 1.5rem 1.5rem 0;
 }
 .card-title {
@@ -409,7 +412,8 @@ the website, in dark theme
   color: var(--first-color-lighten);
   gap: 0.2rem;
 }
-.top__card.large-card .card-info {
+.top__card.large-card .card-info,
+.related__card.large-card .card-info {
 
   position: absolute;
   bottom: 25px;
@@ -447,12 +451,14 @@ the website, in dark theme
   border-radius: 50px;
 }
 
-.top__card.large-card .card-img-link {
+.top__card.large-card .card-img-link,
+.related__card.large-card .card-img-link {
   width: 120px;
   display: inline-block;
   margin-right: 1rem;
 }
-.top__card.large-card img {
+.top__card.large-card img,
+.related__card.large-card img {
   position: absolute;
   max-width: 230px;
   left: -120px;
@@ -541,7 +547,7 @@ the website, in dark theme
 .topic__card-link{
   display: flex;
   align-items: center;
-  height: 90px;
+  height: 80px;
   border-radius: 15px;
   padding: 1.7rem .7rem;
   margin-bottom: 1.2rem;

@@ -1,0 +1,144 @@
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+}
+
+/* Responsive typography */
+@media screen and (min-width: 1024px) {
+  :root {
+  }
+}
+
+/*=============== BASE ===============*/
+
+/*=============== THEME ===============*/
+
+
+/*========== Variables Dark theme ==========*/
+
+
+
+/*==========
+Color changes in some parts of
+the website, in dark theme
+==========*/
+
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+
+
+
+/*=============== RELATED ===============*/
+
+.related__content > * {
+  background: linear-gradient(180deg,#f44881,#ec454f);
+}
+
+.related {
+  margin-top: 2rem;
+}
+.related__data .related__title {
+  font-size: 2rem;
+}
+.related__data .related__title span {
+  color: var(--first-color);
+}
+
+.first-card {
+  grid-column: span 2;
+  border-radius: 15px;
+  background: #18273f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.3rem;
+  overflow: hidden;
+}
+.first-card .card-img {
+  position: relative;
+  width: 200px;
+  height: 160px;
+}
+.first-card .card-img img {
+
+  position: absolute;
+  top: -113px;
+  left: -44px;
+  max-width: initial;
+  width: 290px;
+  height: 290px;
+}
+.first-card .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+  margin-top: 2.5rem;
+}
+.first-card .card-title {
+  font-size: 1.5rem;
+}
+.first-card .card-desc {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.first-card .card-info {
+  display: flex;
+  flex-direction: row;
+  gap: .8rem;
+  margin-bottom: 1rem;
+}
+.first-card .card-info div {
+  font-size: .68rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: var(--font-semi-bold);
+  gap: .2rem;
+}
+
+
+.card-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 420px;
+}
+.card-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(50,138,241,.1);
+  padding: 1rem;
+  border-radius: 15px;
+  transition: .3s;
+}
+.card-button:hover {
+  color: var(--first-color);
+}
+
+
+
+
+
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+
+
+/* For medium devices */
+
+
+
+/* For large devices */
+
+
+
+/* For 2K & 4K resolutions */

@@ -30,9 +30,13 @@ the website, in dark theme
   color: #111 !important;
 }
 
+.white-button:hover,
+.secondary-button:hover {
+  color: var(--first-color) !important;
+  
+}
 .secondary-button:hover {
   background-color: rgba(50,138,241,.15) !important;
-  color: var(--first-color) !important;
   text-decoration: none;
 }
 
