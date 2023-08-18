@@ -30,6 +30,12 @@ the website, in dark theme
   color: #111 !important;
 }
 
+.secondary-button:hover {
+  background-color: rgba(50,138,241,.15) !important;
+  color: var(--first-color) !important;
+  text-decoration: none;
+}
+
 
 
 /*=============== SERIE DATA ===============*/
@@ -67,10 +73,7 @@ the website, in dark theme
 .serie__data .button i {
   font-size: var(--h2-font-size);
 }
-.serie__data .button:hover {
-  background-color: #192f4f;
-  color: var(--first-color) !important;
-}
+
 .serie__data .serie-title {
   font-size: 2.1rem;
   margin-bottom: .7rem;
@@ -102,6 +105,7 @@ the website, in dark theme
   width: 100%;
   display: flex;
   gap: .5rem;
+  font-size: .7rem;
 }
 
 
@@ -160,9 +164,9 @@ the website, in dark theme
 }
 .serie-card .card-content {
   display: flex;
-justify-content: center;
-flex-direction: column;
-align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
 }
 .serie-card .card-title {
   font-size: var(--h2-font-size);
@@ -171,7 +175,23 @@ align-items: start;
 .serie-card .card-desc {
   font-size: .75rem;
 }
+.serie-card .card-info {
+  display: flex;
+  color: rgba(186,217,252,.7);
+  text-transform: uppercase;
+  position: relative;
+  top: 1.7rem;
+  display: none;
+}
 
+.serie-card .card-info p {
+  font-size: .6rem;
+  font-weight: var(--font-semi-bold);
+}
+.serie-card .card-info i {
+  font-size: var(--smaller-font-size);
+  margin-left: .5rem;
+}
 
 .serie-card:hover {
   background-color: #19304e;
@@ -180,16 +200,181 @@ align-items: start;
   background-color: #1b395f;
 }
 
+/*=============== INSTRUCTOR ===============*/
+.instructor__container {
+  margin: 0 1rem;
+}
+.instructor__content {
+  margin: 2rem 1rem;
+  max-width: 500px;
+}
+.instructor__img,
+.instructor__img img {
+  width: 100%;
+  height: 445px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.instructor__data {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 1rem 1.5rem;
+}
+.instructor__data .instructor-header {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+}
+.instructor__data .instructor-header .sub-title{
+  font-size: .7rem;
+  font-weight: var(--font-semi-bold);
+  white-space: nowrap;
+  margin: 0;
+}
+
+.instructor__data .instructor-header .line {
+  background-color: rgb(186 217 252);
+  height: 1px;
+  width: 100%;
+}
+.instructor__data .instructor-name {
+  font-family: var(--secondary-font);
+  font-weight: 390;
+  font-size: 1.9rem;
+  margin-top: .5rem;
+  letter-spacing: 0;
+}
+
+.instructor__data .instructor-social-media {
+  margin: .5rem 0;
+}
+.instructor__data .instructor-social-media a {
+  color: #bad9fc;
+  font-size: var(--h1-font-size);
+  transition: .3s;
+}
+
+.instructor__data .instructor-social-media a:hover {
+  color: var(--first-color);
+}
+.instructor__data .instructor-desc {
+  color: white;
+  font-size: var(--smaller-font-size);
+}
+
+.instructor__data .instructor-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  gap: .6rem;
+  width: 100%;
+  padding: 0 .8rem;
+}
+
+.instructor__data .instructor-buttons .button {
+  width: 100%;
+  padding: .8rem;
+  text-align: center;
+  font-family: var(--secondary-font);
+  font-size: .7rem;
+  border-radius: 15px;
+  transition: .3s;
+}
+
+.instructor__data .instructor-buttons .secondary-button {
+  background-color: #182a46;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media (max-width: 396px) {
+  :root {
+    --h2-font-size: 1rem;
+  }
+  .serie__data .serie-title {
+    font-size: 1.8rem;
+  }
+  .serie-card .card-desc {
+    font-size: .7rem;
+  }
+}
 
 
 /* For medium devices */
+@media (min-width: 768px) {
+  .serie__data {
+    flex-direction: row;
+  }
+  .serie__data .serie-img {
+    order: 1;
+    min-width: 216px;
+    position: relative;
+    top: -20px;
+  }
+  .serie__data .serie-desc {
+    align-items: start;
+    width: 100%;
+    margin: .5rem;
+    padding-right: 1rem;
+  }
+  .serie__data .serie-desc .serie-text {
+    text-align: start;
+    margin-top: .4rem;
+    padding-right: 3rem;
+  }
+  .serie__data .serie-buttons {
+    flex-direction: row;
+    max-width: 320px;
+    justify-content: start;
+  }
+
+  .serie__data .serie-button {
+    padding: .4rem .6rem;
+    white-space: nowrap;
+    width: initial;
+  }
+  .serie-card .card-info {
+    display: flex;
+  }
+}
 
 
 
 /* For large devices */
 
+@media (min-width: 992px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    overflow: initial !important;
+  }
+  .serie.section {
+    order: 1;
+    margin-top: 1.4rem;
+  }
+  .serie-card .card-progress span {
+    font-size: var(--h2-font-size);
+  }
+  .instructor.section {
+    position: sticky;
+    top: 0;
+    max-width: 380px
+  }
+}
+@media (min-width: 1250px) {
+  main {
+    max-width: 1700px;
+    margin: 1rem auto 3rem;
+    padding: 0 2.5rem;
+  }
+}
 
 
 /* For 2K & 4K resolutions */
