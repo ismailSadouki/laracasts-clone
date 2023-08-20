@@ -25,7 +25,26 @@ the website, in dark theme
 
 
 /*=============== REUSABLE CSS CLASSES ===============*/
+.white-button {
+  background-color: white !important;
+  color: black;
+}
+.white-button:hover {
+  color: var(--first-color);
+}
 
+
+/*=============== TOPIC ===============*/
+.topic__data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.topic__sub-title {
+  color: rgb(186 198 204);
+  max-width: 600px;
+}
 
 
 /*=============== RELATED ===============*/
@@ -44,7 +63,7 @@ the website, in dark theme
   color: var(--first-color);
 }
 
-.first-card {
+.spacial-card {
   grid-column: span 2;
   border-radius: 15px;
   background: #18273f;
@@ -55,12 +74,12 @@ the website, in dark theme
   padding: 0 1.3rem;
   overflow: hidden;
 }
-.first-card .card-img {
+.spacial-card .card-img {
   position: relative;
   width: 200px;
   height: 160px;
 }
-.first-card .card-img img {
+.spacial-card .card-img img {
 
   position: absolute;
   top: -113px;
@@ -69,7 +88,7 @@ the website, in dark theme
   width: 290px;
   height: 290px;
 }
-.first-card .card-content {
+.spacial-card .card-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,20 +96,20 @@ the website, in dark theme
   padding: .5rem;
   margin-top: 2.5rem;
 }
-.first-card .card-title {
+.spacial-card .card-title {
   font-size: 1.5rem;
 }
-.first-card .card-desc {
+.spacial-card .card-desc {
   text-align: center;
   margin-bottom: 2.5rem;
 }
-.first-card .card-info {
+.spacial-card .card-info {
   display: flex;
   flex-direction: row;
   gap: .8rem;
   margin-bottom: 1rem;
 }
-.first-card .card-info div {
+.spacial-card .card-info div {
   font-size: .68rem;
   display: flex;
   justify-content: center;
@@ -108,34 +127,295 @@ the website, in dark theme
   gap: 1rem;
   width: 100%;
   max-width: 420px;
+  margin-bottom: 1rem;
 }
 .card-button {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: .3rem;
   background-color: rgba(50,138,241,.1);
   padding: 1rem;
   border-radius: 15px;
   transition: .3s;
 }
-.card-button:hover {
+.card-button:not(.white-button):hover {
   color: var(--first-color);
+  background-color: rgba(50,138,241,.15) !important
+}
+.large-card .card-buttons {
+  position: relative;
+  opacity: 0;
+  top: 90px;
+  transition: .5s ease;
+}
+
+
+
+.spacial-card:nth-child(2) {
+  background-image: radial-gradient(circle at 7% 5%,#21385e,#16243c 89%);
+}
+.spacial-card:nth-child(2) .card-content {
+  margin-top: .8rem;
+}
+.spacial-card:nth-child(2) .card-img {
+  order: 2;
+  height: 80px;
+
+}
+
+.spacial-card:nth-child(2) .card-img img {
+  top: -6px;
+}
+.spacial-card:nth-child(2) .card-creator {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.spacial-card:nth-child(2) .creator-logo {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: .2rem;
+  color: white;
+  text-transform: uppercase;
+  font-size: .6rem;
+  font-weight: var(--font-semi-bold);
+  letter-spacing: .04rem;
+}
+.spacial-card:nth-child(2) .creator-logo .creator-img img{
+  width: 16px;
+  height: 16px;
+}
+
+.spacial-card:nth-child(2) .creator-logo  span {
+  color: var(--first-color);
+}
+
+.spacial-card:nth-child(2) .card-title {
+  font-size: var(--h2-font-size);
+  padding: .3rem 0 0;
+}
+
+.spacial-card:nth-child(2) .instructor-name {
+  color: rgba(186,217,252,.5);
+  font-size: .6rem;
+  text-align: center;
+  letter-spacing: .03rem;
+}
+
+.spacial-card:nth-child(2) .instructor-name span {
+  color: white;
+}
+
+.spacial-card:nth-child(2) .instructor-img img {
+  width: 52px;
+  height: 52px;
+  border-radius: 100%;
+  border: 2px solid white;
+  border-left-color: rgb(26 171 139);
+  border-bottom-color:rgb(139 96 237);
+  border-right-color: rgb(241 154 26);
+  border-top-color: rgb(236 69 79);
 }
 
 
 
 
+.spacial-card .card-instructor {
+  margin-left: 2rem;
+  position: relative;
+  display: none;
+}
+.spacial-card .card-instructor-img {
+  width: 248px;
+  max-height: 500px;
+  padding: .3rem;
+  border-radius: 15px;
+  position: relative;
+}
+
+.spacial-card .card-instructor-img img {
+  border-radius: 15px;
+  position: relative;
+  z-index: 4;
+}
+.spacial-card .card-instructor-img::before {
+  content: '';
+  position: absolute;
+  width: 96%;
+  height: 100%;
+  z-index: 5;
+  background: linear-gradient(0deg, rgb(6, 0, 5) -5%, rgba(255,255,255,0) 50%);
+  top: -8px;
+  left: 5px;
+  border-radius: 15px;
+}
+
+.spacial-card .card-instructor-img .background {
+  background-color: rgb(32 55 89);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  border-radius: 15px;
+}
+
+.spacial-card .card-instructor-img .background-1  {
+  max-height: 317px;
+  top: 15px;
+  left: -7px;
+  opacity: .5;
+}
+
+.spacial-card .card-instructor-img .background-2 {
+  max-height: 294px;
+  top: 27px;
+  left: -23px;
+  opacity: .25;
+}
 
 
+.spacial-card .card-instructor-img .background-3 {
+  max-height: 263px;
+  top: 45px;
+  left: -39px;
+  opacity: .15;
+}
+
+.spacial-card .card-instructor-info {
+  position: absolute;
+  z-index: 6;
+  bottom: 21px;
+  left: 13px;
+  width: 100%;
+
+}
+
+.spacial-card .card-instructor-name {
+  color: white;
+  font-family: var(--secondary-font);
+  font-size: var(--normal-font-size);
+  font-weight: 300;
+}
+
+.spacial-card .card-instructor-header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  white-space: nowrap;
+  gap: .5rem;
+  justify-content: start;
+}
+
+.spacial-card .card-instructor-header .sub-title {
+  margin: 0;
+  opacity: .6;
+  letter-spacing: .0;
+  font-size: .76rem;
+}
+
+.spacial-card .card-instructor-header .line {
+  width: 21%;
+  height: 1.2px;
+  background: var(--text-color);
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 
 
 /* For medium devices */
+@media (min-width: 768px) {
+  .spacial-card {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .spacial-card:nth-child(1) {
+    height: 360px;
+  }
+  .spacial-card .card-img {
+    max-width: 200px;
+    min-width: 200px;
+  }
+  .spacial-card .card-img img {
+    left: -184px;
+    top: -100px;
+    height: 360px;
+    width: 360px;
+  }
+  .spacial-card:nth-child(2) .card-img img {
+    top: -130px;
+    left: unset;
+  }
+  .spacial-card .card-content {
+    align-items: start;
+    margin: 0;
+    padding-top: 2rem;
+  }
+  .spacial-card .card-desc {
+    text-align: start;
+  }
+  .spacial-card .card-info {
+    margin-top: 5rem;
+  }
+  .spacial-card:nth-child(2) .card-info {
+    margin-top: 0;
+  }
+  .card-buttons {
+    flex-direction: row;
+  }
+}
 
 
+@media (min-width: 770px) {
+
+  .topic__list {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .related__data {
+    margin: 2rem;
+  }
+  .related__content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .related__card.spacial-card:nth-child(1) {
+    grid-column: span 3;
+  }
+  .related__card.large-card {
+    grid-column: span 1;
+  }
+
+  .large-card:hover .card-buttons {
+    top: 25px;
+    opacity: 1;
+  }
+
+
+  .large-card:hover .card-info {
+    bottom: 999px;
+  }
+
+.spacial-card .card-instructor { display: block }
+}
+@media (min-width: 1200px) {
+
+  .large-card:hover .card-buttons {
+    top: 60px;
+    opacity: 1;
+  }
+
+
+  .large-card:hover .card-info {
+    bottom: 999px;
+  }
+}
 
 /* For large devices */
 
