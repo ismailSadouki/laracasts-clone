@@ -44,12 +44,17 @@ the website, in dark theme
 .topic__sub-title {
   color: rgb(186 198 204);
   max-width: 600px;
+  font-weight: 400;
 }
 
 
 /*=============== RELATED ===============*/
 
 .related__content > * {
+  background: linear-gradient(to left,#21c8f6,#637bff);
+}
+
+.related__content > div:nth-child(3) {
   background: linear-gradient(180deg,#f44881,#ec454f);
 }
 
@@ -220,6 +225,7 @@ the website, in dark theme
   border-bottom-color:rgb(139 96 237);
   border-right-color: rgb(241 154 26);
   border-top-color: rgb(236 69 79);
+  object-fit: cover;
 }
 
 

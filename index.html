@@ -16,9 +16,9 @@
         <title>Laracasts clone</title>
 
         <!--==============META DESC =====================-->
-          <meta name="description" content="Free Web tutorials">
-  <meta name="keywords" content="HTML, CSS, JavaScript">
-  <meta name="author" content="John Doe">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="John Doe">
     </head>
     <body>
         <!--==================== HEADER ====================-->
@@ -27,13 +27,51 @@
                 <i class="bx bx-code-alt"></i>
             </a>
             <nav class="nav">
+                <ul class="nav__link-list" id="nav__link-list">
+                    <li class="nav__link-item active">
+                        <a href="/">HOME</a>
+                    </li>
+
+                    <li class="nav__link-item">
+                        <a href="series.html">SERIES</a>
+                    </li>
+                    <li class="nav__link-item">
+                        <a href="path.html">PATH</a>
+                    </li>
+                    <li class="nav__link-item">
+                        <a href="forum.html">FORUM</a>
+                    </li>
+                    <li class="nav__link-item">
+                        <a href="#">TEST</a>
+                    </li>
+
+                    <li class="nav__link-item">
+                        <a href="#">TEST</a>
+                    </li>
+                </ul>
                 <div class="nav__search">
                     <i class="bx bx-search-alt-2"></i>
                     <input class="nav__search-input" aria-label="Search input"  placeholder="Search ...">
                 </div>
 
-                <a href="" class="nav__button button primary-button">Sign Up</a>
-                <a href="" class="nav__button button secondary-button">Log In</a>
+                <a href="#" class="nav__button button primary-button">Sign Up</a>
+                <a href="#" class="nav__button button secondary-button">Log In</a>
+                <div class="nav__hamburger"
+                     role="button"
+                     aria-label="show navbar links"
+                     tabindex="0"
+                     onclick="navLinkList('show')"
+                     >
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                </div>
+                <button class="nav__hamburger-close"
+                        id="nav__hamburger-close"
+                        onclick="navLinkList('hide')"
+                        >
+                        <i class='bx bx-x'></i>
+                </button>
             </nav>
         </header>
 
@@ -99,7 +137,7 @@
                         <p class="main-desc">
                             Nine out of ten doctors recommend us over competing brands. Come inside, see for yourself, and massively level up your development skills in the process
                         </p>
-                        <a href="" class="main-button button primary-button">
+                        <a href="#" class="main-button button primary-button">
                             Sign Up for Free
                         </a>
 
@@ -120,17 +158,17 @@
 
                     <div class="top__content">
 
-                        <div class="top__card small-card">
+                        <a href="serie.html" class="top__card small-card">
                             <img alt="laravel nova mastery" src="assets/img/laravel-nova-mastery-2023.webp">
-                        </div>
+                        </a>
 
-                        <div class="top__card small-card">
+                        <a href="serie.html" class="top__card small-card">
                             <img alt="build shopify apps with laravel" src="assets/img/build-shopify-apps-with-laravel.webp">
-                        </div>
+                        </a>
 
                         <div class="top__card large-card">
                             <div class="card-img">
-                                <a href="" class="card-img-link">
+                                <a href="serie.html" class="card-img-link">
 
                                     <img src="assets/img/laravel-octane.svg" alt="laravel-octane image">
                                 </a>
@@ -146,9 +184,9 @@
                                 </div>
                             </div>
                             <div class="card-content">
-                                <h3 class="card-title">
+                                <a href="serie.html" class="card-title">
                                     Laravel Octane
-                                </h3>
+                                </a>
                                 <p class="card-desc">
                                     In this course, we'll explore Laravel Octane in detail, and learn how to leverage its capabilities to optimize the performance of your Laravel...                                </p>
 
@@ -158,12 +196,19 @@
                                     <i class="bx bxs-stopwatch"></i>
                                     <p>1h 7m</p>
                                 </div>
+
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button white-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
 
                         <div class="top__card large-card">
                             <div class="card-img">
-                                <a href="" class="card-img-link">
+                                <a href="serie.html" class="card-img-link">
 
                                     <img src="assets/img/phpstorm-for-laravel-developers.svg" alt="phpstorm-for-laravel-developers image">
                                 </a>
@@ -181,9 +226,9 @@
                             </div>
 
                             <div class="card-content">
-                                <h3 class="card-title">
+                                <a href="serie.html" class="card-title">
                                     Laravel Octane
-                                </h3>
+                                </a>
                                 <p class="card-desc">
                                     In this course, we'll explore Laravel Octane in detail, and learn how to leverage its capabilities to optimize the performance of your Laravel...
                                 </p>
@@ -193,6 +238,13 @@
                                     <i class="bx bxs-stopwatch"></i>
                                     <p>1h 7m</p>
                                 </div>
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button white-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+                                </div>
+
                             </div>
                         </div>
 
@@ -202,7 +254,7 @@
                             </div>
 
                             <div class="card-content">
-                                <a href="" class="card-title">
+                                <a href="serie.html" class="card-title">
                                     Servers for Laravel
                                 </a>
                                 <div class="card-info">
@@ -220,7 +272,7 @@
                             </div>
 
                             <div class="card-content">
-                                <a href="" class="card-title">
+                                <a href="serie.html" class="card-title">
                                     CSS Flexbox
                                 </a>
                                 <div class="card-info">
@@ -233,17 +285,17 @@
                         </div>
 
 
-                        <div class="top__card small-card">
+                        <a href="serie.html" class="top__card small-card">
                             <img src="assets/img/automatic-laravel-upgrades-explained.webp" alt="automatic laravel upgrades explained image">
-                        </div>
+                        </a>
 
-                        <div class="top__card small-card">
+                        <a href="serie.html" class="top__card small-card">
                             <img src="assets/img/aws-fundamentals.webp" alt="aws fund amentals image">
-                        </div>
+                        </a>
 
                         <div class="top__card large-card">
                             <div class="card-img">
-                                <a href="" class="card-img-link">
+                                <a href="serie.html" class="card-img-link">
 
                                     <img src="assets/img/whats-new-in-laravel-10.svg" alt="whats new in laravel 10 image">
                                 </a>
@@ -261,9 +313,9 @@
                             </div>
 
                             <div class="card-content">
-                                <h3 class="card-title">
+                                <a href="serie.html" class="card-title">
                                     Laravel Octane
-                                </h3>
+                                </a>
                                 <p class="card-desc">
                                     In this course, we'll explore Laravel Octane in detail, and learn how to leverage its capabilities to optimize the performance of your Laravel...
                                 </p>
@@ -272,6 +324,13 @@
                                     <p>15 Lessons</p>
                                     <i class="bx bxs-stopwatch"></i>
                                     <p>1h 7m</p>
+                                </div>
+
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button white-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -295,54 +354,39 @@
                     <div class="topic__content">
                         <ul class="topic__list">
                             <li class="topic__list-item">
-                                <a href="" class="topic__list-link active">
+                                <a href="topic.html" class="topic__list-link active">
                                     All Topics
                                 </a>
                             </li>
                             <li class="topic__list-item">
-                                <a href="" class="topic__list-link">
+                                <a href="topic.html" class="topic__list-link">
                                     DevOps
                                 </a>
                             </li>
                             <li class="topic__list-item">
-                                <a href="" class="topic__list-link">
+                                <a href="topic.html" class="topic__list-link">
                                     Frameworks
                                 </a>
                             </li>
 
                             <li class="topic__list-item">
-                                <a href="" class="topic__list-link">
-                                    Frameworks
+                                <a href="topic.html" class="topic__list-link">
+                                    Languages
                                 </a>
                             </li>
                             <li class="topic__list-item">
-                                <a href="" class="topic__list-link">
-                                    Frameworks
+                                <a href="topic.html" class="topic__list-link">
+                                    Techniques
                                 </a>
                             </li>
                             <li class="topic__list-item">
-                                <a href="" class="topic__list-link">
-                                    Frameworks
+                                <a href="topic.html" class="topic__list-link">
+                                    Testing
                                 </a>
                             </li>
                             <li class="topic__list-item">
-                                <a href="" class="topic__list-link">
-                                    Frameworks
-                                </a>
-                            </li>
-                            <li class="topic__list-item">
-                                <a href="" class="topic__list-link">
-                                    Frameworks
-                                </a>
-                            </li>
-                            <li class="topic__list-item">
-                                <a href="" class="topic__list-link">
-                                    Frameworks
-                                </a>
-                            </li>
-                            <li class="topic__list-item">
-                                <a href="" class="topic__list-link">
-                                    Frameworks
+                                <a href="topic.html" class="topic__list-link">
+                                    Tooling
                                 </a>
                             </li>
                         </ul>
@@ -350,7 +394,7 @@
                         <ul class="topic__cards">
 
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="topic.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -361,7 +405,7 @@
                             </li>
 
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="topic.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -373,7 +417,7 @@
 
 
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="topic.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -384,7 +428,7 @@
                             </li>
 
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="topic.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -398,7 +442,7 @@
 
 
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="topic.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -410,7 +454,7 @@
 
 
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="topic.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -425,7 +469,7 @@
 
 
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="topic.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -436,7 +480,7 @@
                             </li>
 
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="topic.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -448,7 +492,7 @@
 
 
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="topic.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -459,7 +503,7 @@
                             </li>
 
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="topic.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -473,7 +517,7 @@
 
 
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="topic.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -485,7 +529,7 @@
 
 
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="topic.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -495,7 +539,7 @@
                                 </a>
                             </li>
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="topic.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -506,7 +550,7 @@
                             </li>
 
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="topic.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -518,7 +562,7 @@
 
 
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="topic.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -529,7 +573,7 @@
                             </li>
 
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="topic.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -543,7 +587,7 @@
 
 
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="topic.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -555,7 +599,7 @@
 
 
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="topic.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -565,7 +609,7 @@
                                 </a>
                             </li>
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="topic.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -576,7 +620,7 @@
                             </li>
 
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="topic.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -588,7 +632,7 @@
 
 
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="topic.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -599,7 +643,7 @@
                             </li>
 
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="topic.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -613,7 +657,7 @@
 
 
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="topic.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -625,7 +669,7 @@
 
 
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="topic.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -635,7 +679,7 @@
                                 </a>
                             </li>
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="topic.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -645,123 +689,6 @@
                                 </a>
                             </li>
 
-                            <li class="topic__card">
-                                <a href="" class="topic__card-link">
-
-                                    <div class="topic__card-img">
-
-                                        <img  src="assets/img/alpine-logo.svg" alt="alpine logo">
-                                    </div>
-                                    <h3 class="topic__card-title title">AlpineJS</h3>
-                                </a>
-                            </li>
-
-
-                            <li class="topic__card">
-                                <a href="" class="topic__card-link">
-
-                                    <div class="topic__card-img">
-
-                                        <img  src="assets/img/graphql-logo.svg" alt="graphq logo">
-                                    </div>
-                                    <h3 class="topic__card-title title">GraphQL</h3>
-                                </a>
-                            </li>
-
-                            <li class="topic__card">
-                                <a href="" class="topic__card-link">
-
-                                    <div class="topic__card-img">
-
-                                        <img  src="assets/img/authentication-logo.svg" alt="auth logo">
-                                    </div>
-                                    <h3 class="topic__card-title title">AWS</h3>
-                                </a>
-                            </li>
-
-
-
-
-                            <li class="topic__card">
-                                <a href="" class="topic__card-link">
-
-                                    <div class="topic__card-img">
-
-                                        <img  src="assets/img/livewire-logo.svg" alt="livewire logo">
-                                    </div>
-                                    <h3 class="topic__card-title title">Laravel Livewire</h3>
-                                </a>
-                            </li>
-
-
-                            <li class="topic__card">
-                                <a href="" class="topic__card-link">
-
-                                    <div class="topic__card-img">
-
-                                        <img  src="assets/img/nuxtjs-logo.svg" alt="nuxt logo">
-                                    </div>
-                                    <h3 class="topic__card-title title">Nuxt</h3>
-                                </a>
-                            </li>
-                            <li class="topic__card">
-                                <a href="" class="topic__card-link">
-
-                                    <div class="topic__card-img">
-
-                                        <img  src="assets/img/laravel-logo.svg" alt="Laravel logo">
-                                    </div>
-                                    <h3 class="topic__card-title title">Laravel</h3>
-                                </a>
-                            </li>
-
-                            <li class="topic__card">
-                                <a href="" class="topic__card-link">
-
-                                    <div class="topic__card-img">
-
-                                        <img  src="assets/img/alpine-logo.svg" alt="alpine logo">
-                                    </div>
-                                    <h3 class="topic__card-title title">AlpineJS</h3>
-                                </a>
-                            </li>
-
-
-                            <li class="topic__card">
-                                <a href="" class="topic__card-link">
-
-                                    <div class="topic__card-img">
-
-                                        <img  src="assets/img/graphql-logo.svg" alt="graphq logo">
-                                    </div>
-                                    <h3 class="topic__card-title title">GraphQL</h3>
-                                </a>
-                            </li>
-
-                            <li class="topic__card">
-                                <a href="" class="topic__card-link">
-
-                                    <div class="topic__card-img">
-
-                                        <img  src="assets/img/authentication-logo.svg" alt="auth logo">
-                                    </div>
-                                    <h3 class="topic__card-title title">AWS</h3>
-                                </a>
-                            </li>
-
-
-
-
-                            <li class="topic__card">
-                                <a href="" class="topic__card-link">
-
-                                    <div class="topic__card-img">
-
-                                        <img  src="assets/img/livewire-logo.svg" alt="livewire logo">
-                                    </div>
-                                    <h3 class="topic__card-title title">Laravel Livewire</h3>
-                                </a>
-                            </li>
 
 
 
@@ -803,15 +730,15 @@
                                 </p>
 
                                 <div class="card-series">
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/phpstorm-for-laravel-developers.webp" alt="phpstorm-for-laravel-developers image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/whats-new-in-laravel-10.webp" alt=" whats-new-in-laravel-10 image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/php-for-beginners.webp" alt="php-for-beginners image">
                                     </a>
                                 </div>
@@ -838,15 +765,15 @@
                                 </p>
 
                                 <div class="card-series">
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/phpstorm-for-laravel-developers.webp" alt="phpstorm-for-laravel-developers image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/whats-new-in-laravel-10.webp" alt=" whats-new-in-laravel-10 image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/php-for-beginners.webp" alt="php-for-beginners image">
                                     </a>
                                 </div>
@@ -873,15 +800,15 @@
                                 </p>
 
                                 <div class="card-series">
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/phpstorm-for-laravel-developers.webp" alt="phpstorm-for-laravel-developers image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/whats-new-in-laravel-10.webp" alt=" whats-new-in-laravel-10 image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/php-for-beginners.webp" alt="php-for-beginners image">
                                     </a>
                                 </div>
@@ -908,15 +835,15 @@
                                 </p>
 
                                 <div class="card-series">
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/phpstorm-for-laravel-developers.webp" alt="phpstorm-for-laravel-developers image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/whats-new-in-laravel-10.webp" alt=" whats-new-in-laravel-10 image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/php-for-beginners.webp" alt="php-for-beginners image">
                                     </a>
                                 </div>
@@ -943,15 +870,15 @@
                                 </p>
 
                                 <div class="card-series">
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/phpstorm-for-laravel-developers.webp" alt="phpstorm-for-laravel-developers image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/whats-new-in-laravel-10.webp" alt=" whats-new-in-laravel-10 image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/php-for-beginners.webp" alt="php-for-beginners image">
                                     </a>
                                 </div>
@@ -978,15 +905,15 @@
                                 </p>
 
                                 <div class="card-series">
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/phpstorm-for-laravel-developers.webp" alt="phpstorm-for-laravel-developers image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/whats-new-in-laravel-10.webp" alt=" whats-new-in-laravel-10 image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/php-for-beginners.webp" alt="php-for-beginners image">
                                     </a>
                                 </div>
@@ -1013,15 +940,15 @@
                                 </p>
 
                                 <div class="card-series">
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/phpstorm-for-laravel-developers.webp" alt="phpstorm-for-laravel-developers image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/whats-new-in-laravel-10.webp" alt=" whats-new-in-laravel-10 image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/php-for-beginners.webp" alt="php-for-beginners image">
                                     </a>
                                 </div>
@@ -1048,15 +975,15 @@
                                 </p>
 
                                 <div class="card-series">
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/phpstorm-for-laravel-developers.webp" alt="phpstorm-for-laravel-developers image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/whats-new-in-laravel-10.webp" alt=" whats-new-in-laravel-10 image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/php-for-beginners.webp" alt="php-for-beginners image">
                                     </a>
                                 </div>
@@ -1082,15 +1009,15 @@
                                 </p>
 
                                 <div class="card-series">
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/phpstorm-for-laravel-developers.webp" alt="phpstorm-for-laravel-developers image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/whats-new-in-laravel-10.webp" alt=" whats-new-in-laravel-10 image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/php-for-beginners.webp" alt="php-for-beginners image">
                                     </a>
                                 </div>
@@ -1117,15 +1044,15 @@
                                 </p>
 
                                 <div class="card-series">
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/phpstorm-for-laravel-developers.webp" alt="phpstorm-for-laravel-developers image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/whats-new-in-laravel-10.webp" alt=" whats-new-in-laravel-10 image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/php-for-beginners.webp" alt="php-for-beginners image">
                                     </a>
                                 </div>
@@ -1152,15 +1079,15 @@
                                 </p>
 
                                 <div class="card-series">
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/phpstorm-for-laravel-developers.webp" alt="phpstorm-for-laravel-developers image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/whats-new-in-laravel-10.webp" alt=" whats-new-in-laravel-10 image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/php-for-beginners.webp" alt="php-for-beginners image">
                                     </a>
                                 </div>
@@ -1187,15 +1114,15 @@
                                 </p>
 
                                 <div class="card-series">
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/phpstorm-for-laravel-developers.webp" alt="phpstorm-for-laravel-developers image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/whats-new-in-laravel-10.webp" alt=" whats-new-in-laravel-10 image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/php-for-beginners.webp" alt="php-for-beginners image">
                                     </a>
                                 </div>
@@ -1221,15 +1148,15 @@
                                 </p>
 
                                 <div class="card-series">
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/phpstorm-for-laravel-developers.webp" alt="phpstorm-for-laravel-developers image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/whats-new-in-laravel-10.webp" alt=" whats-new-in-laravel-10 image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/php-for-beginners.webp" alt="php-for-beginners image">
                                     </a>
                                 </div>
@@ -1256,15 +1183,15 @@
                                 </p>
 
                                 <div class="card-series">
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/phpstorm-for-laravel-developers.webp" alt="phpstorm-for-laravel-developers image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/whats-new-in-laravel-10.webp" alt=" whats-new-in-laravel-10 image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/php-for-beginners.webp" alt="php-for-beginners image">
                                     </a>
                                 </div>
@@ -1291,15 +1218,15 @@
                                 </p>
 
                                 <div class="card-series">
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/phpstorm-for-laravel-developers.webp" alt="phpstorm-for-laravel-developers image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/whats-new-in-laravel-10.webp" alt=" whats-new-in-laravel-10 image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/php-for-beginners.webp" alt="php-for-beginners image">
                                     </a>
                                 </div>
@@ -1326,15 +1253,15 @@
                                 </p>
 
                                 <div class="card-series">
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/phpstorm-for-laravel-developers.webp" alt="phpstorm-for-laravel-developers image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/whats-new-in-laravel-10.webp" alt=" whats-new-in-laravel-10 image">
                                     </a>
 
-                                    <a class="card-series-link">
+                                    <a href="series.html" class="card-series-link">
                                         <img src="assets/img/php-for-beginners.webp" alt="php-for-beginners image">
                                     </a>
                                 </div>
@@ -1361,40 +1288,40 @@
 
                         <div class="developers__column">
                             <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img alt="" src="assets/img/146405.webp" >
                             </div>
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
-                            </div>
-                        </div>
-
-                        <div class="developers__column">
-                            <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
-                            </div>
-                            <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
-                            </div>
-
-                            <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img alt="" src="assets/img/34960.webp" >
                             </div>
                         </div>
 
                         <div class="developers__column">
                             <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img alt="" src="assets/img/146405.webp" >
                             </div>
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
-                            </div>
-
-                            <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img alt="" src="assets/img/2071.webp" >
                             </div>
 
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
+                                <img alt="" src="assets/img/146405.webp" >
+                            </div>
+                        </div>
+
+                        <div class="developers__column">
+                            <div class="developer">
+                                <img alt="" src="assets/img/34960.webp" >
+                            </div>
+                            <div class="developer">
+                                <img alt="" src="assets/img/1770.webp" >
+                            </div>
+
+                            <div class="developer">
+                                <img alt="" src="assets/img/146405.webp" >
+                            </div>
+
+                            <div class="developer">
+                                <img alt="" src="assets/img/1770.webp" >
                             </div>
                         </div>
 
@@ -1402,151 +1329,151 @@
 
                         <div class="developers__column">
                             <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img alt="" src="assets/img/146405.webp" >
                             </div>
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
-                            </div>
-
-                            <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img alt="" src="assets/img/1770.webp" >
                             </div>
 
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
+                                <img alt="" src="assets/img/2071.webp" >
+                            </div>
+
+                            <div class="developer">
+                                <img alt="" src="assets/img/1770.webp" >
                             </div>
                         </div>
                         <div class="developers__column">
                             <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img alt="" src="assets/img/34960.webp" >
                             </div>
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
-                            </div>
-
-                            <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img alt="" src="assets/img/default-avatar-11.webp" >
                             </div>
 
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
+                                <img alt="" src="assets/img/146405.webp" >
+                            </div>
+
+                            <div class="developer">
+                                <img alt="" src="assets/img/1770.webp" >
                             </div>
                         </div>
                         <div class="developers__column">
                             <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img alt="" src="assets/img/146405.webp" >
                             </div>
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
-                            </div>
-
-                            <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img alt="" src="assets/img/default-avatar-11.webp" >
                             </div>
 
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
+                                <img alt="" src="assets/img/146405.webp" >
+                            </div>
+
+                            <div class="developer">
+                                <img alt="" src="assets/img/default-avatar-11.webp" >
                             </div>
                         </div>
                         <div class="developers__column">
                             <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img alt="" src="assets/img/146405.webp" >
                             </div>
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
-                            </div>
-
-                            <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img alt="" src="assets/img/2071.webp" >
                             </div>
 
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
+                                <img alt="" src="assets/img/34960.webp" >
+                            </div>
+
+                            <div class="developer">
+                                <img alt="" src="assets/img/146405.webp" >
                             </div>
                         </div>
                         <div class="developers__column">
                             <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img alt="" src="assets/img/1770.webp" >
                             </div>
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
-                            </div>
-
-                            <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img alt="" src="assets/img/default-avatar-10.webp" >
                             </div>
 
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
+                                <img alt="" src="assets/img/146405.webp" >
+                            </div>
+
+                            <div class="developer">
+                                <img alt="" src="assets/img/2071.webp" >
                             </div>
                         </div>
                         <div class="developers__column">
                             <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img alt="" src="assets/img/146405.webp" >
                             </div>
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
-                            </div>
-
-                            <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img alt="" src="assets/img/34960.webp" >
                             </div>
 
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
+                                <img alt="" src="assets/img/default-avatar-29.webp" >
+                            </div>
+
+                            <div class="developer">
+                                <img alt="" src="assets/img/146405.webp" >
                             </div>
                         </div>
                         <div class="developers__column">
                             <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img alt="" src="assets/img/default-avatar-29.webp" >
                             </div>
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
-                            </div>
-
-                            <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img alt="" src="assets/img/default-avatar-10.webp" >
                             </div>
 
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
+                                <img alt="" src="assets/img/146405.webp" >
+                            </div>
+
+                            <div class="developer">
+                                <img alt="" src="assets/img/34960.webp" >
                             </div>
                         </div>
                         <div class="developers__column">
                             <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img alt="" src="assets/img/default-avatar-10.webp" >
                             </div>
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
-                            </div>
-
-                            <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img alt="" src="assets/img/146405.webp" >
                             </div>
 
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
+                                <img alt="" src="assets/img/34960.webp" >
+                            </div>
+
+                            <div class="developer">
+                                <img alt="" src="assets/img/default-avatar-11.webp" >
                             </div>
                         </div>
                         <div class="developers__column">
                             <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img alt="" src="assets/img/146405.webp" >
                             </div>
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
+                                <img alt="" src="assets/img/1770.webp" >
                             </div>
 
                             <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img alt="" src="assets/img/34960.webp" >
                             </div>
 
                         </div>
                         <div class="developers__column">
                             <div class="developer">
-                                <img alt="" src="assets/img/syntax-seed.webp" >
+                                <img alt="" src="assets/img/34960.webp" >
                             </div>
                             <div class="developer">
-                                <img alt="" src="assets/img/darren-benney.webp" >
+                                <img alt="" src="assets/img/146405.webp" >
                             </div>
 
                         </div>
@@ -1588,17 +1515,17 @@
                                     </button>
                                 </div>
 
-                                <h4 class="price" aria-live="assertive" aria-label="yearly price">
+                                <h3 class="price" aria-live="assertive" aria-label="yearly price">
                                     $15
-                                </h4>
+                                </h3>
                             </div>
-                            <h3 class="card-title">Individual Plan</h3>
+                            <h4 class="card-title">Individual Plan</h4>
                             <div class="card-img">
                                 <img src="assets/img/sub-monthly.svg" alt="sub-monthly image">
                             </div>
                             <p class="card-desc">Be in the know. Fetch an endless stream of input with our <span>monthly</span> plan.
                             </p>
-                            <a href="" class="card-button button">
+                            <a href="#" class="card-button button">
                                 <i class='bx bxs-check-circle'></i>
                                 Select Plan
                             </a>
@@ -1607,23 +1534,24 @@
                         <div class=plans__card>
                             <div class="card-prices">
 
-                                <h4 class="price" aria-live="assertive" aria-label="yearly price">
-                                    $15
-                                </h4>
                                 <div class="card-prices-buttons">
                                     <button class="button active-button">
                                         forever
                                     </button>
 
                                 </div>
+
+                                <h3 class="price" aria-live="assertive" aria-label="yearly price">
+                                    $15
+                                </h3>
                             </div>
-                            <h3 class="card-title">Individual Plan</h3>
+                            <h4 class="card-title">Individual Plan</h4>
                             <div class="card-img">
                                 <img src="assets/img/sub-lifetime.svg" alt="sub-lifetime  image">
                             </div>
                             <p class="card-desc">Be in the know. Fetch an endless stream of input with our <span>monthly</span> plan.
                             </p>
-                            <a href="" class="card-button button">
+                            <a href="#" class="card-button button">
                                 <i class='bx bxs-check-circle'></i>
                                 Select Plan
                             </a>
@@ -1640,17 +1568,17 @@
                                         Yearly
                                     </button>
                                 </div>
-                                <h4 class="price" aria-live="assertive" aria-label="yearly price">
+                                <h3 class="price" aria-live="assertive" aria-label="yearly price">
                                     $29
-                                </h4>
+                                </h3>
                             </div>
-                            <h3 class="card-title">Individual Plan</h3>
+                            <h4 class="card-title">Individual Plan</h4>
                             <div class="card-img">
                                 <img src="assets/img/sub-business.svg" alt="sub-business image">
                             </div>
                             <p class="card-desc">Be in the know. Fetch an endless stream of input with our <span>monthly</span> plan.
                             </p>
-                            <a href="" class="card-button button">
+                            <a href="#" class="card-button button">
                                 <i class='bx bxs-check-circle'></i>
                                 Select Plan
                             </a>
@@ -1658,15 +1586,48 @@
 
                     </div>
 
-                    <a href="" class="question sub-title"> Want to learn more avout our excellent team plans?</a>
+                    <a href="path.html" class="question sub-title"> Want to learn more avout our excellent team plans?</a>
                 </div>
             </section>
 
+
+
+
+
+
+
+
+            <!-- ==================== AD  =======================-->
+
+            <section class="ad section" id="posts">
+                <div class="ad__container container">
+                    <img alt="" class="ad-bg-img" src="assets/img/signup-banner-teacher-bg@2x.webp">
+
+                    <div class="ad__img">
+                        <img alt="" src="assets/img/signup-banner-main-illustration.svg">
+                    </div>
+                    <div class="ad__content">
+                        <h3 class="ad-title title">
+                            A massive community of programmers just like you.
+                        </h3>
+                        <p class="ad-desc sub-title">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </br></br>
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <a href="/" class="ad-button button primary-button">
+                            Get Started For Free
+                        </a>
+                    </div>
+            </section>
         </main>
 
         <!--==================== FOOTER ====================-->
         <footer class="footer section">
             <div class="footer__container container">
+                <div class="footer-bg-img">
+                    <img alt="" src="assets/img/laracasts-gang.png">
+                </div>
 
                 <div class="newspaper">
                     <h2 class="newspaper-title title">
@@ -1680,36 +1641,210 @@
                     </form>
                 </div>
 
-                <div class="about-us">
-                    <a aria-label="home page" href="/" class="about-us-logo">
-                        <i class="bx bx-code-alt"></i>
-                    </a>
-                    <p class="about-us-desc">
-                        Nine out of ten doctors recommend us over competing brands. Come inside, see for yourself, and massively level up your development skills in the process.
-                    </p>
-                    <div class="social-link">
-                        <a class="" href="github.com" target="_blank" aria-label="github">
-                            <i class='bx bxl-github'></i>
-                        </a>
+                <div class="footer-content">
 
-                        <a class="" href="twitter.com" target="_blank" aria-label="twitter">
-                            <i class='bx bxl-twitter'></i>
+                    <div class="about-us">
+                        <a aria-label="home page" href="/" class="about-us-logo">
+                            <i class="bx bx-code-alt"></i>
                         </a>
-                        <a class="" href="facebook.com" target="_blank" aria-label="facebook">
-                            <i class='bx bxl-facebook'></i>
-                        </a>
+                        <p class="about-us-desc">
+                            Nine out of ten doctors recommend us over competing brands. Come inside, see for yourself, and massively level up your development skills in the process.
+                        </p>
+                        <div class="social-link">
+                            <a class="" href="github.com" target="_blank" aria-label="github">
+                                <i class='bx bxl-github'></i>
+                            </a>
+
+                            <a class="" href="twitter.com" target="_blank" aria-label="twitter">
+                                <i class='bx bxl-twitter'></i>
+                            </a>
+                            <a class="" href="facebook.com" target="_blank" aria-label="facebook">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-learn">
+                        <h3 class="title">
+                            LEARN
+                        </h3>
+                        <ul class="footer-list">
+
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-learn">
+                        <h3 class="title">
+                            DISCUSS
+                        </h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-learn">
+                        <h3 class="title">
+                            EXTRAS
+                        </h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
 
                 <div class="copy-right">
-                    &copy; Laracasts 2023. All rights reserver.
+                    &copy; Laracasts clone 2023. All rights reserver.
                 </div>
             </div>
         </footer>
 
 
 
+        <script src="assets/js/main.js"></script>
 
     </body>
 </html>

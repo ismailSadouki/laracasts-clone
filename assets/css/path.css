@@ -1,0 +1,452 @@
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+}
+
+/* Responsive typography */
+@media screen and (min-width: 1024px) {
+  :root {
+  }
+}
+
+/*=============== BASE ===============*/
+.sections {
+  padding: 1.4rem 0 0;
+}
+
+/*=============== THEME ===============*/
+
+
+/*========== Variables Dark theme ==========*/
+
+
+
+/*==========
+Color changes in some parts of
+the website, in dark theme
+==========*/
+
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+
+.main {
+  margin: 0;
+}
+
+.section {
+  margin-bottom: 6rem;
+}
+
+/*=============== TOP ===============*/
+.top {
+  margin-bottom: 2.5rem;
+}
+.top__container {
+  position: relative;
+}
+.top-bg-img {
+  position: absolute;
+  height: 100%;
+  width: 1046px;
+  overflow: hidden;
+  pointer-events: none;
+  top: -65px;
+  left: -1rem;
+}
+.top__data .top__title span {
+  color: var(--first-color);
+}
+.top__data .top__sub-title {
+  color: white;
+}
+.top__content > div{
+  background: none !important;
+}
+.top__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.top__content .top-img {
+  width: 280px;
+  height: 280px;
+}
+
+.top__content .top-img img {
+  position: relative;
+  margin-top: -1rem;
+}
+
+/*=============== LEVELS ===============*/
+.level__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
+  position: relative;
+}
+.level__aside {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+  .level__aside::before,
+.level__container::before {
+  content: "";
+  width: 3px;
+  height: 110%;
+  background-color: rgb(32 55 89);
+  position: absolute;
+  left: 50%;
+  z-index: -1;
+}
+
+  .level__aside::before {
+    display: none;
+  }
+.level__side {
+  padding: 1rem;
+  background-color: #18273f;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+.level-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.level-header .header-img {
+  width: 200px;
+}
+.level-header .header-title {
+  font-size: 1.8rem;
+}
+.level-header .header-sub-title {
+  margin-top: .2rem;
+  letter-spacing: 0.01rem;
+  font-size: .85rem;
+}
+.level-header .header-info {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: .8rem;
+}
+.level-header .header-info > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: .55rem;
+  width: 73px;
+  border-radius: 15px;
+  background-color: #19304e;
+}
+
+.level-header .header-info .title {
+  font-size: 1.8rem;
+}
+.level-header .header-info .sub-title {
+  margin-top: 0;
+  font-size: .8rem;
+}
+
+.level-desc {
+  color: white;
+  font-size: .8rem;
+  font-weight: normal;
+  margin-right: .5rem;
+  margin-left: .5rem;
+}
+.level-learn .learn-title,
+.level-teachers .teachers-title,
+.level-progress .progress-title {
+  background-color: #19304e;
+  padding: .5rem;
+  border-radius: 15px;
+  font-family: var(--body-font);
+  font-weight: var(--font-semi-bold);
+}
+.level-learn .learn-items,
+.level-teachers .teachers-items,
+.level-progress .progress-items {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0 0;
+  gap: .5rem;
+}
+
+.level-teachers .teachers-items {
+  flex-direction: row;
+}
+.level-learn .learn-item {
+  color: white;
+  font-weight: var(--font-medium);
+  font-family: var(--secondary-font);
+  font-size: .8rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: .5rem;
+}
+.level-learn .learn-item i {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.level-teachers .teachers-img {
+  height: 70px;
+}
+.level-teachers .teachers-img img {
+  width: 70px;
+  height: 70px;
+  border: 3px solid;
+  border-color: rgb(32 55 89);
+  border-radius: 15px;
+}
+
+.level-progress {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.level-progress .progress-title {
+  width: 100%;
+}
+.level-progress .progress-items {
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding-bottom: 0;
+  position: relative;
+}
+
+.level-progress .progress-items:before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: rgb(32 55 89);
+  position: absolute;
+}
+
+.level-progress .progress-item {
+  width: 35px;
+  height: 35px;
+  background-color: #151f32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: white;
+  font-size: 1.1rem;
+  z-index: 3;
+  cursor: not-allowed;
+}
+
+
+
+
+
+
+
+
+.level__side-card {
+  margin-top: 1.3rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 1rem;
+  max-width: 450px;
+  width: 100%;
+  background-image: radial-gradient(circle at 0% 2%, rgb(0, 117, 255), rgb(31, 64, 106) 100%);
+  position: relative;
+}
+.level__side-card .title {
+  font-size: 1.8rem;
+}
+
+.level__side-card .sub-title {
+  color: white;
+  text-align: start;
+  font-size: .8rem;
+  max-width: 275px;
+  z-index: 1;
+}
+.level__side-card .button {
+  width: 100%;
+  padding: .7rem;
+  border-radius: 999px;
+  margin-top: 1.5rem;
+  font-size: .9rem;
+  text-align: center;
+  letter-spacing: .02rem;
+  line-height: 1.15;
+}
+.level__side-card .img {
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+.level-series {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.optional-items {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+.optional-item {
+  display: flex;
+  background-color: #18273f;
+  border-radius: 15px;
+  padding: .5rem 1.6rem;
+  height: 62px;
+  cursor: pointer;
+  transition: .4s;
+}
+.optional-item:hover {
+  background-color: rgb(25 48 78);
+}
+.optional-item .item-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .8rem;
+}
+.optional-item .item-info i {
+  background: #192e4c;
+  font-size: 1.35rem;
+  color: #bad9fc;
+  border-radius: 100%;
+  padding: .3rem;
+  font-weight: normal
+}
+.optional-item .item-info .title {
+  font-size: .9rem;
+}
+.optional-item .item-category .sub-title {
+  display: none;
+  font-size: .75rem
+}
+
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media (min-width: 768px) {
+  .level__aside,
+  .level-series{
+    max-width: 900px;
+  }
+  .level-header {
+    flex-direction: row;
+    align-items: start;
+    max-height: 150px;
+  }
+  .level-header .header-img {
+    position: relative;
+    top: -48px;
+    width: 264px;
+    left: -47px;
+  }
+  .level-header .sub-header {
+    position: relative;
+    left: -40px;
+  }
+  .level-header .header-title,
+  .level-header .header-sub-title {
+    text-align: start;
+  }
+  .level-desc {
+    text-align: start;
+  }
+
+  .progress-items {
+    align-self: start;
+  }
+
+  .optional-item {
+    justify-content: space-between;
+  }
+  .optional-item .item-category .sub-title {
+    display: block;
+  }
+
+}
+
+
+
+@media (min-width: 992px) {
+
+  .top-bg-img {
+    width: 1308px;
+    left: 10rem
+  }
+}
+/* For medium devices */
+@media (min-width: 1200px) {
+  .main {
+    overflow: visible
+  }
+  .level__container {
+    flex-direction: row;
+  }
+  .level__aside {
+    max-width: 435px;
+    margin-left: .5rem;
+    justify-content: start;
+  }
+  .level__container::before {
+    display: none;
+  }
+
+  .level__aside::before {
+    display: block;
+
+  }
+
+.aside-sticky {
+  position: sticky;
+  top: 2.5rem;
+}
+}
+
+
+@media (min-width: 1300px) {
+
+  .container {
+    max-width: 1280px;
+    justify-content: center;
+  }
+}
+/* For large devices */
+
+
+
+/* For 2K & 4K resolutions */

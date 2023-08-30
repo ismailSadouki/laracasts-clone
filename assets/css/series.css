@@ -1,0 +1,223 @@
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+}
+
+/* Responsive typography */
+@media screen and (min-width: 1024px) {
+  :root {
+  }
+}
+
+/*=============== BASE ===============*/
+.sections {
+  padding: 1.4rem 0 0;
+}
+
+/*=============== THEME ===============*/
+
+
+/*========== Variables Dark theme ==========*/
+
+
+
+/*==========
+Color changes in some parts of
+the website, in dark theme
+==========*/
+
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+
+
+
+/*=============== CARDS ===============*/
+.updated__content {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+
+
+
+
+
+
+
+
+.panel {
+  border-radius: 15px;
+  background-color: #18273f;
+  padding: 1rem 1.5rem;
+  transition: .5s
+}
+.panel-info {
+  margin: .3rem 0 1rem;
+}
+.panel-info .title {
+  font-size: var(--h2-font-size);
+}
+.panel-info .sub-title {
+  font-size: .7rem;
+  margin-top: 0;
+}
+.panel-cards {
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+.panel-card {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  background-color: #182a45;
+  border-radius: 10px;
+  padding: .2rem .7rem;
+  gap: .7rem;
+  transition: .4s;
+}
+.panel-card-content {
+  width: 100%;
+}
+
+.panel-card-img {
+  display: flex;
+  align-items: center;
+  min-width: 55px;
+  width: 55px;
+  height: 80px;
+}
+.panel-card-title {
+  font-weight: normal;
+  font-size: .79rem;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+.panel-card-title .date {
+  color: rgb(186 217 252);
+  font-size: .6rem;
+}
+.panel-card-desc {
+  text-align: start;
+  font-size: .59rem;
+  margin-top: .3rem;
+  font-weight: normal;
+  max-height: 28px;
+  overflow: hidden;
+}
+
+.panel:hover {
+  background: rgb(25 48 78);
+}
+.panel:hover .panel-card {
+  background: rgba(50,138,241,.03);
+}
+.panel-card:hover {
+  background: rgba(50,138,241,.07) !important;
+}
+
+@media (min-width: 992px) {
+
+  .panel-card-desc {
+    font-size: .63rem;
+  }
+}
+
+/*=============== TRENDING ===============*/
+.trending__content {
+  margin-top: 2rem;
+}
+.trending .panel-card-img {
+  min-width: 70px;
+  height: 80px;
+}
+.trending .panel-card-title {
+  font-weight: var(--font-semi-bold);
+  font-size: var(--normal-font-size);
+}
+.trending-img  {
+  grid-row: 1/4;
+  display:none;
+  width: 370px;
+  height: 370px;
+}
+
+/*=============== New ===============*/
+.new__content,
+.creator__content ,
+.oop__content {
+  margin-top: 1.8rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.2rem;
+}
+
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media (max-width: 480px) {
+  .card-col-3 {
+    max-width: 350px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .trending .panel-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+  }
+  .oop__content .card {
+    max-width: 750px;
+  }
+}
+
+/* For medium devices */
+
+/* For large devices */
+@media (min-width: 1200px) {
+  .updated__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .updated__content .card-col-2 {
+    grid-column: span 2;
+    height: 315px;
+  }
+  .updated__more-content {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+  .trending .panel-cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .trending .panel{
+    padding-left: 0;
+  }
+
+  .trending-img  {
+    display: block;
+  }
+  .oop__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}
+
+
+
+/* For 2K & 4K resolutions */

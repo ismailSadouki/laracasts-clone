@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--=============== FAVICON ===============-->
-        <!-- <link rel="shortcut icon" href="" type="image/x-icon"> -->
+        <!-- <link rel="shortcut icon" href="#" type="image/x-icon"> -->
 
         <!--=============== BOXICONS ===============-->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -29,13 +29,51 @@
                 <i class="bx bx-code-alt"></i>
             </a>
             <nav class="nav">
+                <ul class="nav__link-list" id="nav__link-list">
+                    <li class="nav__link-item">
+                        <a href="/">HOME</a>
+                    </li>
+
+                    <li class="nav__link-item ">
+                        <a href="series.html">SERIES</a>
+                    </li>
+                    <li class="nav__link-item">
+                        <a href="path.html">PATH</a>
+                    </li>
+                    <li class="nav__link-item">
+                        <a href="forum.html">FORUM</a>
+                    </li>
+                    <li class="nav__link-item">
+                        <a href="#">TEST</a>
+                    </li>
+
+                    <li class="nav__link-item">
+                        <a href="#">TEST</a>
+                    </li>
+                </ul>
                 <div class="nav__search">
                     <i class="bx bx-search-alt-2"></i>
                     <input class="nav__search-input" aria-label="Search input"  placeholder="Search ...">
                 </div>
 
-                <a href="" class="nav__button button primary-button">Sign Up</a>
-                <a href="" class="nav__button button secondary-button">Log In</a>
+                <a href="#" class="nav__button button primary-button">Sign Up</a>
+                <a href="#" class="nav__button button secondary-button">Log In</a>
+                <div class="nav__hamburger"
+                     role="button"
+                     aria-label="show navbar links"
+                     tabindex="0"
+                     onclick="navLinkList('show')"
+                     >
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                </div>
+                <button class="nav__hamburger-close"
+                        id="nav__hamburger-close"
+                        onclick="navLinkList('hide')"
+                        >
+                        <i class='bx bx-x'></i>
+                </button>
             </nav>
         </header>
 
@@ -59,33 +97,33 @@
                     <div class="topic__content">
                         <ul class="topic__list">
                             <li class="topic__list-item">
-                                <a href="" class="topic__list-link active">
+                                <a href="#" class="topic__list-link ">
                                     All Topics
                                 </a>
                             </li>
                             <li class="topic__list-item">
-                                <a href="" class="topic__list-link">
+                                <a href="#" class="topic__list-link">
                                     DevOps
                                 </a>
                             </li>
                             <li class="topic__list-item">
-                                <a href="" class="topic__list-link">
+                                <a href="#" class="topic__list-link">
                                     Frameworks
                                 </a>
                             </li>
 
                             <li class="topic__list-item">
-                                <a href="" class="topic__list-link">
+                                <a href="#" class="topic__list-link active">
+                                    Laravel
+                                </a>
+                            </li>
+                            <li class="topic__list-item">
+                                <a href="#" class="topic__list-link">
                                     Frameworks
                                 </a>
                             </li>
                             <li class="topic__list-item">
-                                <a href="" class="topic__list-link">
-                                    Frameworks
-                                </a>
-                            </li>
-                            <li class="topic__list-item">
-                                <a href="" class="topic__list-link">
+                                <a href="#" class="topic__list-link">
                                     Frameworks
                                 </a>
                             </li>
@@ -95,7 +133,7 @@
 
 
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="series.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -107,7 +145,7 @@
 
 
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="series.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -118,7 +156,7 @@
                             </li>
 
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="series.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -129,7 +167,7 @@
                             </li>
 
                             <li class="topic__card ">
-                                <a href="" class="topic__card-link active">
+                                <a href="series.html" class="topic__card-link active">
 
                                     <div class="topic__card-img">
 
@@ -143,7 +181,7 @@
 
 
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="series.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -155,7 +193,7 @@
 
 
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="series.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -168,7 +206,7 @@
                             <!--================copies===========-->
 
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="series.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -179,7 +217,7 @@
                             </li>
 
                             <li class="topic__card">
-                                <a href="" class="topic__card-link">
+                                <a href="series.html" class="topic__card-link">
 
                                     <div class="topic__card-img">
 
@@ -233,12 +271,12 @@
                                 </div>
 
                                 <div class="card-buttons">
-                                    <a class="button card-button">
+                                    <a href="#" class="button card-button">
                                         <i class='bx bx-play-circle'></i>
                                         <span>Play Series</span>
                                     </a>
 
-                                    <a class="button card-button">
+                                    <a href="#" class="button card-button">
                                         <i class='bx bxs-bookmark-star'></i>
                                         <span>Add to Watchlist</span>
                                     </a>
@@ -256,9 +294,9 @@
                                 <div class="card-instructor-info">
 
                                     <h2 class="card-instructor-name">
-                                        Ismail Saoduki
+                                        John Doe
                                     </h2>
-                                    <h5 class="card-instructor-header">
+                                    <h3 class="card-instructor-header">
                                         <span class="sub-title">Your Instructor Today</span>
                                         <span class="line"></span>
                                     </h5>
@@ -292,7 +330,7 @@
                                             Automated Laravel Upgrades
                                         </a>
                                         <div class="instructor-name">
-                                            <span>-Ismail Sadouki</span> is Your Instructor
+                                            <span>-John Deo</span> is Your Instructor
                                         </div>
                                     </div>
                                 </div>
@@ -317,12 +355,12 @@
                                 </div>
 
                                 <div class="card-buttons">
-                                    <a class="button card-button white-button">
+                                    <a href="#" class="button card-button white-button">
                                         <i class='bx bx-play-circle'></i>
                                         <span>Play Series</span>
                                     </a>
 
-                                    <a class="button card-button">
+                                    <a href="#" class="button card-button">
                                         <i class='bx bxs-bookmark-star'></i>
                                         <span>Add to Watchlist</span>
                                     </a>
@@ -334,7 +372,7 @@
 
                         <div class="related__card large-card">
                             <div class="card-img">
-                                <a href="" class="card-img-link">
+                                <a href="serie.html" class="card-img-link">
 
                                     <img src="assets/img/whats-new-in-laravel-10.svg" alt="whats new in laravel 10 image">
                                 </a>
@@ -366,7 +404,7 @@
                                 </div>
 
                                 <div class="card-buttons">
-                                    <a class="button card-button white-button">
+                                    <a href="#" class="button card-button white-button">
                                         <i class='bx bx-play-circle'></i>
                                         <span>Play Series</span>
                                     </a>
@@ -381,9 +419,9 @@
 
                         <div class="related__card large-card">
                             <div class="card-img">
-                                <a href="" class="card-img-link">
+                                <a href="serie.html" class="card-img-link">
 
-                                    <img src="assets/img/whats-new-in-laravel-10.svg" alt="whats new in laravel 10 image">
+                                    <img src="assets/img/solid-principles-in-php.svg" alt="whats new in laravel 10 image">
                                 </a>
 
                                 <div class="card-difficulty">
@@ -413,7 +451,7 @@
                                 </div>
 
                                 <div class="card-buttons">
-                                    <a class="button card-button white-button">
+                                    <a href="#" class="button card-button white-button">
                                         <i class='bx bx-play-circle'></i>
                                         <span>Play Series</span>
                                     </a>
@@ -424,9 +462,9 @@
 
                         <div class="related__card large-card">
                             <div class="card-img">
-                                <a href="" class="card-img-link">
+                                <a href="serie.html" class="card-img-link">
 
-                                    <img src="assets/img/whats-new-in-laravel-10.svg" alt="whats new in laravel 10 image">
+                                    <img src="assets/img/solid-principles-in-php.svg" alt="whats new in laravel 10 image">
                                 </a>
 
                                 <div class="card-difficulty">
@@ -456,7 +494,7 @@
                                 </div>
 
                                 <div class="card-buttons">
-                                    <a class="button card-button white-button">
+                                    <a href="#" class="button card-button white-button">
                                         <i class='bx bx-play-circle'></i>
                                         <span>Play Series</span>
                                     </a>
@@ -467,9 +505,9 @@
 
                         <div class="related__card large-card">
                             <div class="card-img">
-                                <a href="" class="card-img-link">
+                                <a href="serie.html" class="card-img-link">
 
-                                    <img src="assets/img/whats-new-in-laravel-10.svg" alt="whats new in laravel 10 image">
+                                    <img src="assets/img/solid-principles-in-php.svg" alt="whats new in laravel 10 image">
                                 </a>
 
                                 <div class="card-difficulty">
@@ -499,7 +537,7 @@
                                 </div>
 
                                 <div class="card-buttons">
-                                    <a class="button card-button white-button">
+                                    <a href="#" class="button card-button white-button">
                                         <i class='bx bx-play-circle'></i>
                                         <span>Play Series</span>
                                     </a>
@@ -510,9 +548,9 @@
 
                         <div class="related__card large-card">
                             <div class="card-img">
-                                <a href="" class="card-img-link">
+                                <a href="serie.html" class="card-img-link">
 
-                                    <img src="assets/img/whats-new-in-laravel-10.svg" alt="whats new in laravel 10 image">
+                                    <img src="assets/img/solid-principles-in-php.svg" alt="whats new in laravel 10 image">
                                 </a>
 
                                 <div class="card-difficulty">
@@ -542,7 +580,7 @@
                                 </div>
 
                                 <div class="card-buttons">
-                                    <a class="button card-button white-button">
+                                    <a href="#" class="button card-button white-button">
                                         <i class='bx bx-play-circle'></i>
                                         <span>Play Series</span>
                                     </a>
@@ -553,9 +591,9 @@
 
                         <div class="related__card large-card">
                             <div class="card-img">
-                                <a href="" class="card-img-link">
+                                <a href="serie.html" class="card-img-link">
 
-                                    <img src="assets/img/whats-new-in-laravel-10.svg" alt="whats new in laravel 10 image">
+                                    <img src="assets/img/solid-principles-in-php.svg" alt="whats new in laravel 10 image">
                                 </a>
 
                                 <div class="card-difficulty">
@@ -585,7 +623,7 @@
                                 </div>
 
                                 <div class="card-buttons">
-                                    <a class="button card-button white-button">
+                                    <a href="#" class="button card-button white-button">
                                         <i class='bx bx-play-circle'></i>
                                         <span>Play Series</span>
                                     </a>
@@ -596,9 +634,9 @@
 
                         <div class="related__card large-card">
                             <div class="card-img">
-                                <a href="" class="card-img-link">
+                                <a href="serie.html" class="card-img-link">
 
-                                    <img src="assets/img/whats-new-in-laravel-10.svg" alt="whats new in laravel 10 image">
+                                    <img src="assets/img/solid-principles-in-php.svg" alt="whats new in laravel 10 image">
                                 </a>
 
                                 <div class="card-difficulty">
@@ -628,7 +666,7 @@
                                 </div>
 
                                 <div class="card-buttons">
-                                    <a class="button card-button white-button">
+                                    <a href="#" class="button card-button white-button">
                                         <i class='bx bx-play-circle'></i>
                                         <span>Play Series</span>
                                     </a>
@@ -647,11 +685,40 @@
                 </div>
             </section>
 
+
+            <!-- ==================== AD  =======================-->
+
+            <section class="ad section" id="posts">
+                <div class="ad__container container">
+                    <img alt="" class="ad-bg-img" src="assets/img/signup-banner-teacher-bg@2x.webp">
+
+                    <div class="ad__img">
+                        <img alt="" src="assets/img/signup-banner-main-illustration.svg">
+                    </div>
+                    <div class="ad__content">
+                        <h3 class="ad-title title">
+                            A massive community of programmers just like you.
+                        </h3>
+                        <p class="ad-desc sub-title">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </br></br>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <a href="/" class="ad-button button primary-button">
+                            Get Started For Free
+                        </a>
+                    </div>
+            </section>
+
+
         </main>
 
         <!--==================== FOOTER ====================-->
         <footer class="footer section">
             <div class="footer__container container">
+                <div class="footer-bg-img">
+                    <img alt="" src="assets/img/laracasts-gang.png">
+                </div>
 
                 <div class="newspaper">
                     <h2 class="newspaper-title title">
@@ -665,24 +732,197 @@
                     </form>
                 </div>
 
-                <div class="about-us">
-                    <a aria-label="home page" href="/" class="about-us-logo">
-                        <i class="bx bx-code-alt"></i>
-                    </a>
-                    <p class="about-us-desc">
-                        Nine out of ten doctors recommend us over competing brands. Come inside, see for yourself, and massively level up your development skills in the process.
-                    </p>
-                    <div class="social-link">
-                        <a class="" href="github.com" target="_blank" aria-label="github">
-                            <i class='bx bxl-github'></i>
-                        </a>
+                <div class="footer-content">
 
-                        <a class="" href="twitter.com" target="_blank" aria-label="twitter">
-                            <i class='bx bxl-twitter'></i>
+                    <div class="about-us">
+                        <a aria-label="home page" href="/" class="about-us-logo">
+                            <i class="bx bx-code-alt"></i>
                         </a>
-                        <a class="" href="facebook.com" target="_blank" aria-label="facebook">
-                            <i class='bx bxl-facebook'></i>
-                        </a>
+                        <p class="about-us-desc">
+                            Nine out of ten doctors recommend us over competing brands. Come inside, see for yourself, and massively level up your development skills in the process.
+                        </p>
+                        <div class="social-link">
+                            <a class="" href="github.com" target="_blank" aria-label="github">
+                                <i class='bx bxl-github'></i>
+                            </a>
+
+                            <a class="" href="twitter.com" target="_blank" aria-label="twitter">
+                                <i class='bx bxl-twitter'></i>
+                            </a>
+                            <a class="" href="facebook.com" target="_blank" aria-label="facebook">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-learn">
+                        <h3 class="title">
+                            LEARN
+                        </h3>
+                        <ul class="footer-list">
+
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-learn">
+                        <h3 class="title">
+                            DISCUSS
+                        </h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-learn">
+                        <h3 class="title">
+                            EXTRAS
+                        </h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
@@ -694,6 +934,7 @@
         </footer>
 
 
+        <script src="assets/js/main.js"></script>
 
 
     </body>

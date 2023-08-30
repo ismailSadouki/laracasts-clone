@@ -1,0 +1,3379 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <!-- <link rel="shortcut icon" href="" type="image/x-icon"> -->
+
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/series.css">
+        <link rel="stylesheet" href="assets/css/card_components.css">
+
+        <title>Laracasts clone</title>
+
+        <!--==============META DESC =====================-->
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="John Doe">
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <a href="/" aria-label="home page" class="header__logo">
+                <i class="bx bx-code-alt"></i>
+            </a>
+            <nav class="nav">
+                <ul class="nav__link-list" id="nav__link-list">
+                    <li class="nav__link-item">
+                        <a href="/">HOME</a>
+                    </li>
+
+                    <li class="nav__link-item active">
+                        <a href="series.html">SERIES</a>
+                    </li>
+                    <li class="nav__link-item">
+                        <a href="path.html">PATH</a>
+                    </li>
+                    <li class="nav__link-item">
+                        <a href="forum.html">FORUM</a>
+                    </li>
+                    <li class="nav__link-item">
+                        <a href="#">TEST</a>
+                    </li>
+
+                    <li class="nav__link-item">
+                        <a href="#">TEST</a>
+                    </li>
+                </ul>
+                <div class="nav__search">
+                    <i class="bx bx-search-alt-2"></i>
+                    <input class="nav__search-input" aria-label="Search input"  placeholder="Search ...">
+                </div>
+
+                <a href="#" class="nav__button button primary-button">Sign Up</a>
+                <a href="#" class="nav__button button secondary-button">Log In</a>
+                <div class="nav__hamburger"
+                     role="button"
+                     aria-label="show navbar links"
+                     tabindex="0"
+                     onclick="navLinkList('show')"
+                     >
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                </div>
+                <button class="nav__hamburger-close"
+                        id="nav__hamburger-close"
+                        onclick="navLinkList('hide')"
+                        >
+                        <i class='bx bx-x'></i>
+                </button>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+
+            <!--=================== Updated =================-->
+            <section class="updated sections" id="updated">
+                <div class="updated__container container">
+
+                    <div class="updated__data">
+                        <h2 class="topic__title title">Recently Updated</h2>
+                        <p class="topic__sub-title sub-title">
+                            Curious what's new at Laracasts? The following series have been recently updated.
+                        </p>
+                    </div>
+
+                    <div class="updated__content">
+
+                        <div class="card card-col-2 purple-card-bg">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    Laravel Nova is the fastest way to build a full-fledged administration panel for your Laravel applications. Now in its fourth major iteration.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                    <div>
+                                        <i class="bx bx-bar-chart-alt"></i>
+                                        <span>Advenced</span>
+                                    </div>
+                                </div>
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button white-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+
+                                <img alt="" src="assets/img/laravel-nova-mastery-2023.svg">
+                            </div>
+
+                        </div>
+
+
+                        <div class="card card-col-1 yellow-card-bg">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    Laravel Nova is the fastest way to build a full-fledged administration panel for your Laravel applications. Now in its fourth major iteration.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button white-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+                                <a aria-label="title" href="serie.html">
+
+                                    <img alt="" src="assets/img/javascript-the-first-steps.svg">
+                                </a>
+                                <div class="card-difficulty">
+                                    <p>Advanced <br>
+                                        Difficulty
+                                    </p>
+                                    <div class="card-rate">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card card-col-1 red-card-bg">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    JavaScript is one of the most popular and versatile programming languages when working on the web. It makes for a great first language to learn as you can get started with any web browser and its built-in devtools.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button white-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+                                <a aria-label="title" href="serie.html">
+
+                                    <img alt="" src="assets/img/whats-new-in-laravel-10.svg">
+                                </a>
+                                <div class="card-difficulty">
+                                    <p>Advanced <br>
+                                        Difficulty
+                                    </p>
+                                    <div class="card-rate">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--================= More updated =============== -->
+                        <div class="updated__more-content">
+                            <div class="panel" >
+                                <div class="panel-info">
+                                    <h2 class="title">More recently Updated</h2>
+                                    <p class="sub-title">In case You may missed it.</p>
+                                </div>
+                                <div class="panel-cards">
+
+                                    <a aria-label="title" href="serie.html" class="panel-card">
+                                        <div class="panel-card-img">
+                                            <img alt="" src="assets/img/infinite-scrolling-with-inertia.webp">
+                                        </div>
+                                        <div class="panel-card-content">
+                                            <h3 class="panel-card-title title">
+                                                <span>Infinite Scrolling in Interia</span>
+                                                <span class="date">Aug 25,2023</span>
+                                            </h3>
+                                            <p class="panel-card-desc sub-title">
+                                                Finding the right IDE that fits your coding workflow and requirements can often be frustrating. Many editors come close but stumble near the finish line. After years of searching, however, PhpStorm is the first editor that somehow manages to tick every requirement of mine. It's fast, feature-rich, incredibly customizable, and the new UI is gorgeous.In this series, I hope you'll come along as I demonstrate, one episode at a time, my complete Laravel and PhpStorm workflow (including the incredible Laravel Idea plugin). So buckle up, there's a lot to cover!
+                                            </p>
+                                        </div>
+                                    </a>
+
+
+                                    <a aria-label="title" href="serie.html" class="panel-card">
+                                        <div class="panel-card-img">
+                                            <img alt="" src="assets/img/demystifying-laravels-magic.webp">
+                                        </div>
+                                        <div class="panel-card-content">
+                                            <h3 class="panel-card-title title">
+                                                <span>Infinite Scrolling in Interia</span>
+                                                <span class="date">Aug 25,2023</span>
+                                            </h3>
+                                            <p class="panel-card-desc sub-title">
+                                                Finding the right IDE that fits your coding workflow and requirements can often be frustrating. Many editors come close but stumble near the finish line. After years of searching, however, PhpStorm is the first editor that somehow manages to tick every requirement of mine. It's fast, feature-rich, incredibly customizable, and the new UI is gorgeous.In this series, I hope you'll come along as I demonstrate, one episode at a time, my complete Laravel and PhpStorm workflow (including the incredible Laravel Idea plugin). So buckle up, there's a lot to cover!
+                                            </p>
+                                        </div>
+                                    </a>
+
+
+                                    <a aria-label="title" href="serie.html" class="panel-card">
+                                        <div class="panel-card-img">
+                                            <img alt="" src="assets/img/phpstorm-for-laravel-developers.webp">
+                                        </div>
+                                        <div class="panel-card-content">
+                                            <h3 class="panel-card-title title">
+                                                <span>Infinite Scrolling in Interia</span>
+                                                <span class="date">Aug 25,2023</span>
+                                            </h3>
+                                            <p class="panel-card-desc sub-title">
+                                                Finding the right IDE that fits your coding workflow and requirements can often be frustrating. Many editors come close but stumble near the finish line. After years of searching, however, PhpStorm is the first editor that somehow manages to tick every requirement of mine. It's fast, feature-rich, incredibly customizable, and the new UI is gorgeous.In this series, I hope you'll come along as I demonstrate, one episode at a time, my complete Laravel and PhpStorm workflow (including the incredible Laravel Idea plugin). So buckle up, there's a lot to cover!
+                                            </p>
+                                        </div>
+                                    </a>
+
+                                    <a aria-label="title" href="serie.html" class="panel-card">
+                                        <div class="panel-card-img">
+                                            <img alt="" src="assets/img/laravel-octane.webp">
+                                        </div>
+                                        <div class="panel-card-content">
+                                            <h3 class="panel-card-title title">
+                                                <span>Infinite Scrolling in Interia</span>
+                                                <span class="date">Aug 25,2023</span>
+                                            </h3>
+                                            <p class="panel-card-desc sub-title">
+                                                Finding the right IDE that fits your coding workflow and requirements can often be frustrating. Many editors come close but stumble near the finish line. After years of searching, however, PhpStorm is the first editor that somehow manages to tick every requirement of mine. It's fast, feature-rich, incredibly customizable, and the new UI is gorgeous.In this series, I hope you'll come along as I demonstrate, one episode at a time, my complete Laravel and PhpStorm workflow (including the incredible Laravel Idea plugin). So buckle up, there's a lot to cover!
+                                            </p>
+                                        </div>
+                                    </a>
+
+                                    <a aria-label="title" href="serie.html" class="panel-card">
+                                        <div class="panel-card-img">
+                                            <img alt="" src="assets/img/servers-for-laravel.webp">
+                                        </div>
+                                        <div class="panel-card-content">
+                                            <h3 class="panel-card-title title">
+                                                <span>Infinite Scrolling in Interia</span>
+                                                <span class="date">Aug 25,2023</span>
+                                            </h3>
+                                            <p class="panel-card-desc sub-title">
+                                                Finding the right IDE that fits your coding workflow and requirements can often be frustrating. Many editors come close but stumble near the finish line. After years of searching, however, PhpStorm is the first editor that somehow manages to tick every requirement of mine. It's fast, feature-rich, incredibly customizable, and the new UI is gorgeous.In this series, I hope you'll come along as I demonstrate, one episode at a time, my complete Laravel and PhpStorm workflow (including the incredible Laravel Idea plugin). So buckle up, there's a lot to cover!
+                                            </p>
+                                        </div>
+                                    </a>
+
+                                    <a aria-label="title" href="serie.html" class="panel-card">
+                                        <div class="panel-card-img">
+                                            <img alt="" src="assets/img/css-flexbox-simplified.webp">
+                                        </div>
+                                        <div class="panel-card-content">
+                                            <h3 class="panel-card-title title">
+                                                <span>Infinite Scrolling in Interia</span>
+                                                <span class="date">Aug 25,2023</span>
+                                            </h3>
+                                            <p class="panel-card-desc sub-title">
+                                                Finding the right IDE that fits your coding workflow and requirements can often be frustrating. Many editors come close but stumble near the finish line. After years of searching, however, PhpStorm is the first editor that somehow manages to tick every requirement of mine. It's fast, feature-rich, incredibly customizable, and the new UI is gorgeous.In this series, I hope you'll come along as I demonstrate, one episode at a time, my complete Laravel and PhpStorm workflow (including the incredible Laravel Idea plugin). So buckle up, there's a lot to cover!
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!--================== Trending Series ============-->
+
+            <section class="trending sections" id="updated">
+                <div class="trending__container container">
+
+                    <div class="trending__data">
+                        <h2 class="trending__title title">Trending Series</h2>
+                        <p class="trending__sub-title sub-title">
+                            Here's what your peers are binging.
+                        </p>
+                    </div>
+
+                    <div class="trending__content">
+
+                        <div class="panel" >
+                            <div class="panel-cards">
+
+                                <div class="trending-img">
+                                    <img alt="" src="assets/img/lary-trending.svg">
+                                </div>
+
+                                <a aria-label="title" href="serie.html" class="panel-card">
+                                    <div class="panel-card-img">
+                                        <img alt="" src="assets/img/infinite-scrolling-with-inertia.webp">
+                                    </div>
+                                    <div class="panel-card-content">
+                                        <h3 class="panel-card-title title">
+                                            <span>Infinite Scrolling in Interia</span>
+                                        </h3>
+                                        <p class="panel-card-desc sub-title">
+                                            Welcome to the world of Shopify, where I'll show you, step by step, how to build a Shopify app with Laravel from scratch
+                                        </p>
+                                    </div>
+                                </a>
+
+
+                                <a aria-label="title" href="serie.html" class="panel-card">
+                                    <div class="panel-card-img">
+                                        <img alt="" src="assets/img/demystifying-laravels-magic.webp">
+                                    </div>
+                                    <div class="panel-card-content">
+                                        <h3 class="panel-card-title title">
+                                            <span>Infinite Scrolling in Interia</span>
+                                        </h3>
+                                        <p class="panel-card-desc sub-title">
+                                            Welcome to the world of Shopify, where I'll show you, step by step, how to build a Shopify app with Laravel from scratch
+                                        </p>
+                                    </div>
+                                </a>
+
+
+                                <a aria-label="title" href="serie.html" class="panel-card">
+                                    <div class="panel-card-img">
+                                        <img alt="" src="assets/img/laravel-from-scratch-2021.webp">
+                                    </div>
+                                    <div class="panel-card-content">
+                                        <h3 class="panel-card-title title">
+                                            <span>Infinite Scrolling in Interia</span>
+                                        </h3>
+                                        <p class="panel-card-desc sub-title">
+                                            Welcome to the world of Shopify, where I'll show you, step by step, how to build a Shopify app with Laravel from scratch
+                                        </p>
+                                    </div>
+                                </a>
+
+                                <a aria-label="title" href="serie.html" class="panel-card">
+                                    <div class="panel-card-img">
+                                        <img alt="" src="assets/img/php-for-beginners.webp">
+                                    </div>
+                                    <div class="panel-card-content">
+                                        <h3 class="panel-card-title title">
+                                            <span>Infinite Scrolling in Interia</span>
+                                        </h3>
+                                        <p class="panel-card-desc sub-title">
+                                            Welcome to the world of Shopify, where I'll show you, step by step, how to build a Shopify app with Laravel from scratch
+                                        </p>
+                                    </div>
+                                </a>
+
+                                <a aria-label="title" href="serie.html" class="panel-card">
+                                    <div class="panel-card-img">
+                                        <img alt="" src="assets/img/learn-vue-3.webp">
+                                    </div>
+                                    <div class="panel-card-content">
+                                        <h3 class="panel-card-title title">
+                                            <span>Infinite Scrolling in Interia</span>
+                                        </h3>
+                                        <p class="panel-card-desc sub-title">
+                                            Welcome to the world of Shopify, where I'll show you, step by step, how to build a Shopify app with Laravel from scratch
+                                        </p>
+                                    </div>
+                                </a>
+
+                                <a aria-label="title" href="serie.html" class="panel-card">
+                                    <div class="panel-card-img">
+                                        <img alt="" src="assets/img/build-shopify-apps-with-laravel.webp">
+                                    </div>
+                                    <div class="panel-card-content">
+                                        <h3 class="panel-card-title title">
+                                            <span>Infinite Scrolling in Interia</span>
+                                        </h3>
+                                        <p class="panel-card-desc sub-title">
+                                            Welcome to the world of Shopify, where I'll show you, step by step, how to build a Shopify app with Laravel from scratch
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--=============== NEW ========================-->
+
+            <section class="new sections" id="updated">
+                <div class="new__container container">
+
+                    <div class="new__data">
+                        <h2 class="new__title title">New to Laravel?</h2>
+                        <p class="new__sub-title sub-title">
+                            Brand new to Laravel? Might we suggest these two beginner series to get you started?
+                        </p>
+                    </div>
+
+                    <div class="new__content">
+
+                        <div class="card card-col-3 ">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    We don't learn tools for the sake of learning tools. Instead, we learn them because they help us accomplish a particular goal. With that in mind, in this series, we'll use the common desire for a blog - with categories, tags, comments, email notifications, and more - as our goal. Laravel will be the tool that helps us get there. Each lesson, geared toward newcomers to Laravel, will provide instructions and techniques that will get you to the finish line.
+                                    <br>
+                                    <br>
+                                    This version of our popular Laravel From Scratch series was recorded in 2021, and uses Laravel 8.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                    <div>
+                                        <i class="bx bx-bar-chart-alt"></i>
+                                        <span>Advenced</span>
+                                    </div>
+                                </div>
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+
+                                    <a href="#" class="button card-button">
+                                        <i class="bx bxs-bookmark-star"></i>
+                                        <span>Add to Watchlist</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-instructor">
+                                <div class="card-instructor-img">
+                                    <img alt="" src="assets/img/instructor.webp">
+                                    <div class="background background-1"></div>
+                                    <div class="background background-2"></div>
+                                    <div class="background background-3"></div>
+                                </div>
+                                <div class="card-instructor-info">
+
+                                    <h2 class="card-instructor-name">
+                                        John Doe
+                                    </h2>
+                                    <h3 class="card-instructor-header">
+                                        <span class="sub-title">Your Instructor Today</span>
+                                        <span class="line"></span>
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+
+                                <img alt="" src="assets/img/laravel-from-scratch-2021.svg">
+                            </div>
+
+                        </div>
+
+                        <div class="card card-col-3 ">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    We don't learn tools for the sake of learning tools. Instead, we learn them because they help us accomplish a particular goal. With that in mind, in this series, we'll use the common desire for a blog - with categories, tags, comments, email notifications, and more - as our goal. Laravel will be the tool that helps us get there. Each lesson, geared toward newcomers to Laravel, will provide instructions and techniques that will get you to the finish line.
+                                    <br>
+                                    <br>
+                                    This version of our popular Laravel From Scratch series was recorded in 2021, and uses Laravel 8.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                    <div>
+                                        <i class="bx bx-bar-chart-alt"></i>
+                                        <span>Advenced</span>
+                                    </div>
+                                </div>
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+
+                                    <a href="#" class="button card-button">
+                                        <i class="bx bxs-bookmark-star"></i>
+                                        <span>Add to Watchlist</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-instructor">
+                                <div class="card-instructor-img">
+                                    <img alt="" src="assets/img/instructor.webp">
+                                    <div class="background background-1"></div>
+                                    <div class="background background-2"></div>
+                                    <div class="background background-3"></div>
+                                </div>
+                                <div class="card-instructor-info">
+
+                                    <h2 class="card-instructor-name">
+                                        John Doe
+                                    </h2>
+                                    <h3 class="card-instructor-header">
+                                        <span class="sub-title">Your Instructor Today</span>
+                                        <span class="line"></span>
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+
+                                <img alt="" src="assets/img/object-oriented-principles-in-php.svg">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+
+            <!--================ creator ===========================-->
+
+            <section class="creator sections" id="updated">
+                <div class="creator__container container">
+
+                    <div class="creator__data">
+                        <h2 class="creator__title title">Dive into a CreatorSeries</h2>
+                        <p class="creator__sub-title sub-title">
+                            Why learn a tool second-hand, when you can instead be taught by the very person who created it? CreatorSeries provide deep-dives into technologies, as presented by their original creators.
+                        </p>
+                    </div>
+
+                    <div class="creator__content">
+
+                        <div class="card card-col-3 ">
+
+                            <div class="card-content">
+                                <div class="creator-logo">
+                                    <div class="creator-img">
+                                        <img alt="" src="assets/img/laracasts-creator-series-logo-arrow.svg">
+                                    </div>
+                                    creator <span>series</span>
+                                </div>
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    We don't learn tools for the sake of learning tools. Instead, we learn them because they help us accomplish a particular goal. With that in mind, in this series, we'll use the common desire for a blog - with categories, tags, comments, email notifications, and more - as our goal. Laravel will be the tool that helps us get there. Each lesson, geared toward creatorcomers to <span class="blue">Laravel</span>, will provide instructions and techniques that will get you to the finish line.
+                                    <br>
+                                    <br>
+                                    This version of our popular <span class="white">Laravel From Scratch series</span> was recorded in 2021, and uses Laravel 8.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                    <div>
+                                        <i class="bx bx-bar-chart-alt"></i>
+                                        <span>Advenced</span>
+                                    </div>
+                                </div>
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+
+                                    <a href="#" class="button card-button">
+                                        <i class="bx bxs-bookmark-star"></i>
+                                        <span>Add to Watchlist</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-instructor">
+                                <div class="card-instructor-img">
+                                    <img alt="" src="assets/img/instructor.webp">
+                                    <div class="background background-1"></div>
+                                    <div class="background background-2"></div>
+                                    <div class="background background-3"></div>
+                                </div>
+                                <div class="card-instructor-info">
+
+                                    <h2 class="card-instructor-name">
+                                        John Doe
+                                    </h2>
+                                    <h3 class="card-instructor-header">
+                                        <span class="sub-title">Your Instructor Today</span>
+                                        <span class="line"></span>
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+
+                                <img alt="" src="assets/img/learn-statamic-with-jack.svg">
+                            </div>
+
+                        </div>
+
+                        <div class="card card-col-3 ">
+
+                            <div class="card-content">
+
+                                <div class="creator-logo">
+                                    <div class="creator-img">
+                                        <img alt="" src="assets/img/laracasts-creator-series-logo-arrow.svg">
+                                    </div>
+                                    creator <span>series</span>
+                                </div>
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    We don't learn tools for the sake of learning tools. Instead, we learn them because they help us accomplish a particular goal. With that in mind, in this series, we'll use the common desire for a blog - with categories, tags, comments, email notifications, and more - as our goal. Laravel will be the tool that helps us get there. Each lesson, geared toward creatorcomers to <span class="blue">Laravel</span>, will provide instructions and techniques that will get you to the finish line.
+                                    <br>
+                                    <br>
+                                    This version of our popular <span class="white">Laravel From Scratch series</span> was recorded in 2021, and uses Laravel 8.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                    <div>
+                                        <i class="bx bx-bar-chart-alt"></i>
+                                        <span>Advenced</span>
+                                    </div>
+                                </div>
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+
+                                    <a href="#" class="button card-button">
+                                        <i class="bx bxs-bookmark-star"></i>
+                                        <span>Add to Watchlist</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-instructor">
+                                <div class="card-instructor-img">
+                                    <img alt="" src="assets/img/instructor.webp">
+                                    <div class="background background-1"></div>
+                                    <div class="background background-2"></div>
+                                    <div class="background background-3"></div>
+                                </div>
+                                <div class="card-instructor-info">
+
+                                    <h2 class="card-instructor-name">
+                                        John Doe
+                                    </h2>
+                                    <h3 class="card-instructor-header">
+                                        <span class="sub-title">Your Instructor Today</span>
+                                        <span class="line"></span>
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+
+                                <img alt="" src="assets/img/developing-serverless-functions.svg">
+                            </div>
+
+                        </div>
+
+
+                        <div class="card card-col-3 ">
+
+                            <div class="card-content">
+
+                                <div class="creator-logo">
+                                    <div class="creator-img">
+                                        <img alt="" src="assets/img/laracasts-creator-series-logo-arrow.svg">
+                                    </div>
+                                    creator <span>series</span>
+                                </div>
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    We don't learn tools for the sake of learning tools. Instead, we learn them because they help us accomplish a particular goal. With that in mind, in this series, we'll use the common desire for a blog - with categories, tags, comments, email notifications, and more - as our goal. Laravel will be the tool that helps us get there. Each lesson, geared toward creatorcomers to <span class="blue">Laravel</span>, will provide instructions and techniques that will get you to the finish line.
+                                    <br>
+                                    <br>
+                                    This version of our popular <span class="white">Laravel From Scratch series</span> was recorded in 2021, and uses Laravel 8.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                    <div>
+                                        <i class="bx bx-bar-chart-alt"></i>
+                                        <span>Advenced</span>
+                                    </div>
+                                </div>
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+
+                                    <a href="#" class="button card-button">
+                                        <i class="bx bxs-bookmark-star"></i>
+                                        <span>Add to Watchlist</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-instructor">
+                                <div class="card-instructor-img">
+                                    <img alt="" src="assets/img/instructor.webp">
+                                    <div class="background background-1"></div>
+                                    <div class="background background-2"></div>
+                                    <div class="background background-3"></div>
+                                </div>
+                                <div class="card-instructor-info">
+
+                                    <h2 class="card-instructor-name">
+                                        John Doe
+                                    </h2>
+                                    <h3 class="card-instructor-header">
+                                        <span class="sub-title">Your Instructor Today</span>
+                                        <span class="line"></span>
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+
+                                <img alt="" src="assets/img/livewire-uncovered.svg">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+
+            <!--=============== OOP ========================-->
+
+            <section class="oop sections" id="updated">
+                <div class="oop__container container">
+
+                    <div class="oop__data">
+                        <h2 class="oop__title title">Learn OOP</h2>
+                        <p class="oop__sub-title sub-title">
+                            A full understanding and appreciation for how objects communicate with one another is essential to your maturity as a web developer.
+                        </p>
+                    </div>
+
+                    <div class="oop__content">
+
+                        <div class="card card-col-1 yellow-card-bg">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    Laravel Nova is the fastest way to build a full-fledged administration panel for your Laravel applications. Now in its fourth major iteration.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button white-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+                                <a aria-label="title" href="serie.html">
+
+                                    <img alt="" src="assets/img/object-oriented-principles-in-php.svg">
+                                </a>
+                                <div class="card-difficulty">
+                                    <p>Advanced <br>
+                                        Difficulty
+                                    </p>
+                                    <div class="card-rate">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="card card-col-1 yellow-card-bg">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    Laravel Nova is the fastest way to build a full-fledged administration panel for your Laravel applications. Now in its fourth major iteration.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button white-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+                                <a aria-label="title" href="serie.html">
+
+                                    <img alt="" src="assets/img/the-php-practitioner.svg">
+                                </a>
+                                <div class="card-difficulty">
+                                    <p>Advanced <br>
+                                        Difficulty
+                                    </p>
+                                    <div class="card-rate">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="card card-col-1 blue-card-bg">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    Laravel Nova is the fastest way to build a full-fledged administration panel for your Laravel applications. Now in its fourth major iteration.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button white-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+                                <a aria-label="title" href="serie.html">
+
+                                    <img alt="" src="assets/img/solid-principles-in-php.svg">
+                                </a>
+                                <div class="card-difficulty">
+                                    <p>Advanced <br>
+                                        Difficulty
+                                    </p>
+                                    <div class="card-rate">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </section>
+
+
+            <!--================== TESTING UR CODE|copie ============-->
+
+            <section class="trending sections" id="updated">
+                <div class="trending__container container">
+
+                    <div class="trending__data">
+                        <h2 class="trending__title title">How to Test Your Code</h2>
+                        <p class="trending__sub-title sub-title">
+                            Imagine a workflow that alerts you each time a particular refactor was unsuccessful. How much more might you get done with that level of confidence?
+                        </p>
+                    </div>
+
+                    <div class="trending__content">
+
+                        <div class="panel" >
+                            <div class="panel-cards">
+
+                                <div class="trending-img">
+                                    <img alt="" src="assets/img/path-laravel.svg">
+                                </div>
+
+                                <a aria-label="title" href="serie.html" class="panel-card">
+                                    <div class="panel-card-img">
+                                        <img alt="" src="assets/img/cypress-and-laravel-integration.webp">
+                                    </div>
+                                    <div class="panel-card-content">
+                                        <h3 class="panel-card-title title">
+                                            <span>Infinite Scrolling in Interia</span>
+                                        </h3>
+                                        <p class="panel-card-desc sub-title">
+                                            Welcome to the world of Shopify, where I'll show you, step by step, how to build a Shopify app with Laravel from scratch
+                                        </p>
+                                    </div>
+                                </a>
+
+
+                                <a aria-label="title" href="serie.html" class="panel-card">
+                                    <div class="panel-card-img">
+                                        <img alt="" src="assets/img/lets-build-a-forum.webp">
+                                    </div>
+                                    <div class="panel-card-content">
+                                        <h3 class="panel-card-title title">
+                                            <span>Infinite Scrolling in Interia</span>
+                                        </h3>
+                                        <p class="panel-card-desc sub-title">
+                                            Welcome to the world of Shopify, where I'll show you, step by step, how to build a Shopify app with Laravel from scratch
+                                        </p>
+                                    </div>
+                                </a>
+
+
+                                <a aria-label="title" href="serie.html" class="panel-card">
+                                    <div class="panel-card-img">
+                                        <img alt="" src="assets/img/code-katas-with-phpunit.webp">
+                                    </div>
+                                    <div class="panel-card-content">
+                                        <h3 class="panel-card-title title">
+                                            <span>Infinite Scrolling in Interia</span>
+                                        </h3>
+                                        <p class="panel-card-desc sub-title">
+                                            Welcome to the world of Shopify, where I'll show you, step by step, how to build a Shopify app with Laravel from scratch
+                                        </p>
+                                    </div>
+                                </a>
+
+                                <a aria-label="title" href="serie.html" class="panel-card">
+                                    <div class="panel-card-img">
+                                        <img alt="" src="assets/img/testing-jargon.webp">
+                                    </div>
+                                    <div class="panel-card-content">
+                                        <h3 class="panel-card-title title">
+                                            <span>Infinite Scrolling in Interia</span>
+                                        </h3>
+                                        <p class="panel-card-desc sub-title">
+                                            Welcome to the world of Shopify, where I'll show you, step by step, how to build a Shopify app with Laravel from scratch
+                                        </p>
+                                    </div>
+                                </a>
+
+
+                                <a aria-label="title" href="serie.html" class="panel-card">
+                                    <div class="panel-card-img">
+                                        <img alt="" src="assets/img/build-an-app-with-tdd.webp">
+                                    </div>
+                                    <div class="panel-card-content">
+                                        <h3 class="panel-card-title title">
+                                            <span>Infinite Scrolling in Interia</span>
+                                        </h3>
+                                        <p class="panel-card-desc sub-title">
+                                            Welcome to the world of Shopify, where I'll show you, step by step, how to build a Shopify app with Laravel from scratch
+                                        </p>
+                                    </div>
+                                </a>
+
+                                <a aria-label="title" href="serie.html" class="panel-card">
+                                    <div class="panel-card-img">
+                                        <img alt="" src="assets/img/testing-laravel.webp">
+                                    </div>
+                                    <div class="panel-card-content">
+                                        <h3 class="panel-card-title title">
+                                            <span>Infinite Scrolling in Interia</span>
+                                        </h3>
+                                        <p class="panel-card-desc sub-title">
+                                            Welcome to the world of Shopify, where I'll show you, step by step, how to build a Shopify app with Laravel from scratch
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== NEW|copies ========================-->
+
+            <section class="new sections" id="updated">
+                <div class="new__container container">
+
+                    <div class="new__data">
+                        <h2 class="new__title title">Learn Laravel</h2>
+                        <p class="new__sub-title sub-title">
+                            There has never been a better time to dig in and get started learning.
+                        </p>
+                    </div>
+
+                    <div class="new__content">
+
+                        <div class="card card-col-3 ">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    We don't learn tools for the sake of learning tools. Instead, we learn them because they help us accomplish a particular goal. With that in mind, in this series, we'll use the common desire for a blog - with categories, tags, comments, email notifications, and more - as our goal. Laravel will be the tool that helps us get there. Each lesson, geared toward newcomers to Laravel, will provide instructions and techniques that will get you to the finish line.
+                                    <br>
+                                    <br>
+                                    This version of our popular Laravel From Scratch series was recorded in 2021, and uses Laravel 8.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                    <div>
+                                        <i class="bx bx-bar-chart-alt"></i>
+                                        <span>Advenced</span>
+                                    </div>
+                                </div>
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+
+                                    <a href="#" class="button card-button">
+                                        <i class="bx bxs-bookmark-star"></i>
+                                        <span>Add to Watchlist</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-instructor">
+                                <div class="card-instructor-img">
+                                    <img alt="" src="assets/img/instructor.webp">
+                                    <div class="background background-1"></div>
+                                    <div class="background background-2"></div>
+                                    <div class="background background-3"></div>
+                                </div>
+                                <div class="card-instructor-info">
+
+                                    <h2 class="card-instructor-name">
+                                        John Doe
+                                    </h2>
+                                    <h3 class="card-instructor-header">
+                                        <span class="sub-title">Your Instructor Today</span>
+                                        <span class="line"></span>
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+
+                                <img alt="" src="assets/img/laravel-from-scratch-2021.svg">
+                            </div>
+
+                        </div>
+
+                        <div class="card card-col-3 ">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    We don't learn tools for the sake of learning tools. Instead, we learn them because they help us accomplish a particular goal. With that in mind, in this series, we'll use the common desire for a blog - with categories, tags, comments, email notifications, and more - as our goal. Laravel will be the tool that helps us get there. Each lesson, geared toward newcomers to Laravel, will provide instructions and techniques that will get you to the finish line.
+                                    <br>
+                                    <br>
+                                    This version of our popular Laravel From Scratch series was recorded in 2021, and uses Laravel 8.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                    <div>
+                                        <i class="bx bx-bar-chart-alt"></i>
+                                        <span>Advenced</span>
+                                    </div>
+                                </div>
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+
+                                    <a href="#" class="button card-button">
+                                        <i class="bx bxs-bookmark-star"></i>
+                                        <span>Add to Watchlist</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-instructor">
+                                <div class="card-instructor-img">
+                                    <img alt="" src="assets/img/instructor.webp">
+                                    <div class="background background-1"></div>
+                                    <div class="background background-2"></div>
+                                    <div class="background background-3"></div>
+                                </div>
+                                <div class="card-instructor-info">
+
+                                    <h2 class="card-instructor-name">
+                                        John Doe
+                                    </h2>
+                                    <h3 class="card-instructor-header">
+                                        <span class="sub-title">Your Instructor Today</span>
+                                        <span class="line"></span>
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+
+                                <img alt="" src="assets/img/whats-new-in-laravel-10.svg">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== OOP|copie ========================-->
+
+            <section class="oop sections" id="updated">
+                <div class="oop__container container">
+
+                    <div class="oop__data">
+                        <h2 class="oop__title title">The Eloquent Developer</h2>
+                        <p class="oop__sub-title sub-title">
+                            Learn the ins and outs of Laravel's Eloquent ORM.
+                        </p>
+                    </div>
+
+                    <div class="oop__content">
+
+                        <div class="card card-col-1 red-card-bg">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    Laravel Nova is the fastest way to build a full-fledged administration panel for your Laravel applications. Now in its fourth major iteration.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button white-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+                                <a aria-label="title" href="serie.html">
+
+                                    <img alt="" src="assets/img/eloquent-performance-patterns.svg">
+                                </a>
+                                <div class="card-difficulty">
+                                    <p>Advanced <br>
+                                        Difficulty
+                                    </p>
+                                    <div class="card-rate">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="card card-col-1 red-card-bg">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    Laravel Nova is the fastest way to build a full-fledged administration panel for your Laravel applications. Now in its fourth major iteration.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button white-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+                                <a aria-label="title" href="serie.html">
+
+                                    <img alt="" src="assets/img/eloquent-relationships.svg">
+                                </a>
+                                <div class="card-difficulty">
+                                    <p>Advanced <br>
+                                        Difficulty
+                                    </p>
+                                    <div class="card-rate">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="card card-col-1 red-card-bg">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    Laravel Nova is the fastest way to build a full-fledged administration panel for your Laravel applications. Now in its fourth major iteration.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button white-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+                                <a aria-label="title" href="serie.html">
+
+                                    <img alt="" src="assets/img/eloquent-techniques.svg">
+                                </a>
+                                <div class="card-difficulty">
+                                    <p>Advanced <br>
+                                        Difficulty
+                                    </p>
+                                    <div class="card-rate">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </section>
+
+
+            <!--=============== NEW|copies ========================-->
+
+            <section class="new sections" id="updated">
+                <div class="new__container container">
+
+                    <div class="new__data">
+                        <h2 class="new__title title">Brush Up On Your CSS</h2>
+                        <p class="new__sub-title sub-title">
+                            Even backend developers need to style a website from time to time! These series will get you up to speed quickly!
+                        </p>
+                    </div>
+
+                    <div class="new__content">
+
+                        <div class="card card-col-3 ">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    We don't learn tools for the sake of learning tools. Instead, we learn them because they help us accomplish a particular goal. With that in mind, in this series, we'll use the common desire for a blog - with categories, tags, comments, email notifications, and more - as our goal. Laravel will be the tool that helps us get there. Each lesson, geared toward newcomers to Laravel, will provide instructions and techniques that will get you to the finish line.
+                                    <br>
+                                    <br>
+                                    This version of our popular Laravel From Scratch series was recorded in 2021, and uses Laravel 8.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                    <div>
+                                        <i class="bx bx-bar-chart-alt"></i>
+                                        <span>Advenced</span>
+                                    </div>
+                                </div>
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+
+                                    <a href="#" class="button card-button">
+                                        <i class="bx bxs-bookmark-star"></i>
+                                        <span>Add to Watchlist</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-instructor">
+                                <div class="card-instructor-img">
+                                    <img alt="" src="assets/img/instructor.webp">
+                                    <div class="background background-1"></div>
+                                    <div class="background background-2"></div>
+                                    <div class="background background-3"></div>
+                                </div>
+                                <div class="card-instructor-info">
+
+                                    <h2 class="card-instructor-name">
+                                        John Doe
+                                    </h2>
+                                    <h3 class="card-instructor-header">
+                                        <span class="sub-title">Your Instructor Today</span>
+                                        <span class="line"></span>
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+
+                                <img alt="" src="assets/img/css-grids-simplified.svg">
+                            </div>
+
+                        </div>
+
+                        <div class="card card-col-3 ">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    We don't learn tools for the sake of learning tools. Instead, we learn them because they help us accomplish a particular goal. With that in mind, in this series, we'll use the common desire for a blog - with categories, tags, comments, email notifications, and more - as our goal. Laravel will be the tool that helps us get there. Each lesson, geared toward newcomers to Laravel, will provide instructions and techniques that will get you to the finish line.
+                                    <br>
+                                    <br>
+                                    This version of our popular Laravel From Scratch series was recorded in 2021, and uses Laravel 8.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                    <div>
+                                        <i class="bx bx-bar-chart-alt"></i>
+                                        <span>Advenced</span>
+                                    </div>
+                                </div>
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+
+                                    <a href="#" class="button card-button">
+                                        <i class="bx bxs-bookmark-star"></i>
+                                        <span>Add to Watchlist</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-instructor">
+                                <div class="card-instructor-img">
+                                    <img alt="" src="assets/img/instructor.webp">
+                                    <div class="background background-1"></div>
+                                    <div class="background background-2"></div>
+                                    <div class="background background-3"></div>
+                                </div>
+                                <div class="card-instructor-info">
+
+                                    <h2 class="card-instructor-name">
+                                        John Doe
+                                    </h2>
+                                    <h3 class="card-instructor-header">
+                                        <span class="sub-title">Your Instructor Today</span>
+                                        <span class="line"></span>
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+
+                                <img alt="" src="assets/img/css-quirks-and-pitfalls.svg">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+
+            <!--=================== Updated|copie =================-->
+            <section class="updated sections" id="updated">
+                <div class="updated__container container">
+
+                    <div class="updated__data">
+                        <h2 class="topic__title title">Recently Updated</h2>
+                        <p class="topic__sub-title sub-title">
+                            Curious what's new at Laracasts? The following series have been recently updated.
+                        </p>
+                    </div>
+
+                    <div class="updated__content">
+
+                        <div class="card card-col-2 purple-card-bg">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    Laravel Nova is the fastest way to build a full-fledged administration panel for your Laravel applications. Now in its fourth major iteration.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                    <div>
+                                        <i class="bx bx-bar-chart-alt"></i>
+                                        <span>Advenced</span>
+                                    </div>
+                                </div>
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button white-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+
+                                <img alt="" src="assets/img/laravel-nova-mastery-2023.svg">
+                            </div>
+
+                        </div>
+
+
+                        <div class="card card-col-1 purple-card-bg">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    JavaScript is one of the most popular and versatile programming languages when working on the web. It makes for a great first language to learn as you can get started with any web browser and its built-in devtools.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button white-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+                                <a aria-label="title" href="serie.html">
+
+                                    <img alt="" src="assets/img/git-me-some-version-control.svg">
+                                </a>
+                                <div class="card-difficulty">
+                                    <p>Advanced <br>
+                                        Difficulty
+                                    </p>
+                                    <div class="card-rate">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card card-col-1 purple-card-bg">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    JavaScript is one of the most popular and versatile programming languages when working on the web. It makes for a great first language to learn as you can get started with any web browser and its built-in devtools.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button white-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+                                <a aria-label="title" href="serie.html">
+
+                                    <img alt="" src="assets/img/git-me-some-version-control.svg">
+                                </a>
+                                <div class="card-difficulty">
+                                    <p>Advanced <br>
+                                        Difficulty
+                                    </p>
+                                    <div class="card-rate">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card card-col-2 purple-card-bg">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    Laravel Nova is the fastest way to build a full-fledged administration panel for your Laravel applications. Now in its fourth major iteration.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                    <div>
+                                        <i class="bx bx-bar-chart-alt"></i>
+                                        <span>Advenced</span>
+                                    </div>
+                                </div>
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button white-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+
+                                <img alt="" src="assets/img/laravel-nova-mastery-2023.svg">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+
+            <!--=============== NEW|copies ========================-->
+
+            <section class="new sections" id="updated">
+                <div class="new__container container">
+
+                    <div class="new__data">
+                        <h2 class="new__title title">Learn a Tool</h2>
+                        <p class="new__sub-title sub-title">
+                            You use your tools every single day. So take some time to master them.
+                        </p>
+                    </div>
+
+                    <div class="new__content">
+
+                        <div class="card card-col-3 ">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    We don't learn tools for the sake of learning tools. Instead, we learn them because they help us accomplish a particular goal. With that in mind, in this series, we'll use the common desire for a blog - with categories, tags, comments, email notifications, and more - as our goal. Laravel will be the tool that helps us get there. Each lesson, geared toward newcomers to Laravel, will provide instructions and techniques that will get you to the finish line.
+                                    <br>
+                                    <br>
+                                    This version of our popular Laravel From Scratch series was recorded in 2021, and uses Laravel 8.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                    <div>
+                                        <i class="bx bx-bar-chart-alt"></i>
+                                        <span>Advenced</span>
+                                    </div>
+                                </div>
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+
+                                    <a href="#" class="button card-button">
+                                        <i class="bx bxs-bookmark-star"></i>
+                                        <span>Add to Watchlist</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-instructor">
+                                <div class="card-instructor-img">
+                                    <img alt="" src="assets/img/instructor.webp">
+                                    <div class="background background-1"></div>
+                                    <div class="background background-2"></div>
+                                    <div class="background background-3"></div>
+                                </div>
+                                <div class="card-instructor-info">
+
+                                    <h2 class="card-instructor-name">
+                                        John Doe
+                                    </h2>
+                                    <h3 class="card-instructor-header">
+                                        <span class="sub-title">Your Instructor Today</span>
+                                        <span class="line"></span>
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+
+                                <img alt="" src="assets/img/learn-laravel-forge.svg">
+                            </div>
+
+                        </div>
+
+                        <div class="card card-col-3 ">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    We don't learn tools for the sake of learning tools. Instead, we learn them because they help us accomplish a particular goal. With that in mind, in this series, we'll use the common desire for a blog - with categories, tags, comments, email notifications, and more - as our goal. Laravel will be the tool that helps us get there. Each lesson, geared toward newcomers to Laravel, will provide instructions and techniques that will get you to the finish line.
+                                    <br>
+                                    <br>
+                                    This version of our popular Laravel From Scratch series was recorded in 2021, and uses Laravel 8.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                    <div>
+                                        <i class="bx bx-bar-chart-alt"></i>
+                                        <span>Advenced</span>
+                                    </div>
+                                </div>
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+
+                                    <a href="#" class="button card-button">
+                                        <i class="bx bxs-bookmark-star"></i>
+                                        <span>Add to Watchlist</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-instructor">
+                                <div class="card-instructor-img">
+                                    <img alt="" src="assets/img/instructor.webp">
+                                    <div class="background background-1"></div>
+                                    <div class="background background-2"></div>
+                                    <div class="background background-3"></div>
+                                </div>
+                                <div class="card-instructor-info">
+
+                                    <h2 class="card-instructor-name">
+                                        John Doe
+                                    </h2>
+                                    <h3 class="card-instructor-header">
+                                        <span class="sub-title">Your Instructor Today</span>
+                                        <span class="line"></span>
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+
+                                <img alt="" src="assets/img/learn-docker.svg">
+                            </div>
+
+                        </div>
+
+                        <div class="updated__content" style="margin-top: 0;grid-template-rows: repeat(1, 1fr);">
+
+
+                            <div class="card card-col-1 purple-card-bg">
+
+                                <div class="card-content">
+                                    <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                    <p class="card-desc">
+                                        JavaScript is one of the most popular and versatile programming languages when working on the web. It makes for a great first language to learn as you can get started with any web browser and its built-in devtools.
+                                    </p>
+                                    <div class="card-info">
+                                        <div>
+                                            <i class="bx bxs-book"></i>
+                                            <span>6 Lessons</span>
+                                        </div>
+
+                                        <div>
+                                            <i class="bx bxs-stopwatch"></i>
+                                            <span>30m</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-buttons">
+                                        <a href="#" class="button card-button white-button">
+                                            <i class="bx bx-play-circle"></i>
+                                            <span>Play Series</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="card-img">
+                                    <a aria-label="title" href="serie.html">
+
+                                        <img alt="" src="assets/img/git-me-some-version-control.svg">
+                                    </a>
+                                    <div class="card-difficulty">
+                                        <p>Advanced <br>
+                                            Difficulty
+                                        </p>
+                                        <div class="card-rate">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="card card-col-1 purple-card-bg">
+
+                                <div class="card-content">
+                                    <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                    <p class="card-desc">
+                                        JavaScript is one of the most popular and versatile programming languages when working on the web. It makes for a great first language to learn as you can get started with any web browser and its built-in devtools.
+                                    </p>
+                                    <div class="card-info">
+                                        <div>
+                                            <i class="bx bxs-book"></i>
+                                            <span>6 Lessons</span>
+                                        </div>
+
+                                        <div>
+                                            <i class="bx bxs-stopwatch"></i>
+                                            <span>30m</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-buttons">
+                                        <a href="#" class="button card-button white-button">
+                                            <i class="bx bx-play-circle"></i>
+                                            <span>Play Series</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="card-img">
+                                    <a aria-label="title" href="serie.html">
+
+                                        <img alt="" src="assets/img/git-me-some-version-control.svg">
+                                    </a>
+                                    <div class="card-difficulty">
+                                        <p>Advanced <br>
+                                            Difficulty
+                                        </p>
+                                        <div class="card-rate">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="card card-col-1 purple-card-bg">
+
+                                <div class="card-content">
+                                    <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                    <p class="card-desc">
+                                        JavaScript is one of the most popular and versatile programming languages when working on the web. It makes for a great first language to learn as you can get started with any web browser and its built-in devtools.
+                                    </p>
+                                    <div class="card-info">
+                                        <div>
+                                            <i class="bx bxs-book"></i>
+                                            <span>6 Lessons</span>
+                                        </div>
+
+                                        <div>
+                                            <i class="bx bxs-stopwatch"></i>
+                                            <span>30m</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-buttons">
+                                        <a href="#" class="button card-button white-button">
+                                            <i class="bx bx-play-circle"></i>
+                                            <span>Play Series</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="card-img">
+                                    <a aria-label="title" href="serie.html">
+
+                                        <img alt="" src="assets/img/git-me-some-version-control.svg">
+                                    </a>
+                                    <div class="card-difficulty">
+                                        <p>Advanced <br>
+                                            Difficulty
+                                        </p>
+                                        <div class="card-rate">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== OOP|copie ========================-->
+
+            <section class="oop sections" id="updated">
+                <div class="oop__container container">
+
+                    <div class="oop__data">
+                        <h2 class="oop__title title">The Eloquent Developer</h2>
+                        <p class="oop__sub-title sub-title">
+                            Learn the ins and outs of Laravel's Eloquent ORM.
+                        </p>
+                    </div>
+
+                    <div class="oop__content">
+
+                        <div class="card card-col-1 red-card-bg">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    Laravel Nova is the fastest way to build a full-fledged administration panel for your Laravel applications. Now in its fourth major iteration.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button white-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+                                <a aria-label="title" href="serie.html">
+
+                                    <img alt="" src="assets/img/eloquent-performance-patterns.svg">
+                                </a>
+                                <div class="card-difficulty">
+                                    <p>Advanced <br>
+                                        Difficulty
+                                    </p>
+                                    <div class="card-rate">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="card card-col-1 red-card-bg">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    Laravel Nova is the fastest way to build a full-fledged administration panel for your Laravel applications. Now in its fourth major iteration.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button white-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+                                <a aria-label="title" href="serie.html">
+
+                                    <img alt="" src="assets/img/eloquent-relationships.svg">
+                                </a>
+                                <div class="card-difficulty">
+                                    <p>Advanced <br>
+                                        Difficulty
+                                    </p>
+                                    <div class="card-rate">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="card card-col-1 red-card-bg">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    Laravel Nova is the fastest way to build a full-fledged administration panel for your Laravel applications. Now in its fourth major iteration.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button white-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+                                <a aria-label="title" href="serie.html">
+
+                                    <img alt="" src="assets/img/eloquent-techniques.svg">
+                                </a>
+                                <div class="card-difficulty">
+                                    <p>Advanced <br>
+                                        Difficulty
+                                    </p>
+                                    <div class="card-rate">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </section>
+
+            <!--================== TESTING UR CODE|copie ============-->
+
+            <section class="trending sections" id="updated">
+                <div class="trending__container container">
+
+                    <div class="trending__data">
+                        <h2 class="trending__title title">How to Test Your Code</h2>
+                        <p class="trending__sub-title sub-title">
+                            Imagine a workflow that alerts you each time a particular refactor was unsuccessful. How much more might you get done with that level of confidence?
+                        </p>
+                    </div>
+
+                    <div class="trending__content">
+
+                        <div class="panel" >
+                            <div class="panel-cards">
+
+                                <div class="trending-img">
+                                    <img alt="" src="assets/img/path-laravel.svg">
+                                </div>
+
+                                <a aria-label="title" href="serie.html" class="panel-card">
+                                    <div class="panel-card-img">
+                                        <img alt="" src="assets/img/whats-new-in-laravel-10.webp">
+                                    </div>
+                                    <div class="panel-card-content">
+                                        <h3 class="panel-card-title title">
+                                            <span>Infinite Scrolling in Interia</span>
+                                        </h3>
+                                        <p class="panel-card-desc sub-title">
+                                            Welcome to the world of Shopify, where I'll show you, step by step, how to build a Shopify app with Laravel from scratch
+                                        </p>
+                                    </div>
+                                </a>
+
+
+                                <a aria-label="title" href="serie.html" class="panel-card">
+                                    <div class="panel-card-img">
+                                        <img alt="" src="assets/img/lets-build-a-forum.webp">
+                                    </div>
+                                    <div class="panel-card-content">
+                                        <h3 class="panel-card-title title">
+                                            <span>Infinite Scrolling in Interia</span>
+                                        </h3>
+                                        <p class="panel-card-desc sub-title">
+                                            Welcome to the world of Shopify, where I'll show you, step by step, how to build a Shopify app with Laravel from scratch
+                                        </p>
+                                    </div>
+                                </a>
+
+
+                                <a aria-label="title" href="serie.html" class="panel-card">
+                                    <div class="panel-card-img">
+                                        <img alt="" src="assets/img/whats-new-in-laravel-9.webp">
+                                    </div>
+                                    <div class="panel-card-content">
+                                        <h3 class="panel-card-title title">
+                                            <span>Infinite Scrolling in Interia</span>
+                                        </h3>
+                                        <p class="panel-card-desc sub-title">
+                                            Welcome to the world of Shopify, where I'll show you, step by step, how to build a Shopify app with Laravel from scratch
+                                        </p>
+                                    </div>
+                                </a>
+
+                                <a aria-label="title" href="serie.html" class="panel-card">
+                                    <div class="panel-card-img">
+                                        <img alt="" src="assets/img/whats-new-in-laravel-5.4.webp">
+                                    </div>
+                                    <div class="panel-card-content">
+                                        <h3 class="panel-card-title title">
+                                            <span>Infinite Scrolling in Interia</span>
+                                        </h3>
+                                        <p class="panel-card-desc sub-title">
+                                            Welcome to the world of Shopify, where I'll show you, step by step, how to build a Shopify app with Laravel from scratch
+                                        </p>
+                                    </div>
+                                </a>
+
+
+                                <a aria-label="title" href="serie.html" class="panel-card">
+                                    <div class="panel-card-img">
+                                        <img alt="" src="assets/img/build-an-app-with-tdd.webp">
+                                    </div>
+                                    <div class="panel-card-content">
+                                        <h3 class="panel-card-title title">
+                                            <span>Infinite Scrolling in Interia</span>
+                                        </h3>
+                                        <p class="panel-card-desc sub-title">
+                                            Welcome to the world of Shopify, where I'll show you, step by step, how to build a Shopify app with Laravel from scratch
+                                        </p>
+                                    </div>
+                                </a>
+
+                                <a aria-label="title" href="serie.html" class="panel-card">
+                                    <div class="panel-card-img">
+                                        <img alt="" src="assets/img/whats-new-in-laravel-8.webp">
+                                    </div>
+                                    <div class="panel-card-content">
+                                        <h3 class="panel-card-title title">
+                                            <span>Infinite Scrolling in Interia</span>
+                                        </h3>
+                                        <p class="panel-card-desc sub-title">
+                                            Welcome to the world of Shopify, where I'll show you, step by step, how to build a Shopify app with Laravel from scratch
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!--=============== OOP|copie ========================-->
+
+            <section class="oop sections" id="updated">
+                <div class="oop__container container">
+
+                    <div class="oop__data">
+                        <h2 class="oop__title title">All About Inertia</h2>
+                        <p class="oop__sub-title sub-title">
+                            Inertia is the missing piece of the puzzle that connects your server-side framework to your client-side framework. 
+                        </p>
+                    </div>
+
+                    <div class="oop__content">
+
+                        <div class="card card-col-1 red-card-bg">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    Laravel Nova is the fastest way to build a full-fledged administration panel for your Laravel applications. Now in its fourth major iteration.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button white-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+                                <a aria-label="title" href="serie.html">
+
+                                    <img alt="" src="assets/img/eloquent-performance-patterns.svg">
+                                </a>
+                                <div class="card-difficulty">
+                                    <p>Advanced <br>
+                                        Difficulty
+                                    </p>
+                                    <div class="card-rate">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="card card-col-1 red-card-bg">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    Laravel Nova is the fastest way to build a full-fledged administration panel for your Laravel applications. Now in its fourth major iteration.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button white-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+                                <a aria-label="title" href="serie.html">
+
+                                    <img alt="" src="assets/img/eloquent-relationships.svg">
+                                </a>
+                                <div class="card-difficulty">
+                                    <p>Advanced <br>
+                                        Difficulty
+                                    </p>
+                                    <div class="card-rate">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="card card-col-1 red-card-bg">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    Laravel Nova is the fastest way to build a full-fledged administration panel for your Laravel applications. Now in its fourth major iteration.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button white-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+                                <a aria-label="title" href="serie.html">
+
+                                    <img alt="" src="assets/img/eloquent-techniques.svg">
+                                </a>
+                                <div class="card-difficulty">
+                                    <p>Advanced <br>
+                                        Difficulty
+                                    </p>
+                                    <div class="card-rate">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </section>
+
+
+            <!--=============== OOP|copie ========================-->
+
+            <section class="oop sections" id="updated">
+                <div class="oop__container container">
+
+                    <div class="oop__data">
+                        <h2 class="oop__title title">Pick a JavaScript Framework</h2>
+                        <p class="oop__sub-title sub-title">
+                            It seems like a new JavaScript framework is released every week. But we've chosen three that we believe will take us into the next decade. Pick one!
+                        </p>
+                    </div>
+
+                    <div class="oop__content">
+
+                        <div class="card card-col-1 red-card-bg">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    Laravel Nova is the fastest way to build a full-fledged administration panel for your Laravel applications. Now in its fourth major iteration.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-buttons">
+                                    <a href="#" class="button card-button white-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+                                <a aria-label="title" href="serie.html">
+
+                                    <img alt="" src="assets/img/eloquent-performance-patterns.svg">
+                                </a>
+                                <div class="card-difficulty">
+                                    <p>Advanced <br>
+                                        Difficulty
+                                    </p>
+                                    <div class="card-rate">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="card card-col-1 red-card-bg">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    Laravel Nova is the fastest way to build a full-fledged administration panel for your Laravel applications. Now in its fourth major iteration.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-buttons">
+                                    <a href="#" aria-label="play serie" class="button card-button white-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+                                <a aria-label="title" href="serie.html">
+
+                                    <img alt="" src="assets/img/eloquent-relationships.svg">
+                                </a>
+                                <div class="card-difficulty">
+                                    <p>Advanced <br>
+                                        Difficulty
+                                    </p>
+                                    <div class="card-rate">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="card card-col-1 red-card-bg">
+
+                            <div class="card-content">
+                                <a aria-label="title" href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    Laravel Nova is the fastest way to build a full-fledged administration panel for your Laravel applications. Now in its fourth major iteration.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-buttons">
+                                    <a href="#" aria-label="play serie" class="button card-button white-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-img">
+                                <a aria-label="title" href="serie.html">
+
+                                    <img alt="" src="assets/img/eloquent-techniques.svg">
+                                </a>
+                                <div class="card-difficulty">
+                                    <p>Advanced <br>
+                                        Difficulty
+                                    </p>
+                                    <div class="card-rate">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== TOPICS ================= -->
+
+            <section class="topic sections" id="tepic">
+                <div class="topic__container container">
+                    <div class="topic__data">
+
+                        <h2 class="topic__title title">Explore Topics</h2>
+                        <p class="topic__sub-title sub-title">
+                            our videos are categorized into a variety of topics.
+                        </p>
+                    </div>
+
+                    <div class="topic__content">
+                        <ul class="topic__list">
+                            <li class="topic__list-item">
+                                <a href="topic.html" class="topic__list-link active">
+                                    All Topics
+                                </a>
+                            </li>
+                            <li class="topic__list-item">
+                                <a href="topic.html" class="topic__list-link">
+                                    DevOps
+                                </a>
+                            </li>
+                            <li class="topic__list-item">
+                                <a href="topic.html" class="topic__list-link">
+                                    Frameworks
+                                </a>
+                            </li>
+
+                            <li class="topic__list-item">
+                                <a href="topic.html" class="topic__list-link">
+                                    Frameworks
+                                </a>
+                            </li>
+                            <li class="topic__list-item">
+                                <a href="topic.html" class="topic__list-link">
+                                    Frameworks
+                                </a>
+                            </li>
+                            <li class="topic__list-item">
+                                <a href="topic.html" class="topic__list-link">
+                                    Frameworks
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="topic__cards">
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/laravel-logo.svg" alt="Laravel logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">Laravel</h3>
+                                </a>
+                            </li>
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/alpine-logo.svg" alt="alpine logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">AlpineJS</h3>
+                                </a>
+                            </li>
+
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/graphql-logo.svg" alt="graphq logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">GraphQL</h3>
+                                </a>
+                            </li>
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/authentication-logo.svg" alt="auth logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">AWS</h3>
+                                </a>
+                            </li>
+
+
+
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/livewire-logo.svg" alt="livewire logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">Laravel Livewire</h3>
+                                </a>
+                            </li>
+
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/nuxtjs-logo.svg" alt="nuxt logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">Nuxt</h3>
+                                </a>
+                            </li>
+
+                            <!--================copies===========-->
+
+
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/laravel-logo.svg" alt="Laravel logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">Laravel</h3>
+                                </a>
+                            </li>
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/alpine-logo.svg" alt="alpine logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">AlpineJS</h3>
+                                </a>
+                            </li>
+
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/graphql-logo.svg" alt="graphq logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">GraphQL</h3>
+                                </a>
+                            </li>
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/authentication-logo.svg" alt="auth logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">AWS</h3>
+                                </a>
+                            </li>
+
+
+
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/livewire-logo.svg" alt="livewire logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">Laravel Livewire</h3>
+                                </a>
+                            </li>
+
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/nuxtjs-logo.svg" alt="nuxt logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">Nuxt</h3>
+                                </a>
+                            </li>
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/laravel-logo.svg" alt="Laravel logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">Laravel</h3>
+                                </a>
+                            </li>
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/alpine-logo.svg" alt="alpine logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">AlpineJS</h3>
+                                </a>
+                            </li>
+
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/graphql-logo.svg" alt="graphq logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">GraphQL</h3>
+                                </a>
+                            </li>
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/authentication-logo.svg" alt="auth logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">AWS</h3>
+                                </a>
+                            </li>
+
+
+
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/livewire-logo.svg" alt="livewire logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">Laravel Livewire</h3>
+                                </a>
+                            </li>
+
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/nuxtjs-logo.svg" alt="nuxt logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">Nuxt</h3>
+                                </a>
+                            </li>
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/laravel-logo.svg" alt="Laravel logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">Laravel</h3>
+                                </a>
+                            </li>
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/alpine-logo.svg" alt="alpine logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">AlpineJS</h3>
+                                </a>
+                            </li>
+
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/graphql-logo.svg" alt="graphq logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">GraphQL</h3>
+                                </a>
+                            </li>
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/authentication-logo.svg" alt="auth logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">AWS</h3>
+                                </a>
+                            </li>
+
+
+
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/livewire-logo.svg" alt="livewire logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">Laravel Livewire</h3>
+                                </a>
+                            </li>
+
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/nuxtjs-logo.svg" alt="nuxt logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">Nuxt</h3>
+                                </a>
+                            </li>
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/laravel-logo.svg" alt="Laravel logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">Laravel</h3>
+                                </a>
+                            </li>
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/alpine-logo.svg" alt="alpine logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">AlpineJS</h3>
+                                </a>
+                            </li>
+
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/graphql-logo.svg" alt="graphq logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">GraphQL</h3>
+                                </a>
+                            </li>
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/authentication-logo.svg" alt="auth logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">AWS</h3>
+                                </a>
+                            </li>
+
+
+
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/livewire-logo.svg" alt="livewire logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">Laravel Livewire</h3>
+                                </a>
+                            </li>
+
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/nuxtjs-logo.svg" alt="nuxt logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">Nuxt</h3>
+                                </a>
+                            </li>
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/laravel-logo.svg" alt="Laravel logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">Laravel</h3>
+                                </a>
+                            </li>
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/alpine-logo.svg" alt="alpine logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">AlpineJS</h3>
+                                </a>
+                            </li>
+
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/graphql-logo.svg" alt="graphq logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">GraphQL</h3>
+                                </a>
+                            </li>
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/authentication-logo.svg" alt="auth logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">AWS</h3>
+                                </a>
+                            </li>
+
+
+
+
+                            <li class="topic__card">
+                                <a href="topic.html" class="topic__card-link">
+
+                                    <div class="topic__card-img">
+
+                                        <img  src="assets/img/livewire-logo.svg" alt="livewire logo">
+                                    </div>
+                                    <h3 class="topic__card-title title">Laravel Livewire</h3>
+                                </a>
+                            </li>
+
+
+
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ==================== AD  =======================-->
+
+            <section class="ad section" id="posts">
+                <div class="ad__container container">
+                    <img alt="" class="ad-bg-img" src="assets/img/signup-banner-teacher-bg@2x.webp">
+
+                    <div class="ad__img">
+                        <img alt="" src="assets/img/signup-banner-main-illustration.svg">
+                    </div>
+                    <div class="ad__content">
+                        <h3 class="ad-title title">
+                            A massive community of programmers just like you.
+                        </h3>
+                        <p class="ad-desc sub-title">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </br></br>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <a href="/" class="ad-button button primary-button">
+                            Get Started For Free
+                        </a>
+                    </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </main>
+
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container">
+                <div class="footer-bg-img">
+                    <img alt="" src="assets/img/laracasts-gang.png">
+                </div>
+
+                <div class="newspaper">
+                    <h2 class="newspaper-title title">
+                        Want us to email you accasionally with our news?
+                    </h2>
+                    <form class="newspaper-form">
+                        <input class="newspaper-input" placeholder="Enter your email address" aria-label="Your email" type="email">
+                        <button class="button primary-button newspaper-button">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+
+                <div class="footer-content">
+
+                    <div class="about-us">
+                        <a aria-label="home page" href="/" class="about-us-logo">
+                            <i class="bx bx-code-alt"></i>
+                        </a>
+                        <p class="about-us-desc">
+                            Nine out of ten doctors recommend us over competing brands. Come inside, see for yourself, and massively level up your development skills in the process.
+                        </p>
+                        <div class="social-link">
+                            <a class="" href="github.com" target="_blank" aria-label="github">
+                                <i class='bx bxl-github'></i>
+                            </a>
+
+                            <a class="" href="twitter.com" target="_blank" aria-label="twitter">
+                                <i class='bx bxl-twitter'></i>
+                            </a>
+                            <a class="" href="facebook.com" target="_blank" aria-label="facebook">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-learn">
+                        <h3 class="title">
+                            LEARN
+                        </h3>
+                        <ul class="footer-list">
+
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-learn">
+                        <h3 class="title">
+                            DISCUSS
+                        </h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-learn">
+                        <h3 class="title">
+                            EXTRAS
+                        </h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="copy-right">
+                    &copy; Laracasts 2023. All rights reserver.
+                </div>
+            </div>
+        </footer>
+
+
+
+
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>

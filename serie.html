@@ -29,13 +29,51 @@
                 <i class="bx bx-code-alt"></i>
             </a>
             <nav class="nav">
+                <ul class="nav__link-list" id="nav__link-list">
+                    <li class="nav__link-item">
+                        <a href="/">HOME</a>
+                    </li>
+
+                    <li class="nav__link-item ">
+                        <a href="series.html">SERIES</a>
+                    </li>
+                    <li class="nav__link-item">
+                        <a href="path.html">PATH</a>
+                    </li>
+                    <li class="nav__link-item">
+                        <a href="forum.html">FORUM</a>
+                    </li>
+                    <li class="nav__link-item">
+                        <a href="#">TEST</a>
+                    </li>
+
+                    <li class="nav__link-item">
+                        <a href="#">TEST</a>
+                    </li>
+                </ul>
                 <div class="nav__search">
                     <i class="bx bx-search-alt-2"></i>
                     <input class="nav__search-input" aria-label="Search input"  placeholder="Search ...">
                 </div>
 
-                <a href="" class="nav__button button primary-button">Sign Up</a>
-                <a href="" class="nav__button button secondary-button">Log In</a>
+                <a href="#" class="nav__button button primary-button">Sign Up</a>
+                <a href="#" class="nav__button button secondary-button">Log In</a>
+                <div class="nav__hamburger"
+                     role="button"
+                     aria-label="show navbar links"
+                     tabindex="0"
+                     onclick="navLinkList('show')"
+                     >
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                </div>
+                <button class="nav__hamburger-close"
+                        id="nav__hamburger-close"
+                        onclick="navLinkList('hide')"
+                        >
+                        <i class='bx bx-x'></i>
+                </button>
             </nav>
         </header>
 
@@ -352,13 +390,13 @@
                         </div>
 
                         <figcaption class="instructor__data">
-                            <h5 class="instructor-header">
+                            <h2 class="instructor-header">
                                 <span class="sub-title">Your Instructor Today</span>
                                 <span class="line"></span>
-                            </h5>
-                            <h2 class="instructor-name title">
-                                Ismail Sadouki
                             </h2>
+                            <h3 class="instructor-name title">
+                                John Doe
+                            </h3>
                             <div class="instructor-social-media">
                                 <a href="github.com" aria-label="Visite my twitter">
                                     <i class='bx bxl-twitter'></i>
@@ -390,9 +428,35 @@
 
         </main>
 
+            <!-- ==================== AD  =======================-->
+
+            <section class="ad section" id="posts">
+                <div class="ad__container container">
+                    <img alt="" class="ad-bg-img" src="assets/img/signup-banner-teacher-bg@2x.webp">
+
+                    <div class="ad__img">
+                        <img alt="" src="assets/img/signup-banner-main-illustration.svg">
+                    </div>
+                    <div class="ad__content">
+                        <h3 class="ad-title title">
+                            A massive community of programmers just like you.
+                        </h3>
+                        <p class="ad-desc sub-title">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </br></br>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <a href="/" class="ad-button button primary-button">
+                            Get Started For Free
+                        </a>
+                    </div>
+            </section>
         <!--==================== FOOTER ====================-->
         <footer class="footer section">
             <div class="footer__container container">
+                <div class="footer-bg-img">
+                    <img alt="" src="assets/img/laracasts-gang.png">
+                </div>
 
                 <div class="newspaper">
                     <h2 class="newspaper-title title">
@@ -406,24 +470,197 @@
                     </form>
                 </div>
 
-                <div class="about-us">
-                    <a aria-label="home page" href="/" class="about-us-logo">
-                        <i class="bx bx-code-alt"></i>
-                    </a>
-                    <p class="about-us-desc">
-                        Nine out of ten doctors recommend us over competing brands. Come inside, see for yourself, and massively level up your development skills in the process.
-                    </p>
-                    <div class="social-link">
-                        <a class="" href="github.com" target="_blank" aria-label="github">
-                            <i class='bx bxl-github'></i>
-                        </a>
+                <div class="footer-content">
 
-                        <a class="" href="twitter.com" target="_blank" aria-label="twitter">
-                            <i class='bx bxl-twitter'></i>
+                    <div class="about-us">
+                        <a aria-label="home page" href="/" class="about-us-logo">
+                            <i class="bx bx-code-alt"></i>
                         </a>
-                        <a class="" href="facebook.com" target="_blank" aria-label="facebook">
-                            <i class='bx bxl-facebook'></i>
-                        </a>
+                        <p class="about-us-desc">
+                            Nine out of ten doctors recommend us over competing brands. Come inside, see for yourself, and massively level up your development skills in the process.
+                        </p>
+                        <div class="social-link">
+                            <a class="" href="github.com" target="_blank" aria-label="github">
+                                <i class='bx bxl-github'></i>
+                            </a>
+
+                            <a class="" href="twitter.com" target="_blank" aria-label="twitter">
+                                <i class='bx bxl-twitter'></i>
+                            </a>
+                            <a class="" href="facebook.com" target="_blank" aria-label="facebook">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-learn">
+                        <h3 class="title">
+                            LEARN
+                        </h3>
+                        <ul class="footer-list">
+
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-learn">
+                        <h3 class="title">
+                            DISCUSS
+                        </h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-learn">
+                        <h3 class="title">
+                            EXTRAS
+                        </h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
@@ -435,6 +672,7 @@
         </footer>
 
 
+        <script src="assets/js/main.js"></script>
 
 
     </body>

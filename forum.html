@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <!-- <link rel="shortcut icon" href="" type="image/x-icon"> -->
+
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/forum.css">
+
+        <title>Laracasts clone</title>
+
+        <!--==============META DESC =====================-->
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="John Doe">
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <a href="/" aria-label="home page" class="header__logo">
+                <i class="bx bx-code-alt"></i>
+            </a>
+            <nav class="nav">
+                <ul class="nav__link-list" id="nav__link-list">
+                    <li class="nav__link-item">
+                        <a href="/">HOME</a>
+                    </li>
+
+                    <li class="nav__link-item ">
+                        <a href="series.html">SERIES</a>
+                    </li>
+                    <li class="nav__link-item">
+                        <a href="path.html">PATH</a>
+                    </li>
+                    <li class="nav__link-item active">
+                        <a href="forum.html">FORUM</a>
+                    </li>
+                    <li class="nav__link-item">
+                        <a href="#">TEST</a>
+                    </li>
+
+                    <li class="nav__link-item">
+                        <a href="#">TEST</a>
+                    </li>
+                </ul>
+                <div class="nav__search">
+                    <i class="bx bx-search-alt-2"></i>
+                    <input class="nav__search-input" aria-label="Search input"  placeholder="Search ...">
+                </div>
+
+                <a href="#" class="nav__button button primary-button">Sign Up</a>
+                <a href="#" class="nav__button button secondary-button">Log In</a>
+                <div class="nav__hamburger"
+                     role="button"
+                     aria-label="show navbar links"
+                     tabindex="0"
+                     onclick="navLinkList('show')"
+                     >
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                </div>
+                <button class="nav__hamburger-close"
+                        id="nav__hamburger-close"
+                        onclick="navLinkList('hide')"
+                        >
+                        <i class='bx bx-x'></i>
+                </button>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+
+            <aside class="sidebar">
+                <div class="sidebar__container container">
+                    <div class="sidebar-discussion">
+                        <a href="#" class="discussion-button button primary-button">New Discussion</a>
+                    </div>
+                    <ul class="sidebar-nav">
+                        <li class="sidebar-nav-item active-item">
+                            <a class="sidebar-nav-link" href="#">
+                                All Threads
+                            </a>
+                        </li>
+
+                        <li class="sidebar-nav-item">
+                            <a class="sidebar-nav-link" href="#">
+                                Channels <span class="new">New!</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-nav-item">
+                            <a class="sidebar-nav-link" href="#">
+                                Popular This Week
+                            </a>
+                        </li>
+
+                        <li class="sidebar-nav-item">
+                            <a class="sidebar-nav-link" href="#">
+                                Solved
+                            </a>
+                        </li>
+
+                        <li class="sidebar-nav-item">
+                            <a class="sidebar-nav-link" href="#">
+                                Unsolved
+                            </a>
+                        </li>
+                        <li class="sidebar-nav-item">
+                            <a class="sidebar-nav-link" href="#">
+                                Channels
+                            </a>
+                        </li>
+
+                        <li class="sidebar-nav-item">
+                            <a class="sidebar-nav-link" href="#">
+                                Popular
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </aside>
+
+            <!--==================== POSTS ====================-->
+            <section class="posts section" id="posts">
+                <div class="posts__container container">
+                    <div class="posts__header">
+
+                        <div class="posts__header-line"></div>
+                        <div class="posts__categories select-container">
+
+                            <div class="select-wrap">
+
+                                <select name="latest" class="select-list" id="latest" aria-label="latest">
+                                    <option value="" class="select-item" disabled selected>Latest</option>
+                                    <option value="codeReview" class="select-item">Code</option>
+                                    <option value="Design" class="select-item">Designk</option>
+                                    <option value="devops" class="select-item">DevOps</option>
+                                    <option value="laravel" class="select-item">Laravel</option>
+                                    <option value="javascript" class="select-item">JavaScript</option>
+                                    <option value="react" class="select-item">React</option>
+                                </select>
+                                <i class='bx bx-chevron-down select-list-icon'></i>
+                            </div>
+
+                            <div class="select-wrap">
+
+                                <select name="latest" class="select-list" id="All" aria-label="latest">
+                                    <option value="" class="select-item" disabled selected>All</option>
+                                    <option value="codeReview" class="select-item">Code</option>
+                                    <option value="Design" class="select-item">Designk</option>
+                                    <option value="devops" class="select-item">DevOps</option>
+                                    <option value="laravel" class="select-item">Laravel</option>
+                                    <option value="javascript" class="select-item">JavaScript</option>
+                                    <option value="react" class="select-item">React</option>
+                                </select>
+                                <i class='bx bx-chevron-down select-list-icon'></i>
+                            </div>
+
+
+
+
+                        </div>
+                        <div class="posts__search">
+
+                            <div
+                                class="show-desc"
+                                id="show-desc"
+
+                                role="button"
+                                tabindex="0"
+                                aria-label="hide desc"
+                                onclick="toggleDesc('hide')"
+                                >
+
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <button
+                                class="hide-desc"
+                                id="hide-desc"
+                                role="button"
+                                tabindex="0"
+                                aria-label="show desc"
+                                onclick="toggleDesc('show')"
+                                >
+                                <span></span>
+                                <span></span>
+
+                                <span></span>
+                            </button>
+                            <div class=" search-container">
+                                <i class="bx bx-search-alt-2"></i>
+                                <input class="search-input" aria-label="Search input" placeholder="Begin your search...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="posts__content">
+                        <div class="post-card">
+                            <div class="card-img">
+                                <img alt="" src="assets/img/default-avatar-29.webp">
+                                <div class="card-instructor">
+                                    <h2 class="name">SADOUKI</h2>
+                                    <div class="comments">
+                                        <i class='bx bxs-message-rounded'></i>
+                                        <span class="comments-number">4</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <a href="#" class="title card-title">
+                                        Can I use policies instead of middleware?
+                                    </a>
+                                    <div class="card-details">
+                                        <div class="views">
+                                            <i class='bx bxs-show'></i>
+                                            <span class="views-number">6043</span>
+                                        </div>
+                                        <div class="comments">
+
+                                            <i class='bx bxs-message-rounded'></i>
+                                            <span class="comments-number">4</span>
+                                        </div>
+
+                                        <a href="topic.html" class="button category-button red-button">
+                                            Laravel
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="sub-title card-sub-title toggle-card-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <div class="card-replied">
+                                    <a href="serie.html" class="blue">ismail</a> replied 10 minutes ago
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post-card">
+                            <div class="card-img">
+                                <img alt="" src="assets/img/default-avatar-10.webp">
+                                <div class="card-instructor">
+                                    <h2 class="name">SADOUKI</h2>
+                                    <div class="comments">
+                                        <i class='bx bxs-message-rounded'></i>
+                                        <span class="comments-number">4</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <a href="#" class="title card-title">
+                                        Can I use policies instead of middleware?
+                                    </a>
+                                    <div class="card-details">
+                                        <div class="views">
+                                            <i class='bx bxs-show'></i>
+                                            <span class="views-number">6043</span>
+                                        </div>
+                                        <div class="comments">
+
+                                            <i class='bx bxs-message-rounded'></i>
+                                            <span class="comments-number">4</span>
+                                        </div>
+
+                                        <a href="topic.html" class="button category-button blue-button">
+                                            Laravel
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="sub-title card-sub-title toggle-card-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <div class="card-replied">
+                                    <a href="serie.html" class="blue">ismail</a> replied 10 minutes ago
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post-card">
+                            <div class="card-img">
+                                <img alt="" src="assets/img/default-avatar-11.webp">
+                                <div class="card-instructor">
+                                    <h2 class="name">SADOUKI</h2>
+                                    <div class="comments">
+                                        <i class='bx bxs-message-rounded'></i>
+                                        <span class="comments-number">4</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <a href="#" class="title card-title">
+                                        Can I use policies instead of middleware?
+                                    </a>
+                                    <div class="card-details">
+                                        <div class="views">
+                                            <i class='bx bxs-show'></i>
+                                            <span class="views-number">6043</span>
+                                        </div>
+                                        <div class="comments">
+
+                                            <i class='bx bxs-message-rounded'></i>
+                                            <span class="comments-number">4</span>
+                                        </div>
+
+                                        <a href="topic.html" class="button category-button green-button">
+                                            Laravel
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="sub-title card-sub-title toggle-card-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <div class="card-replied">
+                                    <a href="serie.html" class="blue">ismail</a> replied 10 minutes ago
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post-card">
+                            <div class="card-img">
+                                <img alt="" src="assets/img/default-avatar-29.webp">
+                                <div class="card-instructor">
+                                    <h2 class="name">SADOUKI</h2>
+                                    <div class="comments">
+                                        <i class='bx bxs-message-rounded'></i>
+                                        <span class="comments-number">4</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <a href="#" class="title card-title">
+                                        Can I use policies instead of middleware?
+                                    </a>
+                                    <div class="card-details">
+                                        <div class="views">
+                                            <i class='bx bxs-show'></i>
+                                            <span class="views-number">6043</span>
+                                        </div>
+                                        <div class="comments">
+
+                                            <i class='bx bxs-message-rounded'></i>
+                                            <span class="comments-number">4</span>
+                                        </div>
+
+                                        <a href="topic.html" class="button category-button red-button">
+                                            Laravel
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="sub-title card-sub-title toggle-card-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <div class="card-replied">
+                                    <a href="serie.html" class="blue">ismail</a> replied 10 minutes ago
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post-card">
+                            <div class="card-img">
+                                <img alt="" src="assets/img/default-avatar-29.webp">
+                                <div class="card-instructor">
+                                    <h2 class="name">SADOUKI</h2>
+                                    <div class="comments">
+                                        <i class='bx bxs-message-rounded'></i>
+                                        <span class="comments-number">4</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <a href="#" class="title card-title">
+                                        Can I use policies instead of middleware?
+                                    </a>
+                                    <div class="card-details">
+                                        <div class="views">
+                                            <i class='bx bxs-show'></i>
+                                            <span class="views-number">6043</span>
+                                        </div>
+                                        <div class="comments">
+
+                                            <i class='bx bxs-message-rounded'></i>
+                                            <span class="comments-number">4</span>
+                                        </div>
+
+                                        <a href="topic.html" class="button category-button red-button">
+                                            Laravel
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="sub-title card-sub-title toggle-card-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <div class="card-replied">
+                                    <a href="serie.html" class="blue">ismail</a> replied 10 minutes ago
+                                </div>
+                            </div>
+                        </div>
+
+
+                <!-- ========================= copies==============-->
+
+                        <div class="post-card">
+                            <div class="card-img">
+                                <img alt="" src="assets/img/default-avatar-29.webp">
+                                <div class="card-instructor">
+                                    <h2 class="name">SADOUKI</h2>
+                                    <div class="comments">
+                                        <i class='bx bxs-message-rounded'></i>
+                                        <span class="comments-number">4</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <a href="#" class="title card-title">
+                                        Can I use policies instead of middleware?
+                                    </a>
+                                    <div class="card-details">
+                                        <div class="views">
+                                            <i class='bx bxs-show'></i>
+                                            <span class="views-number">6043</span>
+                                        </div>
+                                        <div class="comments">
+
+                                            <i class='bx bxs-message-rounded'></i>
+                                            <span class="comments-number">4</span>
+                                        </div>
+
+                                        <a href="topic.html" class="button category-button red-button">
+                                            Laravel
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="sub-title card-sub-title toggle-card-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <div class="card-replied">
+                                    <a href="serie.html" class="blue">ismail</a> replied 10 minutes ago
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post-card">
+                            <div class="card-img">
+                                <img alt="" src="assets/img/default-avatar-10.webp">
+                                <div class="card-instructor">
+                                    <h2 class="name">SADOUKI</h2>
+                                    <div class="comments">
+                                        <i class='bx bxs-message-rounded'></i>
+                                        <span class="comments-number">4</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <a href="#" class="title card-title">
+                                        Can I use policies instead of middleware?
+                                    </a>
+                                    <div class="card-details">
+                                        <div class="views">
+                                            <i class='bx bxs-show'></i>
+                                            <span class="views-number">6043</span>
+                                        </div>
+                                        <div class="comments">
+
+                                            <i class='bx bxs-message-rounded'></i>
+                                            <span class="comments-number">4</span>
+                                        </div>
+
+                                        <a href="topic.html" class="button category-button blue-button">
+                                            Laravel
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="sub-title card-sub-title toggle-card-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <div class="card-replied">
+                                    <a href="serie.html" class="blue">ismail</a> replied 10 minutes ago
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post-card">
+                            <div class="card-img">
+                                <img alt="" src="assets/img/default-avatar-11.webp">
+                                <div class="card-instructor">
+                                    <h2 class="name">SADOUKI</h2>
+                                    <div class="comments">
+                                        <i class='bx bxs-message-rounded'></i>
+                                        <span class="comments-number">4</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <a href="#" class="title card-title">
+                                        Can I use policies instead of middleware?
+                                    </a>
+                                    <div class="card-details">
+                                        <div class="views">
+                                            <i class='bx bxs-show'></i>
+                                            <span class="views-number">6043</span>
+                                        </div>
+                                        <div class="comments">
+
+                                            <i class='bx bxs-message-rounded'></i>
+                                            <span class="comments-number">4</span>
+                                        </div>
+
+                                        <a href="topic.html" class="button category-button green-button">
+                                            Laravel
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="sub-title card-sub-title toggle-card-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <div class="card-replied">
+                                    <a href="serie.html" class="blue">ismail</a> replied 10 minutes ago
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post-card">
+                            <div class="card-img">
+                                <img alt="" src="assets/img/default-avatar-29.webp">
+                                <div class="card-instructor">
+                                    <h2 class="name">SADOUKI</h2>
+                                    <div class="comments">
+                                        <i class='bx bxs-message-rounded'></i>
+                                        <span class="comments-number">4</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <a href="#" class="title card-title">
+                                        Can I use policies instead of middleware?
+                                    </a>
+                                    <div class="card-details">
+                                        <div class="views">
+                                            <i class='bx bxs-show'></i>
+                                            <span class="views-number">6043</span>
+                                        </div>
+                                        <div class="comments">
+
+                                            <i class='bx bxs-message-rounded'></i>
+                                            <span class="comments-number">4</span>
+                                        </div>
+
+                                        <a href="topic.html" class="button category-button red-button">
+                                            Laravel
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="sub-title card-sub-title toggle-card-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <div class="card-replied">
+                                    <a href="serie.html" class="blue">ismail</a> replied 10 minutes ago
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post-card">
+                            <div class="card-img">
+                                <img alt="" src="assets/img/default-avatar-29.webp">
+                                <div class="card-instructor">
+                                    <h2 class="name">SADOUKI</h2>
+                                    <div class="comments">
+                                        <i class='bx bxs-message-rounded'></i>
+                                        <span class="comments-number">4</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <a href="#" class="title card-title">
+                                        Can I use policies instead of middleware?
+                                    </a>
+                                    <div class="card-details">
+                                        <div class="views">
+                                            <i class='bx bxs-show'></i>
+                                            <span class="views-number">6043</span>
+                                        </div>
+                                        <div class="comments">
+
+                                            <i class='bx bxs-message-rounded'></i>
+                                            <span class="comments-number">4</span>
+                                        </div>
+
+                                        <a href="topic.html" class="button category-button red-button">
+                                            Laravel
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="sub-title card-sub-title toggle-card-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <div class="card-replied">
+                                    <a href="serie.html" class="blue">ismail</a> replied 10 minutes ago
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post-card">
+                            <div class="card-img">
+                                <img alt="" src="assets/img/default-avatar-29.webp">
+                                <div class="card-instructor">
+                                    <h2 class="name">SADOUKI</h2>
+                                    <div class="comments">
+                                        <i class='bx bxs-message-rounded'></i>
+                                        <span class="comments-number">4</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <a href="#" class="title card-title">
+                                        Can I use policies instead of middleware?
+                                    </a>
+                                    <div class="card-details">
+                                        <div class="views">
+                                            <i class='bx bxs-show'></i>
+                                            <span class="views-number">6043</span>
+                                        </div>
+                                        <div class="comments">
+
+                                            <i class='bx bxs-message-rounded'></i>
+                                            <span class="comments-number">4</span>
+                                        </div>
+
+                                        <a href="topic.html" class="button category-button red-button">
+                                            Laravel
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="sub-title card-sub-title toggle-card-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <div class="card-replied">
+                                    <a href="serie.html" class="blue">ismail</a> replied 10 minutes ago
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post-card">
+                            <div class="card-img">
+                                <img alt="" src="assets/img/default-avatar-10.webp">
+                                <div class="card-instructor">
+                                    <h2 class="name">SADOUKI</h2>
+                                    <div class="comments">
+                                        <i class='bx bxs-message-rounded'></i>
+                                        <span class="comments-number">4</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <a href="#" class="title card-title">
+                                        Can I use policies instead of middleware?
+                                    </a>
+                                    <div class="card-details">
+                                        <div class="views">
+                                            <i class='bx bxs-show'></i>
+                                            <span class="views-number">6043</span>
+                                        </div>
+                                        <div class="comments">
+
+                                            <i class='bx bxs-message-rounded'></i>
+                                            <span class="comments-number">4</span>
+                                        </div>
+
+                                        <a href="topic.html" class="button category-button blue-button">
+                                            Laravel
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="sub-title card-sub-title toggle-card-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <div class="card-replied">
+                                    <a href="serie.html" class="blue">ismail</a> replied 10 minutes ago
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post-card">
+                            <div class="card-img">
+                                <img alt="" src="assets/img/default-avatar-11.webp">
+                                <div class="card-instructor">
+                                    <h2 class="name">SADOUKI</h2>
+                                    <div class="comments">
+                                        <i class='bx bxs-message-rounded'></i>
+                                        <span class="comments-number">4</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <a href="#" class="title card-title">
+                                        Can I use policies instead of middleware?
+                                    </a>
+                                    <div class="card-details">
+                                        <div class="views">
+                                            <i class='bx bxs-show'></i>
+                                            <span class="views-number">6043</span>
+                                        </div>
+                                        <div class="comments">
+
+                                            <i class='bx bxs-message-rounded'></i>
+                                            <span class="comments-number">4</span>
+                                        </div>
+
+                                        <a href="topic.html" class="button category-button green-button">
+                                            Laravel
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="sub-title card-sub-title toggle-card-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <div class="card-replied">
+                                    <a href="serie.html" class="blue">ismail</a> replied 10 minutes ago
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post-card">
+                            <div class="card-img">
+                                <img alt="" src="assets/img/default-avatar-29.webp">
+                                <div class="card-instructor">
+                                    <h2 class="name">SADOUKI</h2>
+                                    <div class="comments">
+                                        <i class='bx bxs-message-rounded'></i>
+                                        <span class="comments-number">4</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <a href="#" class="title card-title">
+                                        Can I use policies instead of middleware?
+                                    </a>
+                                    <div class="card-details">
+                                        <div class="views">
+                                            <i class='bx bxs-show'></i>
+                                            <span class="views-number">6043</span>
+                                        </div>
+                                        <div class="comments">
+
+                                            <i class='bx bxs-message-rounded'></i>
+                                            <span class="comments-number">4</span>
+                                        </div>
+
+                                        <a href="topic.html" class="button category-button red-button">
+                                            Laravel
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="sub-title card-sub-title toggle-card-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <div class="card-replied">
+                                    <a href="serie.html" class="blue">ismail</a> replied 10 minutes ago
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post-card">
+                            <div class="card-img">
+                                <img alt="" src="assets/img/default-avatar-29.webp">
+                                <div class="card-instructor">
+                                    <h2 class="name">SADOUKI</h2>
+                                    <div class="comments">
+                                        <i class='bx bxs-message-rounded'></i>
+                                        <span class="comments-number">4</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <a href="#" class="title card-title">
+                                        Can I use policies instead of middleware?
+                                    </a>
+                                    <div class="card-details">
+                                        <div class="views">
+                                            <i class='bx bxs-show'></i>
+                                            <span class="views-number">6043</span>
+                                        </div>
+                                        <div class="comments">
+
+                                            <i class='bx bxs-message-rounded'></i>
+                                            <span class="comments-number">4</span>
+                                        </div>
+
+                                        <a href="topic.html" class="button category-button red-button">
+                                            Laravel
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="sub-title card-sub-title toggle-card-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <div class="card-replied">
+                                    <a href="serie.html" class="blue">ismail</a> replied 10 minutes ago
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </section>
+
+
+
+
+
+
+            <aside class="sidebar sidebar-right">
+                <div class="sidebar__container container">
+
+
+                    <div class="sidebar__card blue-card-bg">
+                        <div class="card-img">
+                            <img alt="" src="assets/img/laravel-security-through-examples.svg">
+                        </div>
+
+                        <div class="card-content">
+                            <a href="series.html" class="title card-title">
+                                What's New in Laravel 10
+                            </a>
+                            <p class="sub-title card-desc">
+                                It's a new year, and that means we also get a new major release ...
+                            </p>
+                            <div class="card-buttons">
+                                <a href="series.html" class="button card-button">
+                                    We Recommends This Series
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar__card">
+                        <div class="card-img">
+                            <img alt="" src="assets/img/whats-new-in-laravel-10.svg">
+                        </div>
+
+                        <div class="card-content">
+                            <a href="series.html" class="title card-title">
+                                What's New in Laravel 10
+                            </a>
+                            <p class="sub-title card-desc">
+                                It's a new year, and that means we also get a new major release ...
+                            </p>
+                            <div class="card-buttons">
+                                <a href="series.html" class="button card-button">
+                                    We Recommends This Series
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                        <div class="sidebar__header-line"></div>
+
+                </div>
+            </aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </main>
+
+            <!-- ==================== AD  =======================-->
+
+            <section class="ad section" id="posts">
+                <div class="ad__container container">
+                    <img alt="" class="ad-bg-img" src="assets/img/signup-banner-teacher-bg@2x.webp">
+
+                    <div class="ad__img">
+                        <img alt="" src="assets/img/signup-banner-main-illustration.svg">
+                    </div>
+                    <div class="ad__content">
+                        <h3 class="ad-title title">
+                            A massive community of programmers just like you.
+                        </h3>
+                        <p class="ad-desc sub-title">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </br></br>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <a href="/" class="ad-button button primary-button">
+                            Get Started For Free
+                        </a>
+                    </div>
+            </section>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container">
+                <div class="footer-bg-img">
+                    <img alt="" src="assets/img/laracasts-gang.png">
+                </div>
+
+                <div class="newspaper">
+                    <h2 class="newspaper-title title">
+                        Want us to email you accasionally with our news?
+                    </h2>
+                    <form class="newspaper-form">
+                        <input class="newspaper-input" placeholder="Enter your email address" aria-label="Your email" type="email">
+                        <button class="button primary-button newspaper-button">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+
+                <div class="footer-content">
+
+                    <div class="about-us">
+                        <a aria-label="home page" href="/" class="about-us-logo">
+                            <i class="bx bx-code-alt"></i>
+                        </a>
+                        <p class="about-us-desc">
+                            Nine out of ten doctors recommend us over competing brands. Come inside, see for yourself, and massively level up your development skills in the process.
+                        </p>
+                        <div class="social-link">
+                            <a class="" href="github.com" target="_blank" aria-label="github">
+                                <i class='bx bxl-github'></i>
+                            </a>
+
+                            <a class="" href="twitter.com" target="_blank" aria-label="twitter">
+                                <i class='bx bxl-twitter'></i>
+                            </a>
+                            <a class="" href="facebook.com" target="_blank" aria-label="facebook">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-learn">
+                        <h3 class="title">
+                            LEARN
+                        </h3>
+                        <ul class="footer-list">
+
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-learn">
+                        <h3 class="title">
+                            DISCUSS
+                        </h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-learn">
+                        <h3 class="title">
+                            EXTRAS
+                        </h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="copy-right">
+                    &copy; Laracasts 2023. All rights reserver.
+                </div>
+            </div>
+        </footer>
+
+
+
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/forum.js"></script>
+
+    </body>
+</html>

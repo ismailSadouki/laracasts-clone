@@ -1,0 +1,1776 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <!-- <link rel="shortcut icon" href="" type="image/x-icon"> -->
+
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/path.css">
+        <link rel="stylesheet" href="assets/css/card_components.css">
+
+
+        <title>Laracasts clone</title>
+
+        <!--==============META DESC =====================-->
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="John Doe">
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <a href="/" aria-label="home page" class="header__logo">
+                <i class="bx bx-code-alt"></i>
+            </a>
+            <nav class="nav">
+                <ul class="nav__link-list" id="nav__link-list">
+                    <li class="nav__link-item">
+                        <a href="/">HOME</a>
+                    </li>
+
+                    <li class="nav__link-item ">
+                        <a href="series.html">SERIES</a>
+                    </li>
+                    <li class="nav__link-item active">
+                        <a href="path.html">PATH</a>
+                    </li>
+                    <li class="nav__link-item">
+                        <a href="forum.html">FORUM</a>
+                    </li>
+                    <li class="nav__link-item">
+                        <a href="#">TEST</a>
+                    </li>
+
+                    <li class="nav__link-item">
+                        <a href="#">TEST</a>
+                    </li>
+                </ul>
+                <div class="nav__search">
+                    <i class="bx bx-search-alt-2"></i>
+                    <input class="nav__search-input" aria-label="Search input"  placeholder="Search ...">
+                </div>
+
+                <a href="#" class="nav__button button primary-button">Sign Up</a>
+                <a href="#" class="nav__button button secondary-button">Log In</a>
+                <div class="nav__hamburger"
+                     role="button"
+                     aria-label="show navbar links"
+                     tabindex="0"
+                     onclick="navLinkList('show')"
+                     >
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                </div>
+                <button class="nav__hamburger-close"
+                        id="nav__hamburger-close"
+                        onclick="navLinkList('hide')"
+                        >
+                        <i class='bx bx-x'></i>
+                </button>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+
+
+            <!--==================== TOP ====================-->
+            <section class="top section" id="top">
+                <div class="top__container container">
+                    <div class="top-bg-img">
+                        <img alt="" src="assets/img/grid.svg">
+                    </div>
+
+                    <div class="top__content">
+                        <div class="top-img">
+                            <img alt="" src="assets/img/laravel-icon.svg">
+                        </div>
+                    </div>
+
+                    <div class="top__data">
+                        <h2 class="top__title title">Learn Laravel <span>Path</span></h2>
+                        <p class="top__sub-title sub-title">
+                            There's a difference between knowing the path, and walking the path.
+                        </p>
+                    </div>
+
+
+
+                </div>
+            </section>
+
+
+            <!--==================== LEVEL ====================-->
+            <section class="level section" id="posts">
+                <div class="level__container container">
+
+
+                    <aside class="level__aside">
+                        <div class="level__side">
+
+                            <div class="level-header">
+                                <div class="header-img">
+                                    <img alt="" src="assets/img/difficulty-1.webp">
+                                </div>
+                                <div class="sub-header">
+                                    <h2 class="title header-title">Level One</h2>
+                                    <p class="sub-title header-sub-title">
+                                        The Prerequisites
+                                    </p>
+                                    <div class="header-info">
+                                        <div>
+                                            <h3 class="title">2</h3>
+                                            <p class="sub-title">Series</p>
+                                        </div>
+
+                                        <div>
+                                            <h3 class="title">12</h3>
+                                            <p class="sub-title">Hours</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="sub-title level-desc">
+                                Let's first confirm that you have the strength to begin your Laravel journey. A basic understanding of PHP, object-oriented programming, and database management are essential prerequisites.
+                            </p>
+
+                            <div class="level-learn">
+                                <h3 class="learn-title sub-title">Things You'll Learn</h3>
+                                <div class="learn-items">
+                                    <h4 class="learn-item">
+                                        <i class='bx bx-check'></i>
+                                        <span>Laravel Essentials</span>
+                                    </h4>
+
+                                    <h4 class="learn-item">
+                                        <i class='bx bx-check'></i>
+                                        <span>Database Design</span>
+                                    </h4>
+
+                                    <h4 class="learn-item">
+                                        <i class='bx bx-check'></i>
+                                        <span>Deployment</span>
+                                    </h4>
+
+                                </div>
+                            </div>
+
+                            <div class="level-teachers">
+                                <h3 class="teachers-title sub-title">Your Teachers For Level Two</h3>
+                                <div class="teachers-items">
+                                    <div class="teachers-img">
+                                        <img alt="" src="assets/img/default-avatar-10.webp">
+                                    </div>
+
+                                    <div class="teachers-img">
+                                        <img alt="" src="assets/img/default-avatar-11.webp">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="level-progress">
+                                <h3 class="progress-title sub-title">Tour Progress -- 0% Complete</h3>
+                                <div class="progress-items">
+                                    <h4 class="progress-item">
+                                        1
+                                    </h4>
+
+                                    <h4 class="progress-item">
+                                        2
+                                    </h4>
+
+                                    <h4 class="progress-item">
+                                        3
+                                    </h4>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="level__side-card">
+                            <div class="img">
+                                <img src="assets/img/sidebar-join-laracasts-robot.webp"  alt="">
+                            </div>
+                            <h3 class="title">This is the Way...</h3>
+                            <p class="sub-title">
+                                $15 a month for everything we know about programming. Everything!
+                            </p>
+                            <a href="#" aria-label="link name" class="button primary-button">
+                                Sign Me Up!
+                            </a>
+                        </div>
+                    </aside>
+
+
+                    <div class="level-series">
+                        <div class="card card-col-3 ">
+
+                            <div class="card-content">
+                                <a href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    We don't learn tools for the sake of learning tools. Instead, we learn them because they help us accomplish a particular goal. With that in mind, in this series, we'll use the common desire for a blog - with categories, tags, comments, email notifications, and more - as our goal. Laravel will be the tool that helps us get there. Each lesson, geared toward newcomers to Laravel, will provide instructions and techniques that will get you to the finish line.
+                                    <br>
+                                    <br>
+                                    This version of our popular Laravel From Scratch series was recorded in 2021, and uses Laravel 8.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                    <div>
+                                        <i class="bx bx-bar-chart-alt"></i>
+                                        <span>Advenced</span>
+                                    </div>
+                                </div>
+                                <div class="card-buttons">
+                                    <a href="#" aria-label="link name" class="button card-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+
+                                    <a href="#" aria-label="link name" class="button card-button">
+                                        <i class="bx bxs-bookmark-star"></i>
+                                        <span>Add to Watchlist</span>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="card-img">
+
+                                <img alt="" src="assets/img/php-for-beginners.svg">
+                            </div>
+
+                        </div>
+
+
+                        <div class="card card-col-3 ">
+
+                            <div class="card-content">
+                                <a href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    We don't learn tools for the sake of learning tools. Instead, we learn them because they help us accomplish a particular goal. With that in mind, in this series, we'll use the common desire for a blog - with categories, tags, comments, email notifications, and more - as our goal. Laravel will be the tool that helps us get there. Each lesson, geared toward newcomers to Laravel, will provide instructions and techniques that will get you to the finish line.
+                                    <br>
+                                    <br>
+                                    This version of our popular Laravel From Scratch series was recorded in 2021, and uses Laravel 8.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                    <div>
+                                        <i class="bx bx-bar-chart-alt"></i>
+                                        <span>Advenced</span>
+                                    </div>
+                                </div>
+                                <div class="card-buttons">
+                                    <a href="#" aria-label="link name" class="button card-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+
+                                    <a href="#" aria-label="link name" class="button card-button">
+                                        <i class="bx bxs-bookmark-star"></i>
+                                        <span>Add to Watchlist</span>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="card-img">
+
+                                <img alt="" src="assets/img/object-oriented-principles-in-php.svg">
+                            </div>
+
+                        </div>
+
+
+                        <div class="optional-items">
+                            <div class="optional-item">
+                                <div class="item-info">
+                                    <i class='bx bx-play-circle'></i>
+                                    <h3 class="title">PHP 8 Crash Course</h3>
+                                </div>
+                                <div class="item-category">
+
+                                    <p class="sub-title">
+                                        PHP Delusions
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="optional-item">
+                                <div class="item-info">
+                                    <i class='bx bx-book'></i>
+                                    <h3 class="title">PHP & MySql</h3>
+                                </div>
+                                <div class="item-category">
+
+                                    <p class="sub-title">
+                                        PHP Delusions
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="optional-item">
+                                <div class="item-info">
+                                    <i class='bx bxl-meta' ></i>
+                                    <h3 class="title">HTML and CSS</h3>
+                                </div>
+                                <div class="item-category">
+
+                                    <p class="sub-title">
+                                        PHP Delusions
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="optional-item">
+                                <div class="item-info">
+                                    <i class='bx bx-play-circle'></i>
+                                    <h3 class="title">PHP 8 Crash Course</h3>
+                                </div>
+                                <div class="item-category">
+
+                                    <p class="sub-title">
+                                        PHP Delusions
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="optional-item">
+                                <div class="item-info">
+                                    <i class='bx bx-play-circle'></i>
+                                    <h3 class="title">PHP 8 Crash Course</h3>
+                                </div>
+                                <div class="item-category">
+
+                                    <p class="sub-title">
+                                        PHP Delusions
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- ==================== LEVEL 2 =======================-->
+
+            <section class="level section" id="posts">
+                <div class="level__container container">
+
+
+                    <aside class="">
+                        <div class="aside-sticky level__aside"style="">
+                            <div class="level__side">
+
+                                <div class="level-header">
+                                    <div class="header-img">
+                                        <img alt="" src="assets/img/difficulty-2.webp">
+                                    </div>
+                                    <div class="sub-header">
+                                        <h2 class="title header-title">Level One</h2>
+                                        <p class="sub-title header-sub-title">
+                                            The Prerequisites
+                                        </p>
+                                        <div class="header-info">
+                                            <div>
+                                                <h3 class="title">2</h3>
+                                                <p class="sub-title">Series</p>
+                                            </div>
+
+                                            <div>
+                                                <h3 class="title">12</h3>
+                                                <p class="sub-title">Hours</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="sub-title level-desc">
+                                    Let's first confirm that you have the strength to begin your Laravel journey. A basic understanding of PHP, object-oriented programming, and database management are essential prerequisites.
+                                </p>
+
+                                <div class="level-learn">
+                                    <h3 class="learn-title sub-title">Things You'll Learn</h3>
+                                    <div class="learn-items">
+                                        <h4 class="learn-item">
+                                            <i class='bx bx-check'></i>
+                                            <span>Laravel Essentials</span>
+                                        </h4>
+
+                                        <h4 class="learn-item">
+                                            <i class='bx bx-check'></i>
+                                            <span>Database Design</span>
+                                        </h4>
+
+                                        <h4 class="learn-item">
+                                            <i class='bx bx-check'></i>
+                                            <span>Deployment</span>
+                                        </h4>
+
+                                    </div>
+                                </div>
+
+                                <div class="level-teachers">
+                                    <h3 class="teachers-title sub-title">Your Teachers For Level Two</h3>
+                                    <div class="teachers-items">
+                                        <div class="teachers-img">
+                                            <img alt="" src="assets/img/default-avatar-11.webp">
+                                        </div>
+
+                                        <div class="teachers-img">
+                                            <img alt="" src="assets/img/default-avatar-10.webp">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="level-progress">
+                                    <h3 class="progress-title sub-title">Tour Progress -- 0% Complete</h3>
+                                    <div class="progress-items">
+                                        <h4 class="progress-item">
+                                            1
+                                        </h4>
+
+                                        <h4 class="progress-item">
+                                            2
+                                        </h4>
+
+                                        <h4 class="progress-item">
+                                            3
+                                        </h4>
+
+                                        <h4 class="progress-item">
+                                            4
+                                        </h4>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="level__side-card">
+                                <div class="img">
+                                    <img src="assets/img/sidebar-join-laracasts-robot.webp"  alt="">
+                                </div>
+                                <h3 class="title">This is the Way...</h3>
+                                <p class="sub-title">
+                                    $15 a month for everything we know about programming. Everything!
+                                </p>
+                                <a href="#" aria-label="link name" class="button primary-button">
+                                    Sign Me Up!
+                                </a>
+                            </div>
+                        </div>
+                    </aside>
+
+
+                    <div class="level-series">
+                        <div class="card card-col-3 ">
+
+                            <div class="card-content">
+                                <a href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    We don't learn tools for the sake of learning tools. Instead, we learn them because they help us accomplish a particular goal. With that in mind, in this series, we'll use the common desire for a blog - with categories, tags, comments, email notifications, and more - as our goal. Laravel will be the tool that helps us get there. Each lesson, geared toward newcomers to Laravel, will provide instructions and techniques that will get you to the finish line.
+                                    <br>
+                                    <br>
+                                    This version of our popular Laravel From Scratch series was recorded in 2021, and uses Laravel 8.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                    <div>
+                                        <i class="bx bx-bar-chart-alt"></i>
+                                        <span>Advenced</span>
+                                    </div>
+                                </div>
+                                <div class="card-buttons">
+                                    <a href="#" aria-label="link name" class="button card-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+
+                                    <a href="#" aria-label="link name" class="button card-button">
+                                        <i class="bx bxs-bookmark-star"></i>
+                                        <span>Add to Watchlist</span>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="card-img">
+
+                                <img alt="" src="assets/img/laravel-from-scratch-2021.svg">
+                            </div>
+
+                        </div>
+
+
+                        <div class="card card-col-3 ">
+
+                            <div class="card-content">
+                                <a href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    We don't learn tools for the sake of learning tools. Instead, we learn them because they help us accomplish a particular goal. With that in mind, in this series, we'll use the common desire for a blog - with categories, tags, comments, email notifications, and more - as our goal. Laravel will be the tool that helps us get there. Each lesson, geared toward newcomers to Laravel, will provide instructions and techniques that will get you to the finish line.
+                                    <br>
+                                    <br>
+                                    This version of our popular Laravel From Scratch series was recorded in 2021, and uses Laravel 8.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                    <div>
+                                        <i class="bx bx-bar-chart-alt"></i>
+                                        <span>Advenced</span>
+                                    </div>
+                                </div>
+                                <div class="card-buttons">
+                                    <a href="#" aria-label="link name" class="button card-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+
+                                    <a href="#" aria-label="link name" class="button card-button">
+                                        <i class="bx bxs-bookmark-star"></i>
+                                        <span>Add to Watchlist</span>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="card-img">
+
+                                <img alt="" src="assets/img/eloquent-relationships.svg">
+                            </div>
+
+                        </div>
+
+
+                        <div class="card card-col-3 ">
+
+                            <div class="card-content">
+                                <a href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    We don't learn tools for the sake of learning tools. Instead, we learn them because they help us accomplish a particular goal. With that in mind, in this series, we'll use the common desire for a blog - with categories, tags, comments, email notifications, and more - as our goal. Laravel will be the tool that helps us get there. Each lesson, geared toward newcomers to Laravel, will provide instructions and techniques that will get you to the finish line.
+                                    <br>
+                                    <br>
+                                    This version of our popular Laravel From Scratch series was recorded in 2021, and uses Laravel 8.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                    <div>
+                                        <i class="bx bx-bar-chart-alt"></i>
+                                        <span>Advenced</span>
+                                    </div>
+                                </div>
+                                <div class="card-buttons">
+                                    <a href="#" aria-label="link name" class="button card-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+
+                                    <a href="#" aria-label="link name" class="button card-button">
+                                        <i class="bx bxs-bookmark-star"></i>
+                                        <span>Add to Watchlist</span>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="card-img">
+
+                                <img alt="" src="assets/img/mysql-database-design.svg">
+                            </div>
+
+                        </div>
+                        <div class="card card-col-3 ">
+
+                            <div class="card-content">
+                                <a href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    We don't learn tools for the sake of learning tools. Instead, we learn them because they help us accomplish a particular goal. With that in mind, in this series, we'll use the common desire for a blog - with categories, tags, comments, email notifications, and more - as our goal. Laravel will be the tool that helps us get there. Each lesson, geared toward newcomers to Laravel, will provide instructions and techniques that will get you to the finish line.
+                                    <br>
+                                    <br>
+                                    This version of our popular Laravel From Scratch series was recorded in 2021, and uses Laravel 8.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                    <div>
+                                        <i class="bx bx-bar-chart-alt"></i>
+                                        <span>Advenced</span>
+                                    </div>
+                                </div>
+                                <div class="card-buttons">
+                                    <a href="#" aria-label="link name" class="button card-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+
+                                    <a href="#" aria-label="link name" class="button card-button">
+                                        <i class="bx bxs-bookmark-star"></i>
+                                        <span>Add to Watchlist</span>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="card-img">
+
+                                <img alt="" src="assets/img/code-katas-with-phpunit.svg">
+                            </div>
+
+                        </div>
+                        <div class="card card-col-3 ">
+
+                            <div class="card-content">
+                                <a href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    We don't learn tools for the sake of learning tools. Instead, we learn them because they help us accomplish a particular goal. With that in mind, in this series, we'll use the common desire for a blog - with categories, tags, comments, email notifications, and more - as our goal. Laravel will be the tool that helps us get there. Each lesson, geared toward newcomers to Laravel, will provide instructions and techniques that will get you to the finish line.
+                                    <br>
+                                    <br>
+                                    This version of our popular Laravel From Scratch series was recorded in 2021, and uses Laravel 8.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                    <div>
+                                        <i class="bx bx-bar-chart-alt"></i>
+                                        <span>Advenced</span>
+                                    </div>
+                                </div>
+                                <div class="card-buttons">
+                                    <a href="#" aria-label="link name" class="button card-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+
+                                    <a href="#" aria-label="link name" class="button card-button">
+                                        <i class="bx bxs-bookmark-star"></i>
+                                        <span>Add to Watchlist</span>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="card-img">
+
+                                <img alt="" src="assets/img/eloquent-relationships.svg">
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="optional-items">
+                            <div class="optional-item">
+                                <div class="item-info">
+                                    <i class='bx bx-play-circle'></i>
+                                    <h3 class="title">PHP 8 Crash Course</h3>
+                                </div>
+                                <div class="item-category">
+
+                                    <p class="sub-title">
+                                        PHP Delusions
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="optional-item">
+                                <div class="item-info">
+                                    <i class='bx bx-book'></i>
+                                    <h3 class="title">PHP & MySql</h3>
+                                </div>
+                                <div class="item-category">
+
+                                    <p class="sub-title">
+                                        PHP Delusions
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="optional-item">
+                                <div class="item-info">
+                                    <i class='bx bxl-meta' ></i>
+                                    <h3 class="title">HTML and CSS</h3>
+                                </div>
+                                <div class="item-category">
+
+                                    <p class="sub-title">
+                                        PHP Delusions
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="optional-item">
+                                <div class="item-info">
+                                    <i class='bx bx-play-circle'></i>
+                                    <h3 class="title">PHP 8 Crash Course</h3>
+                                </div>
+                                <div class="item-category">
+
+                                    <p class="sub-title">
+                                        PHP Delusions
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="optional-item">
+                                <div class="item-info">
+                                    <i class='bx bx-play-circle'></i>
+                                    <h3 class="title">PHP 8 Crash Course</h3>
+                                </div>
+                                <div class="item-category">
+
+                                    <p class="sub-title">
+                                        PHP Delusions
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- ==================== LEVEL 3 =======================-->
+
+            <section class="level section" id="posts">
+                <div class="level__container container">
+
+
+                    <aside class="">
+                        <div class="aside-sticky level__aside"style="">
+                            <div class="level__side">
+
+                                <div class="level-header">
+                                    <div class="header-img" style="width:230px">
+                                        <img alt="" src="assets/img/difficulty-3.webp">
+                                    </div>
+                                    <div class="sub-header">
+                                        <h2 class="title header-title">Level Three</h2>
+                                        <p class="sub-title header-sub-title">
+                                            The Prerequisites
+                                        </p>
+                                        <div class="header-info">
+                                            <div>
+                                                <h3 class="title">2</h3>
+                                                <p class="sub-title">Series</p>
+                                            </div>
+
+                                            <div>
+                                                <h3 class="title">12</h3>
+                                                <p class="sub-title">Hours</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="sub-title level-desc">
+                                    Let's first confirm that you have the strength to begin your Laravel journey. A basic understanding of PHP, object-oriented programming, and database management are essential prerequisites.
+                                </p>
+
+                                <div class="level-learn">
+                                    <h3 class="learn-title sub-title">Things You'll Learn</h3>
+                                    <div class="learn-items">
+                                        <h4 class="learn-item">
+                                            <i class='bx bx-check'></i>
+                                            <span>Laravel Essentials</span>
+                                        </h4>
+
+                                        <h4 class="learn-item">
+                                            <i class='bx bx-check'></i>
+                                            <span>Database Design</span>
+                                        </h4>
+
+                                        <h4 class="learn-item">
+                                            <i class='bx bx-check'></i>
+                                            <span>Deployment</span>
+                                        </h4>
+
+                                    </div>
+                                </div>
+
+                                <div class="level-teachers">
+                                    <h3 class="teachers-title sub-title">Your Teachers For Level Two</h3>
+                                    <div class="teachers-items">
+                                        <div class="teachers-img">
+                                            <img alt="" src="assets/img/default-avatar-11.webp">
+                                        </div>
+
+                                        <div class="teachers-img">
+                                            <img alt="" src="assets/img/default-avatar-10.webp">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="level-progress">
+                                    <h3 class="progress-title sub-title">Tour Progress -- 0% Complete</h3>
+                                    <div class="progress-items">
+                                        <h4 class="progress-item">
+                                            1
+                                        </h4>
+
+                                        <h4 class="progress-item">
+                                            2
+                                        </h4>
+
+                                        <h4 class="progress-item">
+                                            3
+                                        </h4>
+
+                                        <h4 class="progress-item">
+                                            4
+                                        </h4>
+
+                                        <h4 class="progress-item">
+                                            5
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="level__side-card">
+                                <div class="img">
+                                    <img src="assets/img/sidebar-join-laracasts-robot.webp"  alt="">
+                                </div>
+                                <h3 class="title">This is the Way...</h3>
+                                <p class="sub-title">
+                                    $15 a month for everything we know about programming. Everything!
+                                </p>
+                                <a href="#" aria-label="link name" class="button primary-button">
+                                    Sign Me Up!
+                                </a>
+                            </div>
+                        </div>
+                    </aside>
+
+
+                    <div class="level-series">
+                        <div class="card card-col-3 ">
+
+                            <div class="card-content">
+                                <a href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    We don't learn tools for the sake of learning tools. Instead, we learn them because they help us accomplish a particular goal. With that in mind, in this series, we'll use the common desire for a blog - with categories, tags, comments, email notifications, and more - as our goal. Laravel will be the tool that helps us get there. Each lesson, geared toward newcomers to Laravel, will provide instructions and techniques that will get you to the finish line.
+                                    <br>
+                                    <br>
+                                    This version of our popular Laravel From Scratch series was recorded in 2021, and uses Laravel 8.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                    <div>
+                                        <i class="bx bx-bar-chart-alt"></i>
+                                        <span>Advenced</span>
+                                    </div>
+                                </div>
+                                <div class="card-buttons">
+                                    <a href="#" aria-label="link name" class="button card-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+
+                                    <a href="#" aria-label="link name" class="button card-button">
+                                        <i class="bx bxs-bookmark-star"></i>
+                                        <span>Add to Watchlist</span>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="card-img">
+
+                                <img alt="" src="assets/img/learn-vue-3.svg">
+                            </div>
+
+                        </div>
+
+
+                        <div class="card card-col-3 ">
+
+                            <div class="card-content">
+                                <a href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    We don't learn tools for the sake of learning tools. Instead, we learn them because they help us accomplish a particular goal. With that in mind, in this series, we'll use the common desire for a blog - with categories, tags, comments, email notifications, and more - as our goal. Laravel will be the tool that helps us get there. Each lesson, geared toward newcomers to Laravel, will provide instructions and techniques that will get you to the finish line.
+                                    <br>
+                                    <br>
+                                    This version of our popular Laravel From Scratch series was recorded in 2021, and uses Laravel 8.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                    <div>
+                                        <i class="bx bx-bar-chart-alt"></i>
+                                        <span>Advenced</span>
+                                    </div>
+                                </div>
+                                <div class="card-buttons">
+                                    <a href="#" aria-label="link name" class="button card-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+
+                                    <a href="#" aria-label="link name" class="button card-button">
+                                        <i class="bx bxs-bookmark-star"></i>
+                                        <span>Add to Watchlist</span>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="card-img">
+
+                                <img alt="" src="assets/img/modern-laravel-apps-using-inertia.svg">
+                            </div>
+
+                        </div>
+
+
+                        <div class="card card-col-3 ">
+
+                            <div class="card-content">
+                                <a href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    We don't learn tools for the sake of learning tools. Instead, we learn them because they help us accomplish a particular goal. With that in mind, in this series, we'll use the common desire for a blog - with categories, tags, comments, email notifications, and more - as our goal. Laravel will be the tool that helps us get there. Each lesson, geared toward newcomers to Laravel, will provide instructions and techniques that will get you to the finish line.
+                                    <br>
+                                    <br>
+                                    This version of our popular Laravel From Scratch series was recorded in 2021, and uses Laravel 8.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                    <div>
+                                        <i class="bx bx-bar-chart-alt"></i>
+                                        <span>Advenced</span>
+                                    </div>
+                                </div>
+                                <div class="card-buttons">
+                                    <a href="#" aria-label="link name" class="button card-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+
+                                    <a href="#" aria-label="link name" class="button card-button">
+                                        <i class="bx bxs-bookmark-star"></i>
+                                        <span>Add to Watchlist</span>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="card-img">
+
+                                <img alt="" src="assets/img/inertia-and-spa-techniques.svg">
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+
+                        <div class="optional-items">
+                            <div class="optional-item">
+                                <div class="item-info">
+                                    <i class='bx bx-play-circle'></i>
+                                    <h3 class="title">PHP 8 Crash Course</h3>
+                                </div>
+                                <div class="item-category">
+
+                                    <p class="sub-title">
+                                        PHP Delusions
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="optional-item">
+                                <div class="item-info">
+                                    <i class='bx bx-book'></i>
+                                    <h3 class="title">PHP & MySql</h3>
+                                </div>
+                                <div class="item-category">
+
+                                    <p class="sub-title">
+                                        PHP Delusions
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="optional-item">
+                                <div class="item-info">
+                                    <i class='bx bxl-meta' ></i>
+                                    <h3 class="title">HTML and CSS</h3>
+                                </div>
+                                <div class="item-category">
+
+                                    <p class="sub-title">
+                                        PHP Delusions
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="optional-item">
+                                <div class="item-info">
+                                    <i class='bx bx-play-circle'></i>
+                                    <h3 class="title">PHP 8 Crash Course</h3>
+                                </div>
+                                <div class="item-category">
+
+                                    <p class="sub-title">
+                                        PHP Delusions
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="optional-item">
+                                <div class="item-info">
+                                    <i class='bx bx-play-circle'></i>
+                                    <h3 class="title">PHP 8 Crash Course</h3>
+                                </div>
+                                <div class="item-category">
+
+                                    <p class="sub-title">
+                                        PHP Delusions
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- ==================== LEVEL 3 =======================-->
+
+            <section class="level section" id="posts">
+                <div class="level__container container">
+
+
+                    <aside class="">
+                        <div class="aside-sticky level__aside"style="">
+                            <div class="level__side">
+
+                                <div class="level-header">
+                                    <div class="header-img" style="width:230px">
+                                        <img alt="" src="assets/img/difficulty-4.webp">
+                                    </div>
+                                    <div class="sub-header">
+                                        <h2 class="title header-title">Level Four</h2>
+                                        <p class="sub-title header-sub-title">
+                                            The Prerequisites
+                                        </p>
+                                        <div class="header-info">
+                                            <div>
+                                                <h3 class="title">2</h3>
+                                                <p class="sub-title">Series</p>
+                                            </div>
+
+                                            <div>
+                                                <h3 class="title">12</h3>
+                                                <p class="sub-title">Hours</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="sub-title level-desc">
+                                    Let's first confirm that you have the strength to begin your Laravel journey. A basic understanding of PHP, object-oriented programming, and database management are essential prerequisites.
+                                </p>
+
+                                <div class="level-learn">
+                                    <h3 class="learn-title sub-title">Things You'll Learn</h3>
+                                    <div class="learn-items">
+                                        <h4 class="learn-item">
+                                            <i class='bx bx-check'></i>
+                                            <span>Laravel Essentials</span>
+                                        </h4>
+
+                                        <h4 class="learn-item">
+                                            <i class='bx bx-check'></i>
+                                            <span>Database Design</span>
+                                        </h4>
+
+                                        <h4 class="learn-item">
+                                            <i class='bx bx-check'></i>
+                                            <span>Deployment</span>
+                                        </h4>
+
+                                    </div>
+                                </div>
+
+                                <div class="level-teachers">
+                                    <h3 class="teachers-title sub-title">Your Teachers For Level Two</h3>
+                                    <div class="teachers-items">
+                                        <div class="teachers-img">
+                                            <img alt="" src="assets/img/default-avatar-11.webp">
+                                        </div>
+
+                                        <div class="teachers-img">
+                                            <img alt="" src="assets/img/default-avatar-10.webp">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="level-progress">
+                                    <h3 class="progress-title sub-title">Tour Progress -- 0% Complete</h3>
+                                    <div class="progress-items">
+                                        <h4 class="progress-item">
+                                            1
+                                        </h4>
+
+                                        <h4 class="progress-item">
+                                            2
+                                        </h4>
+
+                                        <h4 class="progress-item">
+                                            3
+                                        </h4>
+
+                                        <h4 class="progress-item">
+                                            4
+                                        </h4>
+
+                                        <h4 class="progress-item">
+                                            5
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="level__side-card">
+                                <div class="img">
+                                    <img src="assets/img/sidebar-join-laracasts-robot.webp"  alt="">
+                                </div>
+                                <h3 class="title">This is the Way...</h3>
+                                <p class="sub-title">
+                                    $15 a month for everything we know about programming. Everything!
+                                </p>
+                                <a href="#" aria-label="link name" class="button primary-button">
+                                    Sign Me Up!
+                                </a>
+                            </div>
+                        </div>
+                    </aside>
+
+
+                    <div class="level-series">
+                        <div class="card card-col-3 ">
+
+                            <div class="card-content">
+                                <a href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    We don't learn tools for the sake of learning tools. Instead, we learn them because they help us accomplish a particular goal. With that in mind, in this series, we'll use the common desire for a blog - with categories, tags, comments, email notifications, and more - as our goal. Laravel will be the tool that helps us get there. Each lesson, geared toward newcomers to Laravel, will provide instructions and techniques that will get you to the finish line.
+                                    <br>
+                                    <br>
+                                    This version of our popular Laravel From Scratch series was recorded in 2021, and uses Laravel 8.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                    <div>
+                                        <i class="bx bx-bar-chart-alt"></i>
+                                        <span>Advenced</span>
+                                    </div>
+                                </div>
+                                <div class="card-buttons">
+                                    <a href="#" aria-label="link name" class="button card-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+
+                                    <a href="#" aria-label="link name" class="button card-button">
+                                        <i class="bx bxs-bookmark-star"></i>
+                                        <span>Add to Watchlist</span>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="card-img">
+
+                                <img alt="" src="assets/img/laravel-security-through-examples.svg">
+                            </div>
+
+                        </div>
+
+
+                        <div class="card card-col-3 ">
+
+                            <div class="card-content">
+                                <a href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    We don't learn tools for the sake of learning tools. Instead, we learn them because they help us accomplish a particular goal. With that in mind, in this series, we'll use the common desire for a blog - with categories, tags, comments, email notifications, and more - as our goal. Laravel will be the tool that helps us get there. Each lesson, geared toward newcomers to Laravel, will provide instructions and techniques that will get you to the finish line.
+                                    <br>
+                                    <br>
+                                    This version of our popular Laravel From Scratch series was recorded in 2021, and uses Laravel 8.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                    <div>
+                                        <i class="bx bx-bar-chart-alt"></i>
+                                        <span>Advenced</span>
+                                    </div>
+                                </div>
+                                <div class="card-buttons">
+                                    <a href="#" aria-label="link name" class="button card-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+
+                                    <a href="#" aria-label="link name" class="button card-button">
+                                        <i class="bx bxs-bookmark-star"></i>
+                                        <span>Add to Watchlist</span>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="card-img">
+
+                                <img alt="" src="assets/img/modern-laravel-apps-using-inertia.svg">
+                            </div>
+
+                        </div>
+
+
+                        <div class="card card-col-3 ">
+
+                            <div class="card-content">
+                                <a href="serie.html" class="card-title title">Laravel Nova Mastery</a>
+                                <p class="card-desc">
+                                    We don't learn tools for the sake of learning tools. Instead, we learn them because they help us accomplish a particular goal. With that in mind, in this series, we'll use the common desire for a blog - with categories, tags, comments, email notifications, and more - as our goal. Laravel will be the tool that helps us get there. Each lesson, geared toward newcomers to Laravel, will provide instructions and techniques that will get you to the finish line.
+                                    <br>
+                                    <br>
+                                    This version of our popular Laravel From Scratch series was recorded in 2021, and uses Laravel 8.
+                                </p>
+                                <div class="card-info">
+                                    <div>
+                                        <i class="bx bxs-book"></i>
+                                        <span>6 Lessons</span>
+                                    </div>
+
+                                    <div>
+                                        <i class="bx bxs-stopwatch"></i>
+                                        <span>30m</span>
+                                    </div>
+                                    <div>
+                                        <i class="bx bx-bar-chart-alt"></i>
+                                        <span>Advenced</span>
+                                    </div>
+                                </div>
+                                <div class="card-buttons">
+                                    <a href="#" aria-label="link name" class="button card-button">
+                                        <i class="bx bx-play-circle"></i>
+                                        <span>Play Series</span>
+                                    </a>
+
+                                    <a href="#" aria-label="link name" class="button card-button">
+                                        <i class="bx bxs-bookmark-star"></i>
+                                        <span>Add to Watchlist</span>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="card-img">
+
+                                <img alt="" src="assets/img/10-techniques-for-cleaner-code.svg">
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+
+                        <div class="optional-items">
+                            <div class="optional-item">
+                                <div class="item-info">
+                                    <i class='bx bx-play-circle'></i>
+                                    <h3 class="title">PHP 8 Crash Course</h3>
+                                </div>
+                                <div class="item-category">
+
+                                    <p class="sub-title">
+                                        PHP Delusions
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="optional-item">
+                                <div class="item-info">
+                                    <i class='bx bx-book'></i>
+                                    <h3 class="title">PHP & MySql</h3>
+                                </div>
+                                <div class="item-category">
+
+                                    <p class="sub-title">
+                                        PHP Delusions
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="optional-item">
+                                <div class="item-info">
+                                    <i class='bx bxl-meta' ></i>
+                                    <h3 class="title">HTML and CSS</h3>
+                                </div>
+                                <div class="item-category">
+
+                                    <p class="sub-title">
+                                        PHP Delusions
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="optional-item">
+                                <div class="item-info">
+                                    <i class='bx bx-play-circle'></i>
+                                    <h3 class="title">PHP 8 Crash Course</h3>
+                                </div>
+                                <div class="item-category">
+
+                                    <p class="sub-title">
+                                        PHP Delusions
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="optional-item">
+                                <div class="item-info">
+                                    <i class='bx bx-play-circle'></i>
+                                    <h3 class="title">PHP 8 Crash Course</h3>
+                                </div>
+                                <div class="item-category">
+
+                                    <p class="sub-title">
+                                        PHP Delusions
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </section>
+
+
+
+            <!-- ==================== AD  =======================-->
+
+            <section class="ad section" id="posts">
+                <div class="ad__container container">
+                    <img alt="" class="ad-bg-img" src="assets/img/signup-banner-teacher-bg@2x.webp">
+
+                    <div class="ad__img">
+                        <img alt="" src="assets/img/signup-banner-main-illustration.svg">
+                    </div>
+                    <div class="ad__content">
+                        <h3 class="ad-title title">
+                            A massive community of programmers just like you.
+                        </h3>
+                        <p class="ad-desc sub-title">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </br></br>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <a href="/" class="ad-button button primary-button">
+                            Get Started For Free
+                        </a>
+                    </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container">
+                <div class="footer-bg-img">
+                    <img alt="" src="assets/img/laracasts-gang.png">
+                </div>
+
+                <div class="newspaper">
+                    <h2 class="newspaper-title title">
+                        Want us to email you accasionally with our news?
+                    </h2>
+                    <form class="newspaper-form">
+                        <input class="newspaper-input" placeholder="Enter your email address" aria-label="Your email" type="email">
+                        <button class="button primary-button newspaper-button">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+
+                <div class="footer-content">
+
+                    <div class="about-us">
+                        <a aria-label="home page" href="/" class="about-us-logo">
+                            <i class="bx bx-code-alt"></i>
+                        </a>
+                        <p class="about-us-desc">
+                            Nine out of ten doctors recommend us over competing brands. Come inside, see for yourself, and massively level up your development skills in the process.
+                        </p>
+                        <div class="social-link">
+                            <a class="" href="github.com" target="_blank" aria-label="github">
+                                <i class='bx bxl-github'></i>
+                            </a>
+
+                            <a class="" href="twitter.com" target="_blank" aria-label="twitter">
+                                <i class='bx bxl-twitter'></i>
+                            </a>
+                            <a class="" href="facebook.com" target="_blank" aria-label="facebook">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-learn">
+                        <h3 class="title">
+                            LEARN
+                        </h3>
+                        <ul class="footer-list">
+
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-learn">
+                        <h3 class="title">
+                            DISCUSS
+                        </h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-learn">
+                        <h3 class="title">
+                            EXTRAS
+                        </h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="path.html">
+                                    Path
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="forum.html">
+                                    Forum
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="series.html">
+                                    Series
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="copy-right">
+                    &copy; Laracasts 2023. All rights reserver.
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/forum.js"></script>
+
+    </body>
+</html>
