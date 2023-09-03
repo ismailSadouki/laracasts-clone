@@ -8,14 +8,6 @@
 
 A front-end clone of the Laracasts website, built using HTML, CSS, and JavaScript. This project aims to replicate the user interface and key features of Laracasts for showcasing web front end development skills.
 
-## Screenshots
-
-![Homepage Screenshot](/screenshots/home.png)
-![Seriespage Screenshot](/screenshots/series.png)
-![Pathpage Screenshot](/screenshots/path.png)
-![Forumpage Screenshot](/screenshots/forum.png)
-![Topicpage Screenshot](/screenshots/topic.png)
-![Seriepage Screenshot](/screenshots/serie.png)
 ## Technologies Used
 
 - HTML5
@@ -39,3 +31,12 @@ A front-end clone of the Laracasts website, built using HTML, CSS, and JavaScrip
 
    ```bash
    git clone https://github.com/ismailSadouki/laracasts-clone
+
+## Screenshots
+
+![Homepage Screenshot](/screenshots/home.png)
+![Seriespage Screenshot](/screenshots/series.png)
+![Pathpage Screenshot](/screenshots/path.png)
+![Forumpage Screenshot](/screenshots/forum.png)
+![Topicpage Screenshot](/screenshots/topic.png)
+![Seriepage Screenshot](/screenshots/serie.png)
