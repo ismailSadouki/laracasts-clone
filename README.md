@@ -10,9 +10,12 @@ A front-end clone of the Laracasts website, built using HTML, CSS, and JavaScrip
 
 ## Screenshots
 
-![Homepage Screenshot](/screenshots/homepage.png)
-![Course Details Screenshot](/screenshots/course-details.png)
-
+![Homepage Screenshot](/screenshots/home.png)
+![Seriespage Screenshot](/screenshots/series.png)
+![Pathpage Screenshot](/screenshots/path.png)
+![Forumpage Screenshot](/screenshots/forum.png)
+![Topicpage Screenshot](/screenshots/topic.png)
+![Seriepage Screenshot](/screenshots/serie.png)
 ## Technologies Used
 
 - HTML5
